@@ -1,0 +1,628 @@
+{
+  "@@locale": "en",
+  "appTitle": "WordPack",
+  "navLearn": "Learn",
+  "navExplore": "Explore",
+  "navImport": "Import",
+  "navSettings": "Settings",
+  "treeOpen": "Open word tree",
+  "treeCollapse": "Hide word tree",
+  "treeExpand": "Show word tree",
+  "treeResize": "Resize word tree",
+  "treeSearchHint": "Search words",
+  "treeEmpty": "No wordlists yet. Import a CSV to start.",
+  "welcomeTitle": "Learn words one small pack at a time",
+  "welcomeBody": "Import a list of words and definitions. WordPack splits it into packs of 30 and you study each pack until you can get through it without peeking.",
+  "welcomeImport": "Import CSV",
+  "welcomeFormats": "Accepted: a CSV with word, part of speech and definition columns, or plain lines like “abbey - n. a monastery ruled by an abbot”.",
+  "importTitle": "Import preview",
+  "wordlistTitle": "Wordlist",
+  "learnTitle": "Learn",
+  "exploreTitle": "Explore",
+  "settingsTitle": "Settings",
+  "importChooseFile": "Choose a file",
+  "importReading": "Reading {file}…",
+  "@importReading": {
+    "placeholders": {
+      "file": {
+        "type": "String"
+      }
+    }
+  },
+  "importFile": "File: {file}",
+  "@importFile": {
+    "placeholders": {
+      "file": {
+        "type": "String"
+      }
+    }
+  },
+  "importDetectedDash": "Detected: dash lines (word - pos. definition)",
+  "importDetectedColumns": "Detected: CSV columns",
+  "importNameLabel": "Wordlist name",
+  "importWordsReady": "{count, plural, =1{1 word ready} other{{count} words ready}}",
+  "@importWordsReady": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importSkipped": "{count, plural, =0{No lines skipped} =1{1 line skipped} other{{count} lines skipped}}",
+  "@importSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importDuplicates": "{count, plural, =0{No duplicates} =1{1 duplicate removed} other{{count} duplicates removed}}",
+  "@importDuplicates": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importPacks": "{count, plural, =1{1 pack of {size}} other{{count} packs of {size}}}",
+  "@importPacks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "importPacksLast": "{count, plural, =1{1 pack of {size}} other{{count} packs of {size}}} (last pack {last})",
+  "@importPacksLast": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "size": {
+        "type": "int"
+      },
+      "last": {
+        "type": "int"
+      }
+    }
+  },
+  "importFirstWords": "First 10 words",
+  "importSkippedLine": "Line {line}: “{text}” — {reason}",
+  "@importSkippedLine": {
+    "placeholders": {
+      "line": {
+        "type": "int"
+      },
+      "text": {
+        "type": "String"
+      },
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "skipNoSeparator": "no “ - ” separator found",
+  "skipEmptyTerm": "no word",
+  "skipEmptyDefinition": "no definition",
+  "importCancel": "Cancel",
+  "importConfirm": "{count, plural, =1{Import 1 word} other{Import {count} words}}",
+  "@importConfirm": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "importErrorTooLarge": "This file is larger than 5 MB. Split it into smaller files and import them one by one.",
+  "importErrorUnreadable": "This file can’t be read. Save it as a UTF-8 text or CSV file and try again.",
+  "importErrorNoWords": "No words found. Each line needs a word, “ - ” and a definition, or use word and definition columns.",
+  "importChooseAnother": "Choose another file",
+  "importFailed": "Import failed. Please try again.",
+  "homeProgress": "{learned} of {total, plural, =1{1 pack} other{{total} packs}} learned",
+  "@homeProgress": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "homeWords": "{count, plural, =1{1 word} other{{count} words}}",
+  "@homeWords": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePacks": "Packs",
+  "continueLabel": "Continue · Pack {number} · {direction}",
+  "@continueLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "resumeLabel": "Resume Pack {number} · {direction} · card {card} / {total}",
+  "@resumeLabel": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "direction": {
+        "type": "String"
+      },
+      "card": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "allLearned": "All packs learned 🎉",
+  "reviewPack": "Review pack {number}",
+  "@reviewPack": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "directionWd": "Word → Definition",
+  "directionDw": "Definition → Word",
+  "statusNew": "New",
+  "statusLearning": "Learning",
+  "statusLearned": "Learned",
+  "packTitle": "Pack {number}",
+  "@packTitle": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "packRange": "{first} – {last}",
+  "@packRange": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "packSemantics": "Pack {number}, {first} to {last}, {status}",
+  "@packSemantics": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "switchWordlist": "Switch wordlist",
+  "cancel": "Cancel",
+  "learnPackTitle": "Pack {number} · {first} – {last}",
+  "@learnPackTitle": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "learnPosition": "{current} / {total}",
+  "@learnPosition": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnPositionSemantics": "Card {current} of {total}",
+  "@learnPositionSemantics": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "learnPeeks": "Peeks this pass: {count}",
+  "@learnPeeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "learnPeekNote": "This pass won’t count — finish it, then repeat the pack.",
+  "learnShow": "Show",
+  "learnShown": "Shown",
+  "learnNext": "Next",
+  "learnPrevious": "Previous",
+  "learnTapToShow": "Tap to show",
+  "reviewBadge": "Review",
+  "masteryMastered": "mastered",
+  "masteryLearning": "learning",
+  "masteryUnseen": "not started",
+  "directionStatus": "{direction}: {status}",
+  "@directionStatus": {
+    "placeholders": {
+      "direction": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "directionShortWd": "Word → Def",
+  "directionShortDw": "Def → Word",
+  "switchDirectionTitle": "Switch to {direction}?",
+  "@switchDirectionTitle": {
+    "placeholders": {
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "switchDirectionBody": "This pass will restart.",
+  "switchDirectionConfirm": "Switch",
+  "summaryClean": "Clean pass — Pack {number} · {direction} mastered.",
+  "@summaryClean": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryLearned": "Pack {number} learned!",
+  "@summaryLearned": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryPeeks": "{count, plural, =1{Pass finished with 1 peek: {words}} other{Pass finished with {count} peeks: {words}}}",
+  "@summaryPeeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "words": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryCleanReview": "Clean pass — Pack {number} · {direction}.",
+  "@summaryCleanReview": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryStart": "Start {direction}",
+  "@summaryStart": {
+    "placeholders": {
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryNextPack": "Next pack",
+  "summaryReview": "Review this pack",
+  "summaryBack": "Back to wordlist",
+  "summaryRepeat": "Repeat pack",
+  "summarySwitch": "Switch direction",
+  "tonePositive": "Positive",
+  "toneNegative": "Negative",
+  "toneNeutral": "Neutral",
+  "traitCounterIntuitive": "Counter-intuitive",
+  "traitMultipleMeanings": "Multiple meanings",
+  "categoryLabel": "Category",
+  "subcategoryLabel": "Subcategory",
+  "categoryCreate": "Create “{name}”",
+  "@categoryCreate": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "categoryClear": "Clear category",
+  "subcategoryClear": "Clear subcategory",
+  "categorySaved": "Saved",
+  "categoryPath": "{category} › {subcategory}",
+  "@categoryPath": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "subcategory": {
+        "type": "String"
+      }
+    }
+  },
+  "tagSaveFailed": "Couldn’t save that change. Please try again.",
+  "categoryNameInvalid": "Category names must be 1 to 80 characters.",
+  "treePacks": "Packs",
+  "treeCategories": "Categories",
+  "treeTags": "Tags",
+  "treeUncategorised": "Uncategorised",
+  "treeNoSubcategory": "(no subcategory)",
+  "tagUntagged": "Untagged",
+  "treeLearnedOfTotal": "{learned} / {total}",
+  "@treeLearnedOfTotal": {
+    "placeholders": {
+      "learned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "treeRowSemantics": "{title}, {count, plural, =1{1 word} other{{count} words}}",
+  "@treeRowSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "treeStudyPack": "Study pack {number}",
+  "@treeStudyPack": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "treeCollapseNode": "Collapse {title}",
+  "@treeCollapseNode": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "exploreChooseNode": "Choose a group in the word tree to browse its words.",
+  "exploreEmpty": "No words here yet.",
+  "exploreCardMode": "Card",
+  "exploreListMode": "List",
+  "exploreWordFirst": "Word first",
+  "exploreDefinitionFirst": "Definition first",
+  "exploreSearchTitle": "Search: “{query}”",
+  "@exploreSearchTitle": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "treeExpandNode": "Expand {title}",
+  "@treeExpandNode": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLearning": "Learning",
+  "settingsPackSize": "Pack size",
+  "settingsPackSizeValue": "{count} words per pack",
+  "@settingsPackSizeValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsPackSizeHint": "5 to 100 words",
+  "settingsDefaultDirection": "Default direction",
+  "settingsLearnedRule": "Pack counts as learned after",
+  "ruleBoth": "A clean pass in both directions",
+  "ruleEither": "A clean pass in either direction",
+  "ruleWdOnly": "A clean Word → Definition pass",
+  "ruleDwOnly": "A clean Definition → Word pass",
+  "settingsShowPos": "Show part of speech",
+  "settingsDemote": "Peeks during review demote the pack",
+  "settingsDemoteHint": "A peek on a learned pack makes it Learning again.",
+  "settingsAppearance": "Appearance",
+  "settingsTheme": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "settingsOrganise": "Organise",
+  "settingsManageCategories": "Manage categories",
+  "settingsWordlists": "Wordlists",
+  "settingsBackup": "Backup",
+  "settingsExport": "Export backup",
+  "settingsExportHint": "Save everything to one file, e.g. to move to another device.",
+  "settingsRestore": "Restore backup",
+  "settingsRestoreHint": "Replace everything on this device with a backup file.",
+  "settingsKeyboard": "Keyboard shortcuts",
+  "packSizeTitle": "Change pack size to {size}?",
+  "@packSizeTitle": {
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "packSizeList": "{name}: {before} → {after} packs",
+  "@packSizeList": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "before": {
+        "type": "int"
+      },
+      "after": {
+        "type": "int"
+      }
+    }
+  },
+  "packSizeBody": "All packs will be rebuilt with {size} words each. Word progress is kept, and packs whose words were all learned stay Learned.",
+  "@packSizeBody": {
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "packSizeOpenPasses": "{count, plural, =0{} =1{1 pass in progress will be discarded.} other{{count} passes in progress will be discarded.}}",
+  "@packSizeOpenPasses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "packSizeConfirm": "Rebuild packs",
+  "save": "Save",
+  "rename": "Rename",
+  "delete": "Delete",
+  "mergeInto": "Merge into…",
+  "renameWordlist": "Rename wordlist",
+  "deleteWordlistTitle": "Delete “{name}”?",
+  "@deleteWordlistTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteWordlistBody": "{words} words, {packs} packs, all progress, and the tags on these words will be removed from this device. Categories stay. This can’t be undone.",
+  "@deleteWordlistBody": {
+    "placeholders": {
+      "words": {
+        "type": "int"
+      },
+      "packs": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteWordlistConfirm": "Delete list",
+  "manageCategoriesEmpty": "No categories yet. Add them while reviewing a learned pack.",
+  "renameCategory": "Rename category",
+  "categoryNameTaken": "“{name}” already exists here. Use Merge instead.",
+  "@categoryNameTaken": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeCategoryTitle": "Merge “{name}” into…",
+  "@mergeCategoryTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "mergeNoTargets": "There is nothing at the same level to merge into.",
+  "deleteCategoryTitle": "Delete “{name}”?",
+  "@deleteCategoryTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteCategoryBody": "{subs, plural, =0{} =1{Its 1 subcategory goes with it. } other{Its {subs} subcategories go with it. }}{words, plural, =0{No words use it.} =1{1 word becomes uncategorised; its tone and trait tags stay.} other{{words} words become uncategorised; their tone and trait tags stay.}}",
+  "@deleteCategoryBody": {
+    "placeholders": {
+      "subs": {
+        "type": "int"
+      },
+      "words": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteSubcategoryBody": "{words, plural, =0{No words use it.} =1{1 word keeps its category but loses this subcategory.} other{{words} words keep their category but lose this subcategory.}}",
+  "@deleteSubcategoryBody": {
+    "placeholders": {
+      "words": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteCategoryConfirm": "Delete category",
+  "restoreTitle": "Restore this backup?",
+  "restoreBody": "{wordlists, plural, =1{1 wordlist} other{{wordlists} wordlists}} · {words} words · saved {date}. Everything on this device will be replaced by the backup.",
+  "@restoreBody": {
+    "placeholders": {
+      "wordlists": {
+        "type": "int"
+      },
+      "words": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreConfirm": "Replace and restore",
+  "restoreDone": "Backup restored.",
+  "restoreInvalid": "This file isn’t a WordPack backup, or it’s damaged.",
+  "exportDone": "Backup saved.",
+  "exportFailed": "The backup couldn’t be saved.",
+  "shortcutsTitle": "Keyboard shortcuts",
+  "shortcutShow": "Show / reveal",
+  "shortcutNext": "Next card",
+  "shortcutPrevious": "Previous card",
+  "shortcutDirection": "Switch direction",
+  "shortcutTags": "Positive, Negative, Neutral, Counter-intuitive, Multiple meanings (review)",
+  "shortcutCategory": "Category field (review)",
+  "shortcutHelp": "This list",
+  "close": "Close",
+  "learnPackMissing": "This pack no longer exists.",
+  "backToStart": "Back to start"
+}

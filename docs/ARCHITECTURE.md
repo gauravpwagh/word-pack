@@ -1,0 +1,121 @@
+# Architecture (Flutter)
+
+## 1. Packages
+
+Use the latest stable versions at project creation; pin them in `pubspec.lock`. On Flutter 3.41 / Dart 3.11 the newest set that resolves is Riverpod 3.3 (`riverpod_annotation`/`riverpod_generator` 4), go_router 17 and drift 2.31: `riverpod_generator` and `drift_dev` must agree on one `analyzer` version, and go_router 18 needs Dart 3.12. Raise them together after a Flutter upgrade.
+
+| Concern | Package |
+|---|---|
+| State management / DI | `flutter_riverpod` (+ `riverpod_annotation`, `riverpod_generator`) |
+| Routing | `go_router` |
+| Database | `drift`, `drift_flutter` (SQLite on all platforms), dev: `drift_dev` |
+| Files | `file_picker` (open CSV), `file_selector` (desktop save dialog), `share_plus` (mobile export), `path_provider` |
+| CSV + encodings | `csv`, `enough_convert` (Windows-1252 fallback) |
+| IDs | `uuid` |
+| Desktop drag-and-drop (P1) | `desktop_drop` |
+| i18n | `flutter_localizations`, `intl`, ARB files (`flutter gen-l10n`) |
+| Icons | `material_symbols_icons` (Material Symbols Rounded, D-21) |
+| Fonts | none — Literata and Atkinson Hyperlegible Next `.ttf` files bundled in `assets/fonts/` and declared in `pubspec.yaml` (D-20) |
+| Codegen | `build_runner`; dev: `flutter_launcher_icons` (app icon sizes from the 1024 master) |
+| Lints | `flutter_lints` (or `very_good_analysis`), `strict-casts`, `strict-raw-types` |
+| Tests | `flutter_test`, `integration_test`, in-memory drift (`NativeDatabase.memory()`) |
+
+No network packages (so no `google_fonts`).
+
+## 2. Layers
+
+```
+ui (widgets, screens)  ──watch/read──►  providers (Riverpod)  ──►  services (use cases)  ──►  repositories  ──►  drift DB
+                                                                        │
+                                                                        └──► domain (pure Dart: importer, pos, packing, learning, categories, tags)
+```
+
+- **domain/**: pure Dart — no `package:flutter`, no drift. Immutable classes and pure functions; 100 % unit-tested. Time and IDs are injected (`Clock`, `IdGenerator`) so tests are deterministic.
+- **data/**: drift tables, DAOs/repositories; mapping between rows and domain objects; exposes `Stream`s via `watch()`.
+- **services/**: one method per user action (`LearningService.show(passId)`), each running in a single `db.transaction`, applying domain events, and enforcing invariants (`DATA_MODEL.md` §3) — including the learned-only rule for tagging.
+- **providers/**: Riverpod providers exposing services and `StreamProvider`s for screens (tree, pack list, current pass, word).
+- **ui/**: widgets only render state and call services. No business rules in widgets.
+
+## 3. Project layout
+
+```
+pubspec.yaml
+analysis_options.yaml
+assets/fonts/                  # Literata, Atkinson Hyperlegible Next (.ttf + OFL licences)
+l10n.yaml
+lib/
+  main.dart                    # ProviderScope
+  app/app.dart                 # MaterialApp.router, themes, localizations
+  app/router.dart              # go_router routes (UI_UX §2), adaptive shell
+  domain/
+    models.dart                # Direction, Mastery, LearnedRule, PackStatus, Tone, …
+    pos.dart                   # code → key, label, full name
+    importer.dart              # detect, parse, dedupe → ImportReport
+    packing.dart               # chunk, packsForImport, rebuildPacks, deriveMastery
+    learning.dart              # PassState, reducer, events, packStatus, continueTarget
+    categories.dart            # normaliseName, validation
+    tree.dart                  # node ids, TreeNode, flattenTree, findPath
+    tags.dart                  # tone/trait metadata
+    clock.dart  ids.dart
+  data/
+    db/database.dart           # @DriftDatabase, migrations, seeding
+    db/tables.dart             # DATA_MODEL §2
+    db/converters.dart
+    repositories/              # wordlist_repo.dart word_repo.dart pack_repo.dart category_repo.dart pass_repo.dart settings_repo.dart
+    backup/backup_codec.dart
+  services/
+    import_service.dart  wordlist_service.dart  file_picking.dart  backup_files.dart
+    learning_service.dart  tagging_service.dart (tone, traits, category assignment)  category_service.dart (M6)
+    tree_service.dart    settings_service.dart  backup_service.dart
+    exceptions.dart            # WordNotLearnedException, InvalidSubcategoryException, …
+  providers/
+    providers.dart             # db, repos, services, streams (hand-written providers, D-26)
+  ui/
+    theme/app_theme.dart  theme/wp_colors.dart  theme/wp_text.dart  theme/wp_tokens.dart
+    common/page_scaffold.dart  common/dialogs.dart  common/labels.dart  common/shortcut_help.dart
+    shell/adaptive_shell.dart  shell/tree_panel.dart  shell/tree_panel_state.dart
+    tree/tree_view.dart  tree/node_labels.dart
+    card/word_card.dart  card/tag_badges.dart  card/tag_style.dart  card/dashed_border_painter.dart  card/pos_chip.dart
+    learn/learn_screen.dart  learn/pass_summary.dart  learn/direction_toggle.dart  learn/progress_bar.dart
+    tagging/quick_tag_bar.dart  tagging/category_row.dart
+    explore/explorer_screen.dart  explore/word_list_view.dart
+    import/welcome_screen.dart  import/import_preview_screen.dart
+    wordlist/wordlist_home_screen.dart
+    settings/settings_screen.dart  settings/manage_categories_screen.dart
+    shortcuts/app_shortcuts.dart
+  l10n/app_en.arb
+test/
+  domain/  data/  services/  widgets/  ui/
+  goldens/ (optional widget goldens)
+integration_test/
+  app_flow_test.dart
+tool/
+  check.sh  check.ps1          # milestone gate (CLAUDE.md)
+  gen_fixture_data.dart        # embeds fixtures for integration tests
+  render_icon_test.dart        # renders the app icon PNGs
+assets/icon/                   # app icon master + adaptive foreground
+drift_schemas/                 # schema dumps (DATA_MODEL §7)
+fixtures/  reference/  docs/
+```
+
+## 4. Key flows
+
+**Import:** `file_picker` → bytes → `Isolate.run(() => parse(bytes))` → `ImportReport` held in a provider → preview screen → `ImportService.commit(report, name)` inserts wordlist, words (batch), packs in one transaction → navigate to wordlist home.
+
+**Learning action:** tap Show → `LearningService.show(passId)` → load `PassState` → `learning.show(state)` → `(state, events)` → apply events (word reveal count, pack mastery) + save pass, one transaction → the screen's `StreamProvider` emits the new state.
+
+**Tagging:** `TaggingService.setTone(wordId, tone)` checks the word's pack status is learned (else throws `WordNotLearnedException`) → update → stream updates card and tree.
+
+**Pack size change:** `SettingsService.previewPackSizeChange(n)` → dialog → `applyPackSizeChange(n)` → `packing.rebuildPacks` plan (per wordlist) applied in one transaction.
+
+## 5. Performance
+
+- Up to 10 wordlists × 5,000 words: load a wordlist's words into memory where convenient.
+- Batch inserts at import (`batch.insertAll`).
+- Tree counts via grouped SQL queries exposed as streams; debounce tree rebuilds by 50 ms.
+
+## 6. Error handling
+
+- Importer never throws on content; it reports skipped lines. Unreadable file → friendly error screen.
+- Service exceptions are typed; UI shows a `SnackBar` with a localised message.
+- Uncaught errors: `FlutterError.onError` + `PlatformDispatcher.instance.onError` log locally (no telemetry).

@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          # Times are stored as ISO-8601 text and read back in UTC
+          # (docs/DATA_MODEL.md: "Timestamps … UTC").
+          store_date_time_values_as_text: true
+          databases:
+            default: lib/data/db/database.dart
+          schema_dir: drift_schemas/
+          test_dir: test/drift/

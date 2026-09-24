@@ -1,0 +1,427 @@
+{
+ "format": "dash",
+ "words": [
+  {
+   "line": 1,
+   "term": "abbey",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a monastery ruled by an abbot"
+  },
+  {
+   "line": 2,
+   "term": "abide",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "dwell; inhabit or live in"
+  },
+  {
+   "line": 3,
+   "term": "abound",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be abundant or plentiful; exist in large quantities"
+  },
+  {
+   "line": 4,
+   "term": "absence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state of being absent"
+  },
+  {
+   "line": 5,
+   "term": "absorb",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "assimilate or take in"
+  },
+  {
+   "line": 6,
+   "term": "abstinence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "practice of refraining from indulging an appetite especially alcohol"
+  },
+  {
+   "line": 7,
+   "term": "absurd",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "inconsistent with reason or logic or common sense"
+  },
+  {
+   "line": 8,
+   "term": "abundant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "present in great quantity"
+  },
+  {
+   "line": 9,
+   "term": "abusive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by physical or psychological maltreatment"
+  },
+  {
+   "line": 10,
+   "term": "academic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "associated with school or learning"
+  },
+  {
+   "line": 11,
+   "term": "academy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a school for special training"
+  },
+  {
+   "line": 12,
+   "term": "accept",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "consider or hold as true"
+  },
+  {
+   "line": 13,
+   "term": "access",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "reach or gain access to"
+  },
+  {
+   "line": 14,
+   "term": "accessible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "easily obtained"
+  },
+  {
+   "line": 15,
+   "term": "acclaim",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "enthusiastic approval"
+  },
+  {
+   "line": 16,
+   "term": "accommodate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "provide with something desired or needed"
+  },
+  {
+   "line": 17,
+   "term": "accompany",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "go or travel along with"
+  },
+  {
+   "line": 18,
+   "term": "accomplish",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to gain with effort"
+  },
+  {
+   "line": 19,
+   "term": "account",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "furnish a justifying analysis or explanation"
+  },
+  {
+   "line": 20,
+   "term": "accurate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "conforming exactly or almost exactly to fact or to a standard or performing with total accuracy"
+  },
+  {
+   "line": 21,
+   "term": "accusation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an assertion that someone is guilty of a fault or offence"
+  },
+  {
+   "line": 22,
+   "term": "accuse",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "blame for, make a claim of wrongdoing or misbehavior against"
+  },
+  {
+   "line": 23,
+   "term": "acid",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "biting, sarcastic, or scornful"
+  },
+  {
+   "line": 24,
+   "term": "acknowledge",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "declare to be true or admit the existence or reality or truth of"
+  },
+  {
+   "line": 25,
+   "term": "acquire",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come into the possession of something concrete or abstract"
+  },
+  {
+   "line": 26,
+   "term": "acquisition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something acquired or received"
+  },
+  {
+   "line": 27,
+   "term": "adamant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impervious to pleas, persuasion, requests, reason"
+  },
+  {
+   "line": 28,
+   "term": "adjacent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a common boundary or edge; abutting; touching"
+  },
+  {
+   "line": 29,
+   "term": "administrator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who manages a government agency or department"
+  },
+  {
+   "line": 30,
+   "term": "advent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "arrival that has been awaited (especially of something momentous)"
+  },
+  {
+   "line": 31,
+   "term": "adverse",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "contrary to your interests or welfare"
+  },
+  {
+   "line": 32,
+   "term": "advisory",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an announcement that usually advises or warns the public of some threat"
+  },
+  {
+   "line": 33,
+   "term": "advocacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "active support of an idea or cause etc.; especially the act of pleading or arguing for something"
+  },
+  {
+   "line": 34,
+   "term": "advocate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "speak, plead, or argue in favor of"
+  },
+  {
+   "line": 35,
+   "term": "affect",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the conscious subjective aspect of feeling or emotion"
+  },
+  {
+   "line": 36,
+   "term": "affirmative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "affirming or giving assent"
+  },
+  {
+   "line": 37,
+   "term": "aggression",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "violent action that is hostile and usually unprovoked"
+  },
+  {
+   "line": 38,
+   "term": "airy",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not practical or realizable; speculative"
+  },
+  {
+   "line": 39,
+   "term": "album",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a book of blank pages with pockets or envelopes; for organizing photographs or stamp collections etc"
+  },
+  {
+   "line": 40,
+   "term": "alcohol",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a liquor or brew containing alcohol as the active agent"
+  },
+  {
+   "line": 41,
+   "term": "alien",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being or from or characteristic of another place or part of the world"
+  },
+  {
+   "line": 42,
+   "term": "allegiance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the loyalty that citizens owe to their country (or subjects to their sovereign)"
+  },
+  {
+   "line": 43,
+   "term": "alley",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a narrow street with walls on both sides"
+  },
+  {
+   "line": 44,
+   "term": "alliance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a formal agreement establishing an association or alliance between nations or other groups to achieve a particular aim"
+  },
+  {
+   "line": 45,
+   "term": "ally",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an associate who provides cooperation or assistance"
+  },
+  {
+   "line": 46,
+   "term": "altar",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a raised structure on which gifts or sacrifices to a god are made"
+  },
+  {
+   "line": 47,
+   "term": "alter",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cause to change; make different; cause a transformation"
+  },
+  {
+   "line": 48,
+   "term": "alternate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving or used in place of another"
+  },
+  {
+   "line": 49,
+   "term": "alternative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving or used in place of another"
+  },
+  {
+   "line": 50,
+   "term": "altitude",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "elevation especially above sea level or above the earth's surface"
+  },
+  {
+   "line": 51,
+   "term": "amateur",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking professional skill or expertise"
+  },
+  {
+   "line": 52,
+   "term": "ambiguous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having more than one possible meaning"
+  },
+  {
+   "line": 53,
+   "term": "ambitious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a strong desire for success or achievement"
+  },
+  {
+   "line": 54,
+   "term": "ambivalent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "uncertain or unable to decide about what course to follow"
+  },
+  {
+   "line": 55,
+   "term": "analogy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "drawing a comparison in order to show a similarity in some respect"
+  },
+  {
+   "line": 56,
+   "term": "analyst",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who is skilled at analyzing data"
+  },
+  {
+   "line": 57,
+   "term": "analyze",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "break down into components or essential features"
+  },
+  {
+   "line": 58,
+   "term": "anchor",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "fix firmly and stably"
+  },
+  {
+   "line": 59,
+   "term": "android",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a robot designed to look and behave like a human being"
+  },
+  {
+   "line": 60,
+   "term": "annual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "occurring or payable every year"
+  }
+ ],
+ "skipped": [],
+ "duplicates_removed": 0
+}

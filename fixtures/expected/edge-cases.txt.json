@@ -1,0 +1,75 @@
+{
+ "format": "dash",
+ "words": [
+  {
+   "line": 1,
+   "term": "abbey",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a monastery ruled by an abbot"
+  },
+  {
+   "line": 3,
+   "term": "absurd",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "inconsistent with reason, logic or common sense"
+  },
+  {
+   "line": 4,
+   "term": "affect",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the conscious subjective aspect of feeling or emotion"
+  },
+  {
+   "line": 5,
+   "term": "affect",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "have an influence upon"
+  },
+  {
+   "line": 6,
+   "term": "co-op",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a jointly owned enterprise"
+  },
+  {
+   "line": 7,
+   "term": "well-being",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a contented state - being happy and healthy"
+  },
+  {
+   "line": 8,
+   "term": "wholly",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "to a complete degree ('whole' is often used informally)"
+  },
+  {
+   "line": 9,
+   "term": "nopos",
+   "pos_raw": null,
+   "pos": null,
+   "definition": "a definition with no part-of-speech code"
+  },
+  {
+   "line": 10,
+   "term": "x.",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a line whose term looks like a code"
+  }
+ ],
+ "skipped": [
+  {
+   "line": 11,
+   "reason": "NO_SEPARATOR"
+  }
+ ],
+ "duplicates_removed": 1
+}

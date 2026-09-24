@@ -1,0 +1,6993 @@
+{
+ "format": "dash",
+ "words": [
+  {
+   "line": 1,
+   "term": "abbey",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a monastery ruled by an abbot"
+  },
+  {
+   "line": 2,
+   "term": "abide",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "dwell; inhabit or live in"
+  },
+  {
+   "line": 3,
+   "term": "abound",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be abundant or plentiful; exist in large quantities"
+  },
+  {
+   "line": 4,
+   "term": "absence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state of being absent"
+  },
+  {
+   "line": 5,
+   "term": "absorb",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "assimilate or take in"
+  },
+  {
+   "line": 6,
+   "term": "abstinence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "practice of refraining from indulging an appetite especially alcohol"
+  },
+  {
+   "line": 7,
+   "term": "absurd",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "inconsistent with reason or logic or common sense"
+  },
+  {
+   "line": 8,
+   "term": "abundant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "present in great quantity"
+  },
+  {
+   "line": 9,
+   "term": "abusive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by physical or psychological maltreatment"
+  },
+  {
+   "line": 10,
+   "term": "academic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "associated with school or learning"
+  },
+  {
+   "line": 11,
+   "term": "academy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a school for special training"
+  },
+  {
+   "line": 12,
+   "term": "accept",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "consider or hold as true"
+  },
+  {
+   "line": 13,
+   "term": "access",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "reach or gain access to"
+  },
+  {
+   "line": 14,
+   "term": "accessible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "easily obtained"
+  },
+  {
+   "line": 15,
+   "term": "acclaim",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "enthusiastic approval"
+  },
+  {
+   "line": 16,
+   "term": "accommodate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "provide with something desired or needed"
+  },
+  {
+   "line": 17,
+   "term": "accompany",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "go or travel along with"
+  },
+  {
+   "line": 18,
+   "term": "accomplish",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to gain with effort"
+  },
+  {
+   "line": 19,
+   "term": "account",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "furnish a justifying analysis or explanation"
+  },
+  {
+   "line": 20,
+   "term": "accurate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "conforming exactly or almost exactly to fact or to a standard or performing with total accuracy"
+  },
+  {
+   "line": 21,
+   "term": "accusation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an assertion that someone is guilty of a fault or offence"
+  },
+  {
+   "line": 22,
+   "term": "accuse",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "blame for, make a claim of wrongdoing or misbehavior against"
+  },
+  {
+   "line": 23,
+   "term": "acid",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "biting, sarcastic, or scornful"
+  },
+  {
+   "line": 24,
+   "term": "acknowledge",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "declare to be true or admit the existence or reality or truth of"
+  },
+  {
+   "line": 25,
+   "term": "acquire",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come into the possession of something concrete or abstract"
+  },
+  {
+   "line": 26,
+   "term": "acquisition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something acquired or received"
+  },
+  {
+   "line": 27,
+   "term": "adamant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impervious to pleas, persuasion, requests, reason"
+  },
+  {
+   "line": 28,
+   "term": "adjacent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a common boundary or edge; abutting; touching"
+  },
+  {
+   "line": 29,
+   "term": "administrator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who manages a government agency or department"
+  },
+  {
+   "line": 30,
+   "term": "advent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "arrival that has been awaited (especially of something momentous)"
+  },
+  {
+   "line": 31,
+   "term": "adverse",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "contrary to your interests or welfare"
+  },
+  {
+   "line": 32,
+   "term": "advisory",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an announcement that usually advises or warns the public of some threat"
+  },
+  {
+   "line": 33,
+   "term": "advocacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "active support of an idea or cause etc.; especially the act of pleading or arguing for something"
+  },
+  {
+   "line": 34,
+   "term": "advocate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "speak, plead, or argue in favor of"
+  },
+  {
+   "line": 35,
+   "term": "affect",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the conscious subjective aspect of feeling or emotion"
+  },
+  {
+   "line": 36,
+   "term": "affirmative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "affirming or giving assent"
+  },
+  {
+   "line": 37,
+   "term": "aggression",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "violent action that is hostile and usually unprovoked"
+  },
+  {
+   "line": 38,
+   "term": "airy",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not practical or realizable; speculative"
+  },
+  {
+   "line": 39,
+   "term": "album",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a book of blank pages with pockets or envelopes; for organizing photographs or stamp collections etc"
+  },
+  {
+   "line": 40,
+   "term": "alcohol",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a liquor or brew containing alcohol as the active agent"
+  },
+  {
+   "line": 41,
+   "term": "alien",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being or from or characteristic of another place or part of the world"
+  },
+  {
+   "line": 42,
+   "term": "allegiance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the loyalty that citizens owe to their country (or subjects to their sovereign)"
+  },
+  {
+   "line": 43,
+   "term": "alley",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a narrow street with walls on both sides"
+  },
+  {
+   "line": 44,
+   "term": "alliance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a formal agreement establishing an association or alliance between nations or other groups to achieve a particular aim"
+  },
+  {
+   "line": 45,
+   "term": "ally",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an associate who provides cooperation or assistance"
+  },
+  {
+   "line": 46,
+   "term": "altar",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a raised structure on which gifts or sacrifices to a god are made"
+  },
+  {
+   "line": 47,
+   "term": "alter",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cause to change; make different; cause a transformation"
+  },
+  {
+   "line": 48,
+   "term": "alternate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving or used in place of another"
+  },
+  {
+   "line": 49,
+   "term": "alternative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving or used in place of another"
+  },
+  {
+   "line": 50,
+   "term": "altitude",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "elevation especially above sea level or above the earth's surface"
+  },
+  {
+   "line": 51,
+   "term": "amateur",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking professional skill or expertise"
+  },
+  {
+   "line": 52,
+   "term": "ambiguous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having more than one possible meaning"
+  },
+  {
+   "line": 53,
+   "term": "ambitious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a strong desire for success or achievement"
+  },
+  {
+   "line": 54,
+   "term": "ambivalent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "uncertain or unable to decide about what course to follow"
+  },
+  {
+   "line": 55,
+   "term": "analogy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "drawing a comparison in order to show a similarity in some respect"
+  },
+  {
+   "line": 56,
+   "term": "analyst",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who is skilled at analyzing data"
+  },
+  {
+   "line": 57,
+   "term": "analyze",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "break down into components or essential features"
+  },
+  {
+   "line": 58,
+   "term": "anchor",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "fix firmly and stably"
+  },
+  {
+   "line": 59,
+   "term": "android",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a robot designed to look and behave like a human being"
+  },
+  {
+   "line": 60,
+   "term": "annual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "occurring or payable every year"
+  },
+  {
+   "line": 61,
+   "term": "anonymous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no known name or identity or known source"
+  },
+  {
+   "line": 62,
+   "term": "antichrist",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the adversary of Christ (or Christianity) mentioned in the New Testament"
+  },
+  {
+   "line": 63,
+   "term": "antique",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "made in or typical of earlier times and valued for its age"
+  },
+  {
+   "line": 64,
+   "term": "anxious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "causing or fraught with or showing anxiety"
+  },
+  {
+   "line": 65,
+   "term": "apartheid",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a social policy or racial segregation involving political and economic and legal discrimination against people who are not Whites"
+  },
+  {
+   "line": 66,
+   "term": "apocalyptic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "prophetic of devastation or ultimate doom"
+  },
+  {
+   "line": 67,
+   "term": "apology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an expression of regret at having caused trouble for someone"
+  },
+  {
+   "line": 68,
+   "term": "apparel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "clothing in general"
+  },
+  {
+   "line": 69,
+   "term": "apparent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "clearly revealed to the mind or the senses or judgment"
+  },
+  {
+   "line": 70,
+   "term": "appease",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make peace with"
+  },
+  {
+   "line": 71,
+   "term": "appropriate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "suitable for a particular person or place or condition etc"
+  },
+  {
+   "line": 72,
+   "term": "apt",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being of striking appropriateness and pertinence"
+  },
+  {
+   "line": 73,
+   "term": "arbitrary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "based on or subject to individual discretion or preference or sometimes impulse or caprice"
+  },
+  {
+   "line": 74,
+   "term": "arcade",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a covered passageway with shops and stalls on either side"
+  },
+  {
+   "line": 75,
+   "term": "arrange",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "put into a proper or systematic order"
+  },
+  {
+   "line": 76,
+   "term": "arrangement",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an orderly grouping (of things or persons) considered as a unit; the result of arranging"
+  },
+  {
+   "line": 77,
+   "term": "arrival",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of arriving at a certain place"
+  },
+  {
+   "line": 78,
+   "term": "arrogance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "overbearing pride evidenced by a superior manner toward inferiors"
+  },
+  {
+   "line": 79,
+   "term": "arrogant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having or showing feelings of unwarranted importance out of overbearing pride"
+  },
+  {
+   "line": 80,
+   "term": "articulate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "expressing yourself easily or characterized by clear expressive language"
+  },
+  {
+   "line": 81,
+   "term": "assassination",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "murder of a public figure by surprise attack"
+  },
+  {
+   "line": 82,
+   "term": "assess",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "set or determine the amount of (a payment such as a fine)"
+  },
+  {
+   "line": 83,
+   "term": "assets",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "anything of material value or usefulness that is owned by a person or company"
+  },
+  {
+   "line": 84,
+   "term": "asylum",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a shelter from danger or hardship"
+  },
+  {
+   "line": 85,
+   "term": "auburn",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "(of hair) colored a moderate reddish-brown"
+  },
+  {
+   "line": 86,
+   "term": "august",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "profoundly honored"
+  },
+  {
+   "line": 87,
+   "term": "aura",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a distinctive but intangible quality surrounding a person or thing"
+  },
+  {
+   "line": 88,
+   "term": "austere",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of a stern or strict bearing or demeanor; forbidding in aspect"
+  },
+  {
+   "line": 89,
+   "term": "authentic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not counterfeit or copied"
+  },
+  {
+   "line": 90,
+   "term": "authenticity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "undisputed credibility"
+  },
+  {
+   "line": 91,
+   "term": "authoritarian",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who behaves in a tyrannical manner"
+  },
+  {
+   "line": 92,
+   "term": "autobiography",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a biography of yourself"
+  },
+  {
+   "line": 93,
+   "term": "autonomous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "existing as an independent entity"
+  },
+  {
+   "line": 94,
+   "term": "autonomy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "immunity from arbitrary exercise of authority: political independence"
+  },
+  {
+   "line": 95,
+   "term": "avid",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by active interest and enthusiasm"
+  },
+  {
+   "line": 96,
+   "term": "banal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "repeated too often; over familiar through overuse"
+  },
+  {
+   "line": 97,
+   "term": "barring",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of excluding someone by a negative vote or veto"
+  },
+  {
+   "line": 98,
+   "term": "bass",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the lowest adult male singing voice"
+  },
+  {
+   "line": 99,
+   "term": "batter",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a liquid or semiliquid mixture, as of flour, eggs, and milk, used in cooking"
+  },
+  {
+   "line": 100,
+   "term": "belle",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a young woman who is the most charming and beautiful of several rivals"
+  },
+  {
+   "line": 101,
+   "term": "beneficial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "promoting or enhancing well-being"
+  },
+  {
+   "line": 102,
+   "term": "benefit",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that aids or promotes well-being"
+  },
+  {
+   "line": 103,
+   "term": "benign",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not dangerous to health; not recurrent or progressive (especially of a tumor)"
+  },
+  {
+   "line": 104,
+   "term": "bid",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a formal proposal to buy at a specified price"
+  },
+  {
+   "line": 105,
+   "term": "biography",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an account of the series of events making up a person's life"
+  },
+  {
+   "line": 106,
+   "term": "biology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the science that studies living organisms"
+  },
+  {
+   "line": 107,
+   "term": "blaze",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a strong flame that burns brightly"
+  },
+  {
+   "line": 108,
+   "term": "bleak",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unpleasantly cold and damp"
+  },
+  {
+   "line": 109,
+   "term": "bogus",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "fraudulent; having a misleading appearance"
+  },
+  {
+   "line": 110,
+   "term": "bolster",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "support and strengthen"
+  },
+  {
+   "line": 111,
+   "term": "bomb",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an explosive device fused to explode under specific conditions"
+  },
+  {
+   "line": 112,
+   "term": "bore",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who evokes boredom"
+  },
+  {
+   "line": 113,
+   "term": "botanical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to plants or botany"
+  },
+  {
+   "line": 114,
+   "term": "boycott",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a group's refusal to have commercial dealings with some organization in protest against its policies"
+  },
+  {
+   "line": 115,
+   "term": "brass",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an alloy of copper and zinc"
+  },
+  {
+   "line": 116,
+   "term": "breach",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an opening (especially a gap in a dike or fortification)"
+  },
+  {
+   "line": 117,
+   "term": "broadcast",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "message that is transmitted by radio or television"
+  },
+  {
+   "line": 118,
+   "term": "brokerage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the business of a broker; charges a fee to arrange a contract between two parties"
+  },
+  {
+   "line": 119,
+   "term": "buffet",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a meal set out on a buffet at which guests help themselves"
+  },
+  {
+   "line": 120,
+   "term": "bumper",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a mechanical device consisting of bars at either end of a vehicle to absorb shock and prevent serious damage"
+  },
+  {
+   "line": 121,
+   "term": "bureau",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an administrative unit of government"
+  },
+  {
+   "line": 122,
+   "term": "bureaucracy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "non elected government officials"
+  },
+  {
+   "line": 123,
+   "term": "butt",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to strike, thrust or shove against"
+  },
+  {
+   "line": 124,
+   "term": "cabinet",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "persons appointed by a head of state to head executive departments of government and act as official advisers"
+  },
+  {
+   "line": 125,
+   "term": "caliber",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a degree or grade of excellence or worth"
+  },
+  {
+   "line": 126,
+   "term": "campaign",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a series of actions advancing a principle or tending toward a particular end"
+  },
+  {
+   "line": 127,
+   "term": "canon",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a rule or especially body of rules or principles generally established as valid and fundamental in a field or art or philosophy"
+  },
+  {
+   "line": 128,
+   "term": "cardinal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving as an essential component"
+  },
+  {
+   "line": 129,
+   "term": "caricature",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a representation of a person that is exaggerated for comic effect"
+  },
+  {
+   "line": 130,
+   "term": "casual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "without or seeming to be without plan or method; offhand"
+  },
+  {
+   "line": 131,
+   "term": "catastrophe",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an event resulting in great loss and misfortune"
+  },
+  {
+   "line": 132,
+   "term": "caucus",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a closed political meeting"
+  },
+  {
+   "line": 133,
+   "term": "causal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "involving or constituting a cause; causing"
+  },
+  {
+   "line": 134,
+   "term": "censure",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "harsh criticism or disapproval"
+  },
+  {
+   "line": 135,
+   "term": "census",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a periodic count of the population"
+  },
+  {
+   "line": 136,
+   "term": "cereal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "grass whose starchy grains are used as food: wheat; rice; rye; oats; maize; buckwheat; millet"
+  },
+  {
+   "line": 137,
+   "term": "ceremonial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by pomp or ceremony or formality"
+  },
+  {
+   "line": 138,
+   "term": "chaos",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a state of extreme confusion and disorder"
+  },
+  {
+   "line": 139,
+   "term": "characteristic",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a distinguishing quality"
+  },
+  {
+   "line": 140,
+   "term": "chronic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being long-lasting and recurrent or characterized by long suffering"
+  },
+  {
+   "line": 141,
+   "term": "citadel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a stronghold into which people could go for shelter during a battle"
+  },
+  {
+   "line": 142,
+   "term": "cite",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "refer to for illustration or proof"
+  },
+  {
+   "line": 143,
+   "term": "clumsy",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not elegant or graceful in expression"
+  },
+  {
+   "line": 144,
+   "term": "coalition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an organization of people (or countries) involved in a pact or treaty"
+  },
+  {
+   "line": 145,
+   "term": "coherent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by an orderly, logical, and aesthetically consistent relation of parts"
+  },
+  {
+   "line": 146,
+   "term": "coincidence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the temporal property of two things happening at the same time"
+  },
+  {
+   "line": 147,
+   "term": "collapse",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "break down, literally or metaphorically"
+  },
+  {
+   "line": 148,
+   "term": "colleague",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an associate that one works with"
+  },
+  {
+   "line": 149,
+   "term": "collective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "set up on the principle of collectivism or ownership and production by the workers involved usually under the supervision of a government"
+  },
+  {
+   "line": 150,
+   "term": "collector",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who collects things"
+  },
+  {
+   "line": 151,
+   "term": "collision",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an accident resulting from violent impact of a moving object"
+  },
+  {
+   "line": 152,
+   "term": "commemorate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "mark by some ceremony or observation"
+  },
+  {
+   "line": 153,
+   "term": "commentary",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a written explanation or criticism or illustration that is added to a book or other textual material"
+  },
+  {
+   "line": 154,
+   "term": "commission",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a special group delegated to consider some matter"
+  },
+  {
+   "line": 155,
+   "term": "commitment",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of binding yourself (intellectually or emotionally) to a course of action"
+  },
+  {
+   "line": 156,
+   "term": "commodity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "articles of commerce"
+  },
+  {
+   "line": 157,
+   "term": "commute",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a regular journey of some distance to and from your place of work"
+  },
+  {
+   "line": 158,
+   "term": "comparable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "able to be compared or worthy of comparison"
+  },
+  {
+   "line": 159,
+   "term": "comparison",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of examining resemblances"
+  },
+  {
+   "line": 160,
+   "term": "compassionate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing or having compassion"
+  },
+  {
+   "line": 161,
+   "term": "compensate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make payment to; compensate"
+  },
+  {
+   "line": 162,
+   "term": "competence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being adequately or well qualified physically and intellectually"
+  },
+  {
+   "line": 163,
+   "term": "competent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "properly or sufficiently qualified or capable or efficient"
+  },
+  {
+   "line": 164,
+   "term": "competitive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "involving competition or competitiveness"
+  },
+  {
+   "line": 165,
+   "term": "competitor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the contestant you hope to defeat"
+  },
+  {
+   "line": 166,
+   "term": "complex",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "complicated in structure; consisting of interconnected parts"
+  },
+  {
+   "line": 167,
+   "term": "component",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an artifact that is one of the individual parts of which a composite entity is made up; especially a part that can be separated from or attached to a system"
+  },
+  {
+   "line": 168,
+   "term": "composer",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who composes music as a profession"
+  },
+  {
+   "line": 169,
+   "term": "comprehensive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "broad in scope"
+  },
+  {
+   "line": 170,
+   "term": "concede",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "admit (to a wrongdoing)"
+  },
+  {
+   "line": 171,
+   "term": "conceive",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "have the idea for"
+  },
+  {
+   "line": 172,
+   "term": "concession",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a point conceded or yielded"
+  },
+  {
+   "line": 173,
+   "term": "confederate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "united in a group or league"
+  },
+  {
+   "line": 174,
+   "term": "confidence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a state of confident hopefulness that events will be favorable"
+  },
+  {
+   "line": 175,
+   "term": "confident",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having or marked by confidence or assurance"
+  },
+  {
+   "line": 176,
+   "term": "confront",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "oppose, as in hostility or a competition"
+  },
+  {
+   "line": 177,
+   "term": "conscience",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a feeling of shame when you do something immoral"
+  },
+  {
+   "line": 178,
+   "term": "conscious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "knowing and perceiving; having awareness of surroundings and sensations and thoughts"
+  },
+  {
+   "line": 179,
+   "term": "consecutive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "one after the other"
+  },
+  {
+   "line": 180,
+   "term": "consensus",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "agreement in the judgment or opinion reached by a group as a whole"
+  },
+  {
+   "line": 181,
+   "term": "conservatism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a political or theological orientation advocating the preservation of the best in society and opposing radical changes"
+  },
+  {
+   "line": 182,
+   "term": "conservative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "avoiding excess"
+  },
+  {
+   "line": 183,
+   "term": "consistency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a harmonious uniformity or agreement among things or parts"
+  },
+  {
+   "line": 184,
+   "term": "conspicuous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "obvious to the eye or mind"
+  },
+  {
+   "line": 185,
+   "term": "conspiracy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a plot to carry out some harmful or illegal act (especially a political plot)"
+  },
+  {
+   "line": 186,
+   "term": "constituency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the body of voters who elect a representative for their area"
+  },
+  {
+   "line": 187,
+   "term": "consume",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "use up (resources or materials)"
+  },
+  {
+   "line": 188,
+   "term": "consumer",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who uses goods or services"
+  },
+  {
+   "line": 189,
+   "term": "consumption",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the process of taking food into the body through the mouth"
+  },
+  {
+   "line": 190,
+   "term": "contemplate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "look at thoughtfully; observe deep in thought"
+  },
+  {
+   "line": 191,
+   "term": "contemporary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "belonging to the present time"
+  },
+  {
+   "line": 192,
+   "term": "contender",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the contestant you hope to defeat"
+  },
+  {
+   "line": 193,
+   "term": "contentious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "inclined or showing an inclination to dispute or disagree, even to engage in law suits"
+  },
+  {
+   "line": 194,
+   "term": "contingent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "possible but not certain to occur"
+  },
+  {
+   "line": 195,
+   "term": "continuous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "continuing in time or space without interruption"
+  },
+  {
+   "line": 196,
+   "term": "contradiction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "opposition between two conflicting forces or ideas"
+  },
+  {
+   "line": 197,
+   "term": "contradictory",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unable for both to be true at the same time"
+  },
+  {
+   "line": 198,
+   "term": "contribution",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a voluntary gift (as of money or service or ideas) made to some worthwhile cause"
+  },
+  {
+   "line": 199,
+   "term": "contributor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who contributes (or promises to contribute) a sum of money"
+  },
+  {
+   "line": 200,
+   "term": "convenience",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being useful and convenient"
+  },
+  {
+   "line": 201,
+   "term": "conversion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of changing from one use or function or purpose to another"
+  },
+  {
+   "line": 202,
+   "term": "convertible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "designed to be changed from one use or form to another"
+  },
+  {
+   "line": 203,
+   "term": "conviction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an unshakable belief in something without need for proof or evidence"
+  },
+  {
+   "line": 204,
+   "term": "corporate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or belonging to a corporation"
+  },
+  {
+   "line": 205,
+   "term": "corps",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a body of people associated together"
+  },
+  {
+   "line": 206,
+   "term": "corruption",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "destroying someone's (or some group's) honesty or loyalty; undermining moral integrity"
+  },
+  {
+   "line": 207,
+   "term": "cosmetic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving an esthetic rather than a useful purpose"
+  },
+  {
+   "line": 208,
+   "term": "cosmopolitan",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of worldwide scope or applicability"
+  },
+  {
+   "line": 209,
+   "term": "counsel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that provides direction or advice as to a decision or course of action"
+  },
+  {
+   "line": 210,
+   "term": "counterpart",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person or thing having the same function or characteristics as another"
+  },
+  {
+   "line": 211,
+   "term": "courageous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "able to face and deal with danger or fear without flinching"
+  },
+  {
+   "line": 212,
+   "term": "course",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a connected series of events or actions or developments"
+  },
+  {
+   "line": 213,
+   "term": "courtesy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a courteous or respectful or considerate act"
+  },
+  {
+   "line": 214,
+   "term": "credible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "appearing to merit belief or acceptance"
+  },
+  {
+   "line": 215,
+   "term": "critique",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a serious examination and judgment of something"
+  },
+  {
+   "line": 216,
+   "term": "crusade",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for"
+  },
+  {
+   "line": 217,
+   "term": "crush",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to compress with violence, out of natural shape or condition"
+  },
+  {
+   "line": 218,
+   "term": "curator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the custodian of a collection (as a museum or library)"
+  },
+  {
+   "line": 219,
+   "term": "curriculum",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an integrated course of academic studies"
+  },
+  {
+   "line": 220,
+   "term": "cynical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "believing the worst of human nature and motives; having a sneering disbelief in e.g. selflessness of others"
+  },
+  {
+   "line": 221,
+   "term": "cynicism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a cynical feeling of distrust"
+  },
+  {
+   "line": 222,
+   "term": "daring",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the trait of being willing to undertake things that involve risk or danger"
+  },
+  {
+   "line": 223,
+   "term": "debacle",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a sudden and violent collapse"
+  },
+  {
+   "line": 224,
+   "term": "debut",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "appear for the first time in public"
+  },
+  {
+   "line": 225,
+   "term": "decay",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the organic phenomenon of rotting"
+  },
+  {
+   "line": 226,
+   "term": "decency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of conforming to standards of propriety and morality"
+  },
+  {
+   "line": 227,
+   "term": "decent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "socially or conventionally correct; refined or virtuous"
+  },
+  {
+   "line": 228,
+   "term": "decisive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by decision and firmness"
+  },
+  {
+   "line": 229,
+   "term": "decree",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a legally binding command or decision entered on the court record (as if issued by a court or judge)"
+  },
+  {
+   "line": 230,
+   "term": "dedication",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "complete and wholehearted fidelity"
+  },
+  {
+   "line": 231,
+   "term": "default",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "loss due to not showing up"
+  },
+  {
+   "line": 232,
+   "term": "defendant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person or institution against whom an action is brought in a court of law; the person being sued or accused"
+  },
+  {
+   "line": 233,
+   "term": "defensive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "attempting to justify or defend in speech or writing"
+  },
+  {
+   "line": 234,
+   "term": "defiance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a hostile challenge"
+  },
+  {
+   "line": 235,
+   "term": "definite",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "known for certain"
+  },
+  {
+   "line": 236,
+   "term": "delicacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something considered choice to eat"
+  },
+  {
+   "line": 237,
+   "term": "demise",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "transfer by a lease or by a will"
+  },
+  {
+   "line": 238,
+   "term": "demonstrate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "establish the validity of something, as by an example, explanation or experiment"
+  },
+  {
+   "line": 239,
+   "term": "denominator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the divisor of a fraction"
+  },
+  {
+   "line": 240,
+   "term": "deposition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(law) a pretrial interrogation of a witness; usually conducted in a lawyer's office"
+  },
+  {
+   "line": 241,
+   "term": "depression",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a long-term economic state characterized by unemployment and low prices and low levels of trade and investment"
+  },
+  {
+   "line": 242,
+   "term": "depth",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the attribute or quality of being deep, strong, or intense"
+  },
+  {
+   "line": 243,
+   "term": "derive",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come from"
+  },
+  {
+   "line": 244,
+   "term": "descent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "properties attributable to your ancestry"
+  },
+  {
+   "line": 245,
+   "term": "desert",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "arid land with little or no vegetation"
+  },
+  {
+   "line": 246,
+   "term": "designate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "give an assignment to (a person) to a post, or assign a task to (a person)"
+  },
+  {
+   "line": 247,
+   "term": "despair",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a state in which all hope is lost or absent"
+  },
+  {
+   "line": 248,
+   "term": "desperate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing extreme urgency or intensity especially because of great need or desire"
+  },
+  {
+   "line": 249,
+   "term": "detect",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "discover or determine the existence, presence, or fact of"
+  },
+  {
+   "line": 250,
+   "term": "deter",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "try to prevent; show opposition to"
+  },
+  {
+   "line": 251,
+   "term": "determination",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being determined to do or achieve something; firmness of purpose"
+  },
+  {
+   "line": 252,
+   "term": "deterrent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "tending to deter"
+  },
+  {
+   "line": 253,
+   "term": "diagnosis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "identifying the nature or cause of some phenomenon"
+  },
+  {
+   "line": 254,
+   "term": "dialogue",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a discussion intended to produce an agreement"
+  },
+  {
+   "line": 255,
+   "term": "difference",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being unlike or dissimilar"
+  },
+  {
+   "line": 256,
+   "term": "dignity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being worthy of esteem or respect"
+  },
+  {
+   "line": 257,
+   "term": "dilemma",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "state of uncertainty or perplexity especially as requiring a choice between equally unfavorable options"
+  },
+  {
+   "line": 258,
+   "term": "diplomacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "subtly skillful handling of a situation"
+  },
+  {
+   "line": 259,
+   "term": "diplomat",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who deals tactfully with others"
+  },
+  {
+   "line": 260,
+   "term": "diplomatic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "using or marked by tact in dealing with sensitive matters or people"
+  },
+  {
+   "line": 261,
+   "term": "disagree",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be of different opinions"
+  },
+  {
+   "line": 262,
+   "term": "disappear",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "become invisible or unnoticeable"
+  },
+  {
+   "line": 263,
+   "term": "discern",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "detect with the senses"
+  },
+  {
+   "line": 264,
+   "term": "discipline",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a system of rules of conduct or method of practice"
+  },
+  {
+   "line": 265,
+   "term": "discomfort",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state of being tense and feeling pain"
+  },
+  {
+   "line": 266,
+   "term": "discourse",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "extended verbal expression in speech or writing"
+  },
+  {
+   "line": 267,
+   "term": "discover",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "see for the first time; make a discovery"
+  },
+  {
+   "line": 268,
+   "term": "discriminate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "treat differently on the basis of sex or race"
+  },
+  {
+   "line": 269,
+   "term": "discussion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an exchange of views on some topic"
+  },
+  {
+   "line": 270,
+   "term": "disdain",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "lack of respect accompanied by a feeling of intense dislike"
+  },
+  {
+   "line": 271,
+   "term": "dishonest",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "deceptive or fraudulent; disposed to cheat or defraud or deceive"
+  },
+  {
+   "line": 272,
+   "term": "dismal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "causing dejection"
+  },
+  {
+   "line": 273,
+   "term": "dismay",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "fill with apprehension or alarm; cause to be unpleasantly surprised"
+  },
+  {
+   "line": 274,
+   "term": "dismissal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the termination of someone's employment (leaving them free to depart)"
+  },
+  {
+   "line": 275,
+   "term": "disparity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "inequality or difference in some respect"
+  },
+  {
+   "line": 276,
+   "term": "disregard",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "willful lack of care and attention"
+  },
+  {
+   "line": 277,
+   "term": "dissent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a difference of opinion"
+  },
+  {
+   "line": 278,
+   "term": "distant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "separated in space or coming from or going to a distance"
+  },
+  {
+   "line": 279,
+   "term": "distinction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a distinguishing difference"
+  },
+  {
+   "line": 280,
+   "term": "distress",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "extreme physical pain"
+  },
+  {
+   "line": 281,
+   "term": "distrust",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "regard as untrustworthy; regard with suspicion; have no faith or confidence in"
+  },
+  {
+   "line": 282,
+   "term": "diverse",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "many and different"
+  },
+  {
+   "line": 283,
+   "term": "diversion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an activity that diverts or amuses or stimulates"
+  },
+  {
+   "line": 284,
+   "term": "diversity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "noticeable heterogeneity"
+  },
+  {
+   "line": 285,
+   "term": "divert",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "turn aside; turn away from"
+  },
+  {
+   "line": 286,
+   "term": "document",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "writing that provides information (especially information of an official nature)"
+  },
+  {
+   "line": 287,
+   "term": "doe",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "mature female of mammals of which the male is called 'buck'"
+  },
+  {
+   "line": 288,
+   "term": "domain",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "territory over which rule or control is exercised"
+  },
+  {
+   "line": 289,
+   "term": "dominance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state that exists when one person or group has power over another"
+  },
+  {
+   "line": 290,
+   "term": "dominant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "exercising influence or control"
+  },
+  {
+   "line": 291,
+   "term": "dominate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be in control"
+  },
+  {
+   "line": 292,
+   "term": "domination",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "social control by dominating"
+  },
+  {
+   "line": 293,
+   "term": "donate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "give to a charity or good cause"
+  },
+  {
+   "line": 294,
+   "term": "donor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "person who makes a gift of property"
+  },
+  {
+   "line": 295,
+   "term": "drastic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "forceful and extreme and rigorous"
+  },
+  {
+   "line": 296,
+   "term": "drought",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a shortage of rainfall"
+  },
+  {
+   "line": 297,
+   "term": "dubious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "open to doubt or suspicion"
+  },
+  {
+   "line": 298,
+   "term": "dynamics",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the branch of mechanics concerned with the forces that cause motions of bodies"
+  },
+  {
+   "line": 299,
+   "term": "earnest",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by a firm and humorless belief in the validity of your opinions"
+  },
+  {
+   "line": 300,
+   "term": "eccentric",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person with an unusual or odd personality"
+  },
+  {
+   "line": 301,
+   "term": "eclectic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "selecting what seems best of various styles or ideas"
+  },
+  {
+   "line": 302,
+   "term": "editorial",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an article giving opinions or perspectives"
+  },
+  {
+   "line": 303,
+   "term": "effect",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a phenomenon that follows and is caused by some previous phenomenon"
+  },
+  {
+   "line": 304,
+   "term": "effective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "works well as a means or remedy"
+  },
+  {
+   "line": 305,
+   "term": "efficiency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "skillfulness in avoiding wasted time and effort"
+  },
+  {
+   "line": 306,
+   "term": "efficient",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "able to accomplish a purpose; functioning effectively"
+  },
+  {
+   "line": 307,
+   "term": "elaborate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "add details, as to an account or idea; clarify the meaning of and discourse in a learned way, usually in writing"
+  },
+  {
+   "line": 308,
+   "term": "element",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any of the more than 100 known substances (of which 92 occur naturally) that cannot be separated into simpler substances and that singly or in combination constitute all matter"
+  },
+  {
+   "line": 309,
+   "term": "eligible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "qualified for or allowed or worthy of being chosen"
+  },
+  {
+   "line": 310,
+   "term": "eliminate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "terminate, end, or take out"
+  },
+  {
+   "line": 311,
+   "term": "embargo",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a government order imposing a trade barrier"
+  },
+  {
+   "line": 312,
+   "term": "emblem",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a visible symbol representing an abstract idea"
+  },
+  {
+   "line": 313,
+   "term": "embrace",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of clasping another person in the arms (as in greeting or affection)"
+  },
+  {
+   "line": 314,
+   "term": "emerge",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come out into view, as from concealment"
+  },
+  {
+   "line": 315,
+   "term": "emergence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the gradual beginning or coming forth"
+  },
+  {
+   "line": 316,
+   "term": "eminent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of imposing height; especially standing out above others"
+  },
+  {
+   "line": 317,
+   "term": "emphasis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "intensity or forcefulness of expression"
+  },
+  {
+   "line": 318,
+   "term": "emphasize",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to stress, single out as important"
+  },
+  {
+   "line": 319,
+   "term": "employee",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a worker who is hired to perform a job"
+  },
+  {
+   "line": 320,
+   "term": "employer",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person or firm that employs workers"
+  },
+  {
+   "line": 321,
+   "term": "emulate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "imitate the function of (another system), as by modifying the hardware or the software"
+  },
+  {
+   "line": 322,
+   "term": "enact",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "order by virtue of superior authority; decree"
+  },
+  {
+   "line": 323,
+   "term": "encourage",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "inspire with confidence; give hope or courage to"
+  },
+  {
+   "line": 324,
+   "term": "encyclopedia",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a reference work (often in several volumes) containing articles on various topics"
+  },
+  {
+   "line": 325,
+   "term": "endorse",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be behind; approve of"
+  },
+  {
+   "line": 326,
+   "term": "enduring",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "patiently bearing continual wrongs or trouble"
+  },
+  {
+   "line": 327,
+   "term": "energetic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "possessing or exerting or displaying energy"
+  },
+  {
+   "line": 328,
+   "term": "enhance",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make better or more attractive"
+  },
+  {
+   "line": 329,
+   "term": "enormous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "extraordinarily large in size or extent or amount or power or degree"
+  },
+  {
+   "line": 330,
+   "term": "enthusiastic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having or showing great excitement and interest"
+  },
+  {
+   "line": 331,
+   "term": "entity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "that which is perceived or known or inferred to have its own distinct existence (living or nonliving)"
+  },
+  {
+   "line": 332,
+   "term": "epic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "very imposing or impressive; surpassing the ordinary (especially in size or scale)"
+  },
+  {
+   "line": 333,
+   "term": "epidemic",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a widespread outbreak of an infectious disease; many people are infected at the same time"
+  },
+  {
+   "line": 334,
+   "term": "episode",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a brief section of a literary or dramatic work that forms part of a connected series"
+  },
+  {
+   "line": 335,
+   "term": "equilibrium",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a stable situation in which forces cancel one another"
+  },
+  {
+   "line": 336,
+   "term": "equity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the difference between the market value of a property and the claims held against it"
+  },
+  {
+   "line": 337,
+   "term": "equivalent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being essentially equal to something"
+  },
+  {
+   "line": 338,
+   "term": "error",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a wrong action attributable to bad judgment or ignorance or inattention"
+  },
+  {
+   "line": 339,
+   "term": "esquire",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a title of respect for a member of the English gentry ranking just below a knight; placed after the name"
+  },
+  {
+   "line": 340,
+   "term": "essence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the central meaning or theme of a speech or literary work"
+  },
+  {
+   "line": 341,
+   "term": "evangelical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or being a Christian church believing in personal conversion and the inerrancy of the Bible especially the 4 Gospels"
+  },
+  {
+   "line": 342,
+   "term": "evoke",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "call to mind"
+  },
+  {
+   "line": 343,
+   "term": "evolution",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a process in which something passes by degrees to a different stage (especially a more advanced or mature stage)"
+  },
+  {
+   "line": 344,
+   "term": "exceed",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be greater in scope or size than some standard"
+  },
+  {
+   "line": 345,
+   "term": "excellent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "very good; of the highest quality"
+  },
+  {
+   "line": 346,
+   "term": "excerpt",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a passage selected from a larger work"
+  },
+  {
+   "line": 347,
+   "term": "excess",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "more than is needed, desired, or required"
+  },
+  {
+   "line": 348,
+   "term": "exclude",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "prevent from being included or considered or accepted"
+  },
+  {
+   "line": 349,
+   "term": "excursion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a journey taken for pleasure"
+  },
+  {
+   "line": 350,
+   "term": "exempt",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "grant relief or an exemption from a rule or requirement to"
+  },
+  {
+   "line": 351,
+   "term": "existence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "everything that exists anywhere"
+  },
+  {
+   "line": 352,
+   "term": "exit",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "move out of or depart from"
+  },
+  {
+   "line": 353,
+   "term": "exotic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "strikingly strange or unusual"
+  },
+  {
+   "line": 354,
+   "term": "expand",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "become larger in size or volume or quantity"
+  },
+  {
+   "line": 355,
+   "term": "expansion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of increasing (something) in size or volume or quantity or scope"
+  },
+  {
+   "line": 356,
+   "term": "expect",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "regard something as probable or likely"
+  },
+  {
+   "line": 357,
+   "term": "expectancy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something expected (as on the basis of a norm)"
+  },
+  {
+   "line": 358,
+   "term": "expense",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "money spent to perform work and usually reimbursed by an employer"
+  },
+  {
+   "line": 359,
+   "term": "expertise",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "skillfulness by virtue of possessing special knowledge"
+  },
+  {
+   "line": 360,
+   "term": "explicit",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "precisely and clearly expressed or readily observable; leaving nothing to implication"
+  },
+  {
+   "line": 361,
+   "term": "explode",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "drive from the stage by noisy disapproval"
+  },
+  {
+   "line": 362,
+   "term": "exploit",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "use or manipulate to one's advantage"
+  },
+  {
+   "line": 363,
+   "term": "explosion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of exploding or bursting"
+  },
+  {
+   "line": 364,
+   "term": "explosive",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a chemical substance that undergoes a rapid chemical change (with the production of gas) on being heated or struck"
+  },
+  {
+   "line": 365,
+   "term": "exposure",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "vulnerability to the elements; to the action of heat or cold or wind or rain"
+  },
+  {
+   "line": 366,
+   "term": "expressive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by expression"
+  },
+  {
+   "line": 367,
+   "term": "extension",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an addition to the length of something"
+  },
+  {
+   "line": 368,
+   "term": "extensive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "large in spatial extent or range or scope or quantity"
+  },
+  {
+   "line": 369,
+   "term": "exterior",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the outer side or surface of something"
+  },
+  {
+   "line": 370,
+   "term": "external",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "happening or arising or located outside or beyond some limits or especially surface"
+  },
+  {
+   "line": 371,
+   "term": "extradition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the surrender of an accused or convicted person by one state or country to another (usually under the provisions of a statute or treaty)"
+  },
+  {
+   "line": 372,
+   "term": "extraordinary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "beyond what is ordinary or usual; highly unusual or exceptional or remarkable"
+  },
+  {
+   "line": 373,
+   "term": "extravagant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unrestrained, especially with regard to feelings"
+  },
+  {
+   "line": 374,
+   "term": "exuberant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "joyously unrestrained"
+  },
+  {
+   "line": 375,
+   "term": "fabulous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "extremely pleasing"
+  },
+  {
+   "line": 376,
+   "term": "facial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or concerning the face"
+  },
+  {
+   "line": 377,
+   "term": "facility",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something designed and created to serve a particular function and to afford a particular convenience or service"
+  },
+  {
+   "line": 378,
+   "term": "faction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a dissenting clique"
+  },
+  {
+   "line": 379,
+   "term": "faulty",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by errors; not agreeing with a model or not following established rules"
+  },
+  {
+   "line": 380,
+   "term": "feasible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "capable of being done with means at hand and circumstances as they are"
+  },
+  {
+   "line": 381,
+   "term": "felony",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a serious crime (such as murder or arson)"
+  },
+  {
+   "line": 382,
+   "term": "feminine",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "associated with women and not with men"
+  },
+  {
+   "line": 383,
+   "term": "fervor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state of being emotionally aroused and worked up"
+  },
+  {
+   "line": 384,
+   "term": "fetus",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an unborn or unhatched vertebrate in the later stages of development showing the main recognizable features of the mature animal"
+  },
+  {
+   "line": 385,
+   "term": "feud",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a bitter quarrel between two parties"
+  },
+  {
+   "line": 386,
+   "term": "feudal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to or characteristic of feudalism"
+  },
+  {
+   "line": 387,
+   "term": "fidelity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being faithful"
+  },
+  {
+   "line": 388,
+   "term": "finale",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the concluding part of any performance"
+  },
+  {
+   "line": 389,
+   "term": "finite",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "bounded or limited in magnitude or spatial or temporal extent"
+  },
+  {
+   "line": 390,
+   "term": "fiscal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "involving financial matters"
+  },
+  {
+   "line": 391,
+   "term": "flag",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "emblem usually consisting of a rectangular piece of cloth of distinctive design"
+  },
+  {
+   "line": 392,
+   "term": "flamboyant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by ostentation but often tasteless"
+  },
+  {
+   "line": 393,
+   "term": "fleet",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a group of warships organized as a tactical unit"
+  },
+  {
+   "line": 394,
+   "term": "flexible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "able to flex; able to bend easily"
+  },
+  {
+   "line": 395,
+   "term": "flop",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a complete failure"
+  },
+  {
+   "line": 396,
+   "term": "flourish",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a showy gesture"
+  },
+  {
+   "line": 397,
+   "term": "foil",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "anything that serves by contrast to call attention to another thing's good qualities"
+  },
+  {
+   "line": 398,
+   "term": "ford",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cross a river where it's shallow"
+  },
+  {
+   "line": 399,
+   "term": "forecast",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a prediction about how something (as the weather) will develop"
+  },
+  {
+   "line": 400,
+   "term": "foreign",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or originating in or characteristic of another place or part of the world"
+  },
+  {
+   "line": 401,
+   "term": "foresee",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "act in advance of; deal with ahead of time"
+  },
+  {
+   "line": 402,
+   "term": "formation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an arrangement of people or things acting as a unit"
+  },
+  {
+   "line": 403,
+   "term": "formidable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "extremely impressive in strength or excellence"
+  },
+  {
+   "line": 404,
+   "term": "formula",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "directions for making something"
+  },
+  {
+   "line": 405,
+   "term": "forte",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an asset of special worth or utility"
+  },
+  {
+   "line": 406,
+   "term": "forth",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "forward in time or order or degree"
+  },
+  {
+   "line": 407,
+   "term": "foster",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "promote the growth of"
+  },
+  {
+   "line": 408,
+   "term": "fragile",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "easily broken or damaged or destroyed"
+  },
+  {
+   "line": 409,
+   "term": "frantic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "excessively agitated; distraught with fear or other violent emotion"
+  },
+  {
+   "line": 410,
+   "term": "fray",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "wear away by rubbing"
+  },
+  {
+   "line": 411,
+   "term": "frequency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the number of occurrences within a given time period"
+  },
+  {
+   "line": 412,
+   "term": "fringe",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a social group holding marginal or extreme views"
+  },
+  {
+   "line": 413,
+   "term": "frivolous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not serious in content or attitude or behavior"
+  },
+  {
+   "line": 414,
+   "term": "frontier",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a wilderness at the edge of a settled area of a country"
+  },
+  {
+   "line": 415,
+   "term": "fundamental",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being or involving basic facts or principles"
+  },
+  {
+   "line": 416,
+   "term": "further",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "promote the growth of"
+  },
+  {
+   "line": 417,
+   "term": "futile",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "producing no result or effect"
+  },
+  {
+   "line": 418,
+   "term": "galaxy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(astronomy) a collection of star systems; any of the billions of systems each having many stars and nebulae and dust"
+  },
+  {
+   "line": 419,
+   "term": "gamble",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "take a risk in the hope of a favorable outcome"
+  },
+  {
+   "line": 420,
+   "term": "gauge",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a measuring instrument for measuring and indicating a quantity such as the thickness of wire or the amount of rain etc."
+  },
+  {
+   "line": 421,
+   "term": "generate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "bring into existence"
+  },
+  {
+   "line": 422,
+   "term": "generic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "applicable to an entire class or group"
+  },
+  {
+   "line": 423,
+   "term": "generosity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the trait of being willing to give your money or time"
+  },
+  {
+   "line": 424,
+   "term": "genesis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the first book of the Old Testament: tells of Creation; Adam and Eve; Cain and Abel"
+  },
+  {
+   "line": 425,
+   "term": "gesture",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "motion of hands or body to emphasize or help to express a thought or feeling"
+  },
+  {
+   "line": 426,
+   "term": "gigantic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "so exceedingly large or extensive as to suggest a giant or mammoth"
+  },
+  {
+   "line": 427,
+   "term": "gist",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the choicest or most essential or most vital part of some idea or experience"
+  },
+  {
+   "line": 428,
+   "term": "glimpse",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a brief or incomplete view"
+  },
+  {
+   "line": 429,
+   "term": "glorious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having great beauty and splendor"
+  },
+  {
+   "line": 430,
+   "term": "grandeur",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being magnificent or splendid or grand"
+  },
+  {
+   "line": 431,
+   "term": "grandiose",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impressive because of unnecessary largeness or grandeur; used to show disapproval"
+  },
+  {
+   "line": 432,
+   "term": "grave",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of great gravity or crucial import; requiring serious thought"
+  },
+  {
+   "line": 433,
+   "term": "gravity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a manner that is serious and solemn"
+  },
+  {
+   "line": 434,
+   "term": "grief",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that causes great unhappiness"
+  },
+  {
+   "line": 435,
+   "term": "grotesque",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "distorted and unnatural in shape or size; abnormal and hideous"
+  },
+  {
+   "line": 436,
+   "term": "grove",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a small growth of trees without underbrush"
+  },
+  {
+   "line": 437,
+   "term": "guise",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an artful or simulated semblance"
+  },
+  {
+   "line": 438,
+   "term": "hack",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a mediocre and disdained writer"
+  },
+  {
+   "line": 439,
+   "term": "hale",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "exhibiting or restored to vigorous good health"
+  },
+  {
+   "line": 440,
+   "term": "handwriting",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something written by hand"
+  },
+  {
+   "line": 441,
+   "term": "harbor",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "hold back a thought or feeling about"
+  },
+  {
+   "line": 442,
+   "term": "hazard",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a source of danger; a possibility of incurring loss or misfortune"
+  },
+  {
+   "line": 443,
+   "term": "heir",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who is entitled by law or by the terms of a will to inherit the estate of another"
+  },
+  {
+   "line": 444,
+   "term": "heritage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "practices that are handed down from the past by tradition"
+  },
+  {
+   "line": 445,
+   "term": "hilarious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by or causing boisterous merriment or convulsive laughter"
+  },
+  {
+   "line": 446,
+   "term": "hollow",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not solid; having a space or gap or cavity"
+  },
+  {
+   "line": 447,
+   "term": "homage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "respectful deference"
+  },
+  {
+   "line": 448,
+   "term": "hostility",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "violent action that is hostile and usually unprovoked"
+  },
+  {
+   "line": 449,
+   "term": "humane",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked or motivated by concern with the alleviation of suffering"
+  },
+  {
+   "line": 450,
+   "term": "humanitarian",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone devoted to the promotion of human welfare and to social reforms"
+  },
+  {
+   "line": 451,
+   "term": "hush",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "become quiet or still; fall silent"
+  },
+  {
+   "line": 452,
+   "term": "hybrid",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(genetics) an organism that is the offspring of genetically dissimilar parents or stock; especially offspring produced by breeding plants or animals of different varieties or breeds or species"
+  },
+  {
+   "line": 453,
+   "term": "hypocrisy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "insincerity by virtue of pretending to have qualities or beliefs that you do not really have"
+  },
+  {
+   "line": 454,
+   "term": "hypothesis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena"
+  },
+  {
+   "line": 455,
+   "term": "hysteria",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "excessive or uncontrollable fear"
+  },
+  {
+   "line": 456,
+   "term": "icon",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a conventional religious painting in oil on a small wooden panel; venerated in the Eastern Church"
+  },
+  {
+   "line": 457,
+   "term": "ideology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an orientation that characterizes the thinking of a group or nation"
+  },
+  {
+   "line": 458,
+   "term": "illusion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an erroneous mental representation"
+  },
+  {
+   "line": 459,
+   "term": "imaginary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not based on fact; unreal"
+  },
+  {
+   "line": 460,
+   "term": "imitation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something copied or derived from an original"
+  },
+  {
+   "line": 461,
+   "term": "immense",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unusually great in size or amount or degree or especially extent or scope"
+  },
+  {
+   "line": 462,
+   "term": "immigrant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who comes to a country where they were not born in order to settle there"
+  },
+  {
+   "line": 463,
+   "term": "imminent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "close in time; about to occur"
+  },
+  {
+   "line": 464,
+   "term": "immoral",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not adhering to ethical or moral principles"
+  },
+  {
+   "line": 465,
+   "term": "immune",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "(usually followed by 'to') not affected by a given influence"
+  },
+  {
+   "line": 466,
+   "term": "impending",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "close in time; about to occur"
+  },
+  {
+   "line": 467,
+   "term": "implausible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a quality that provokes disbelief"
+  },
+  {
+   "line": 468,
+   "term": "implicit",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "implied though not directly expressed; inherent in the nature of something"
+  },
+  {
+   "line": 469,
+   "term": "imply",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "express or state indirectly"
+  },
+  {
+   "line": 470,
+   "term": "impose",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "compel to behave in a certain way"
+  },
+  {
+   "line": 471,
+   "term": "improper",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not suitable or right or appropriate"
+  },
+  {
+   "line": 472,
+   "term": "impulse",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a sudden desire"
+  },
+  {
+   "line": 473,
+   "term": "inadequate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not sufficient to meet a need"
+  },
+  {
+   "line": 474,
+   "term": "incentive",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a positive motivational influence"
+  },
+  {
+   "line": 475,
+   "term": "incidence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the relative frequency of occurrence of something"
+  },
+  {
+   "line": 476,
+   "term": "incident",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a public disturbance"
+  },
+  {
+   "line": 477,
+   "term": "incidentally",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "of a minor or subordinate nature"
+  },
+  {
+   "line": 478,
+   "term": "inclined",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "at an angle to the horizontal or vertical position"
+  },
+  {
+   "line": 479,
+   "term": "incompetence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "lack of physical or intellectual ability or qualifications"
+  },
+  {
+   "line": 480,
+   "term": "inconsistent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "displaying a lack of consistency"
+  },
+  {
+   "line": 481,
+   "term": "inconvenient",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not suited to your comfort, purpose or needs"
+  },
+  {
+   "line": 482,
+   "term": "indefinitely",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "to an indefinite extent; for an indefinite time"
+  },
+  {
+   "line": 483,
+   "term": "indicator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a device for showing the operating condition of some system"
+  },
+  {
+   "line": 484,
+   "term": "indifferent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing no care or concern in attitude or action"
+  },
+  {
+   "line": 485,
+   "term": "indigenous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "originating where it is found"
+  },
+  {
+   "line": 486,
+   "term": "indulge",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "enjoy to excess"
+  },
+  {
+   "line": 487,
+   "term": "inefficient",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not producing desired results; wasteful"
+  },
+  {
+   "line": 488,
+   "term": "inept",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "generally incompetent and ineffectual"
+  },
+  {
+   "line": 489,
+   "term": "inevitable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "incapable of being avoided or prevented"
+  },
+  {
+   "line": 490,
+   "term": "inexpensive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relatively low in price or charging low prices"
+  },
+  {
+   "line": 491,
+   "term": "infamous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "known widely and usually unfavorably"
+  },
+  {
+   "line": 492,
+   "term": "infinite",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no limits or boundaries in time or space or extent or magnitude"
+  },
+  {
+   "line": 493,
+   "term": "influence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a power to affect persons or events especially power based on prestige etc"
+  },
+  {
+   "line": 494,
+   "term": "influential",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having or exercising influence or power"
+  },
+  {
+   "line": 495,
+   "term": "influx",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the process of flowing in"
+  },
+  {
+   "line": 496,
+   "term": "ingenious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing inventiveness and skill"
+  },
+  {
+   "line": 497,
+   "term": "inherent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "in the nature of something though not readily apparent"
+  },
+  {
+   "line": 498,
+   "term": "injunction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(law) a judicial remedy issued in order to prohibit a party from doing or continuing to do a certain activity"
+  },
+  {
+   "line": 499,
+   "term": "inland",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "towards or into the interior of a region"
+  },
+  {
+   "line": 500,
+   "term": "insight",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the clear (and often sudden) understanding of a complex situation"
+  },
+  {
+   "line": 501,
+   "term": "insistence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the state of demanding notice or attention"
+  },
+  {
+   "line": 502,
+   "term": "inspector",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a high ranking police officer"
+  },
+  {
+   "line": 503,
+   "term": "instance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an occurrence of something"
+  },
+  {
+   "line": 504,
+   "term": "instant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a very short time"
+  },
+  {
+   "line": 505,
+   "term": "insufficient",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of a quantity not able to fulfill a need or requirement"
+  },
+  {
+   "line": 506,
+   "term": "integral",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "essential to completeness; lacking nothing"
+  },
+  {
+   "line": 507,
+   "term": "integrity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "moral soundness"
+  },
+  {
+   "line": 508,
+   "term": "intellectual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "appealing to or using the intellect"
+  },
+  {
+   "line": 509,
+   "term": "intelligence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the ability to comprehend; to understand and profit from experience"
+  },
+  {
+   "line": 510,
+   "term": "intensive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by a high degree or intensity; often used as a combining form"
+  },
+  {
+   "line": 511,
+   "term": "intention",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an act of intending; a volition that you intend to carry out"
+  },
+  {
+   "line": 512,
+   "term": "interact",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "act together or towards others or with others"
+  },
+  {
+   "line": 513,
+   "term": "interim",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the time between one event, process, or period and another"
+  },
+  {
+   "line": 514,
+   "term": "intermediate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lying between two extremes in time or space or state"
+  },
+  {
+   "line": 515,
+   "term": "intervene",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "get involved, so as to alter or hinder an action, or through force or threat of force"
+  },
+  {
+   "line": 516,
+   "term": "intervention",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of intervening (as to mediate a dispute, etc.)"
+  },
+  {
+   "line": 517,
+   "term": "intimacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "close or warm friendship"
+  },
+  {
+   "line": 518,
+   "term": "intricate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having many complexly arranged elements; elaborate"
+  },
+  {
+   "line": 519,
+   "term": "invasion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any entry into an area not previously occupied"
+  },
+  {
+   "line": 520,
+   "term": "inventive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "(used of persons or artifacts) marked by independence and creativity in thought or action"
+  },
+  {
+   "line": 521,
+   "term": "investigator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a police officer who investigates crimes"
+  },
+  {
+   "line": 522,
+   "term": "investor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who commits capital in order to gain financial returns"
+  },
+  {
+   "line": 523,
+   "term": "invincible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "incapable of being overcome or subdued"
+  },
+  {
+   "line": 524,
+   "term": "invoke",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cite as an authority; resort to"
+  },
+  {
+   "line": 525,
+   "term": "involuntary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not subject to the control of the will"
+  },
+  {
+   "line": 526,
+   "term": "involve",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "engage as a participant"
+  },
+  {
+   "line": 527,
+   "term": "irony",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "incongruity between what might be expected and what actually occurs"
+  },
+  {
+   "line": 528,
+   "term": "irrational",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not consistent with or using reason"
+  },
+  {
+   "line": 529,
+   "term": "irrelevant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no bearing on or connection with the subject at issue"
+  },
+  {
+   "line": 530,
+   "term": "irresistible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impossible to resist; overpowering"
+  },
+  {
+   "line": 531,
+   "term": "irresponsible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing lack of care for consequences"
+  },
+  {
+   "line": 532,
+   "term": "judgment",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the capacity to assess situations or circumstances shrewdly and to draw sound conclusions"
+  },
+  {
+   "line": 533,
+   "term": "judicial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "belonging or appropriate to the office of a judge"
+  },
+  {
+   "line": 534,
+   "term": "juicy",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lucrative"
+  },
+  {
+   "line": 535,
+   "term": "junction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that joins or connects"
+  },
+  {
+   "line": 536,
+   "term": "jurisdiction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(law) the right and power to interpret and apply the law"
+  },
+  {
+   "line": 537,
+   "term": "juror",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who serves (or waits to be called to serve) on a jury"
+  },
+  {
+   "line": 538,
+   "term": "justification",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something (such as a fact or circumstance) that shows an action to be reasonable or necessary"
+  },
+  {
+   "line": 539,
+   "term": "juvenile",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to or characteristic of or appropriate for children or young people"
+  },
+  {
+   "line": 540,
+   "term": "ken",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "range of what one can know or understand"
+  },
+  {
+   "line": 541,
+   "term": "knight",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "originally a person of noble birth trained to arms and chivalry; today in Great Britain a person honored by the sovereign for personal merit"
+  },
+  {
+   "line": 542,
+   "term": "knit",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "needlework created by interlacing yarn in a series of connected loops using straight eyeless needles or by machine"
+  },
+  {
+   "line": 543,
+   "term": "lament",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "regret strongly"
+  },
+  {
+   "line": 544,
+   "term": "landmark",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the position of a prominent or well-known object in a particular landscape"
+  },
+  {
+   "line": 545,
+   "term": "landscape",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an expanse of scenery that can be seen in a single view"
+  },
+  {
+   "line": 546,
+   "term": "lapse",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a break or intermission in the occurrence of something"
+  },
+  {
+   "line": 547,
+   "term": "laureate",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone honored for great achievements; figuratively someone crowned with a laurel wreath"
+  },
+  {
+   "line": 548,
+   "term": "lavish",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "very generous"
+  },
+  {
+   "line": 549,
+   "term": "lax",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking in rigor or strictness"
+  },
+  {
+   "line": 550,
+   "term": "legacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(law) a gift of personal property by will"
+  },
+  {
+   "line": 551,
+   "term": "legislative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to a legislature or composed of members of a legislature"
+  },
+  {
+   "line": 552,
+   "term": "legitimacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "lawfulness by virtue of being authorized or in accordance with law"
+  },
+  {
+   "line": 553,
+   "term": "legitimate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "in accordance with recognized or accepted standards or principles"
+  },
+  {
+   "line": 554,
+   "term": "leisure",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "time available for ease and relaxation"
+  },
+  {
+   "line": 555,
+   "term": "lenient",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not strict"
+  },
+  {
+   "line": 556,
+   "term": "levy",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "impose and collect"
+  },
+  {
+   "line": 557,
+   "term": "liable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "held legally responsible"
+  },
+  {
+   "line": 558,
+   "term": "liberalism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a political orientation that favors social progress by reform and by changing laws rather than by revolution"
+  },
+  {
+   "line": 559,
+   "term": "lifelong",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "continuing through life"
+  },
+  {
+   "line": 560,
+   "term": "lifetime",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the period during which something is functional (as between birth and death)"
+  },
+  {
+   "line": 561,
+   "term": "likelihood",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the probability of a specified outcome"
+  },
+  {
+   "line": 562,
+   "term": "liking",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a feeling of pleasure and enjoyment"
+  },
+  {
+   "line": 563,
+   "term": "liquor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an alcoholic beverage that is distilled rather than fermented"
+  },
+  {
+   "line": 564,
+   "term": "literacy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the ability to read and write"
+  },
+  {
+   "line": 565,
+   "term": "literal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "avoiding embellishment or exaggeration (used for emphasis)"
+  },
+  {
+   "line": 566,
+   "term": "literature",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "creative writing of recognized artistic value"
+  },
+  {
+   "line": 567,
+   "term": "logic",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the principles that guide reasoning within a given field or situation"
+  },
+  {
+   "line": 568,
+   "term": "logical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "capable of thinking and expressing yourself in a clear and consistent manner"
+  },
+  {
+   "line": 569,
+   "term": "lovable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having characteristics that attract love or affection"
+  },
+  {
+   "line": 570,
+   "term": "lucrative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "producing a sizeable profit"
+  },
+  {
+   "line": 571,
+   "term": "ludicrous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "broadly or extravagantly humorous; resembling farce"
+  },
+  {
+   "line": 572,
+   "term": "lying",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the deliberate act of deviating from the truth"
+  },
+  {
+   "line": 573,
+   "term": "machinery",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "machines or machine systems collectively"
+  },
+  {
+   "line": 574,
+   "term": "magnet",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(physics) a device that attracts iron and produces a magnetic field"
+  },
+  {
+   "line": 575,
+   "term": "magnificent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by grandeur"
+  },
+  {
+   "line": 576,
+   "term": "magnitude",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the property of relative size or extent (whether large or small)"
+  },
+  {
+   "line": 577,
+   "term": "maintain",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "state or assert"
+  },
+  {
+   "line": 578,
+   "term": "maintenance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "activity involved in maintaining something in good working order"
+  },
+  {
+   "line": 579,
+   "term": "makeup",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the way in which someone or something is composed"
+  },
+  {
+   "line": 580,
+   "term": "mandate",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an authorization to act given to a representative"
+  },
+  {
+   "line": 581,
+   "term": "mandatory",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "required by rule"
+  },
+  {
+   "line": 582,
+   "term": "maneuver",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "act in order to achieve a certain goal"
+  },
+  {
+   "line": 583,
+   "term": "manifesto",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a public declaration of intentions (as issued by a political party or government)"
+  },
+  {
+   "line": 584,
+   "term": "marine",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "native to or inhabiting the sea"
+  },
+  {
+   "line": 585,
+   "term": "maritime",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or involving ships or shipping or navigation or seamen"
+  },
+  {
+   "line": 586,
+   "term": "martial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "suggesting war or military life"
+  },
+  {
+   "line": 587,
+   "term": "marvel",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be amazed at"
+  },
+  {
+   "line": 588,
+   "term": "massacre",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the savage and excessive killing of many people"
+  },
+  {
+   "line": 589,
+   "term": "massive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "imposing in size or bulk or solidity"
+  },
+  {
+   "line": 590,
+   "term": "masterpiece",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the most outstanding work of a creative artist or craftsman"
+  },
+  {
+   "line": 591,
+   "term": "material",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerned with worldly rather than spiritual interests"
+  },
+  {
+   "line": 592,
+   "term": "maternal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or derived from one's mother"
+  },
+  {
+   "line": 593,
+   "term": "maze",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "complex system of paths or tunnels in which it is easy to get lost"
+  },
+  {
+   "line": 594,
+   "term": "mechanics",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the technical aspects of doing something"
+  },
+  {
+   "line": 595,
+   "term": "medicine",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that treats or prevents or alleviates the symptoms of disease"
+  },
+  {
+   "line": 596,
+   "term": "medieval",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "as if belonging to the Middle Ages; old-fashioned and unenlightened"
+  },
+  {
+   "line": 597,
+   "term": "mediocre",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "moderate to inferior in quality"
+  },
+  {
+   "line": 598,
+   "term": "meditation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "continuous and profound contemplation or musing on a subject or series of subjects of a deep or abstruse nature"
+  },
+  {
+   "line": 599,
+   "term": "melodrama",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an extravagant comedy in which action is more salient than characterization"
+  },
+  {
+   "line": 600,
+   "term": "memorable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "worth remembering"
+  },
+  {
+   "line": 601,
+   "term": "menace",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "act in a threatening manner"
+  },
+  {
+   "line": 602,
+   "term": "mentality",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a habitual or characteristic mental attitude that determines how you will interpret and respond to situations"
+  },
+  {
+   "line": 603,
+   "term": "mentor",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "serve as a teacher or trusted counselor"
+  },
+  {
+   "line": 604,
+   "term": "metal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any of several chemical elements that are usually shiny solids"
+  },
+  {
+   "line": 605,
+   "term": "metaphor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a figure of speech in which an expression is used to refer to something that it does not literally denote in order to suggest a similarity"
+  },
+  {
+   "line": 606,
+   "term": "metric",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "based on the meter as a standard of measurement"
+  },
+  {
+   "line": 607,
+   "term": "metropolis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a large and densely populated urban area; may include several independent administrative districts"
+  },
+  {
+   "line": 608,
+   "term": "metropolitan",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or characteristic of a densely populated urban area"
+  },
+  {
+   "line": 609,
+   "term": "mileage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the ratio of the number of miles traveled to the number of gallons of gasoline burned; miles per gallon"
+  },
+  {
+   "line": 610,
+   "term": "militant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "disposed to warfare or hard-line policies"
+  },
+  {
+   "line": 611,
+   "term": "militia",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "civilians trained as soldiers but not part of the regular army"
+  },
+  {
+   "line": 612,
+   "term": "miniature",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being on a very small scale"
+  },
+  {
+   "line": 613,
+   "term": "minimize",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make small or insignificant"
+  },
+  {
+   "line": 614,
+   "term": "ministry",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a government department under the direction of a minister"
+  },
+  {
+   "line": 615,
+   "term": "minority",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "being or relating to the smaller in number of two parts"
+  },
+  {
+   "line": 616,
+   "term": "minute",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "infinitely or immeasurably small"
+  },
+  {
+   "line": 617,
+   "term": "misdemeanor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a crime less serious than a felony"
+  },
+  {
+   "line": 618,
+   "term": "missile",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a rocket carrying a warhead of conventional or nuclear explosives"
+  },
+  {
+   "line": 619,
+   "term": "momentum",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an impelling force or strength"
+  },
+  {
+   "line": 620,
+   "term": "monarchy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an autocracy governed by a monarch who usually inherits the authority"
+  },
+  {
+   "line": 621,
+   "term": "monastery",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the residence of a religious community"
+  },
+  {
+   "line": 622,
+   "term": "monetary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or involving money"
+  },
+  {
+   "line": 623,
+   "term": "monopoly",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(economics) a market in which there are many buyers but only one seller"
+  },
+  {
+   "line": 624,
+   "term": "morale",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the spirit of a group that makes the members want the group to succeed"
+  },
+  {
+   "line": 625,
+   "term": "morality",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "concern with the distinction between good and evil or right and wrong; right or good conduct"
+  },
+  {
+   "line": 626,
+   "term": "motto",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a favorite saying of a sect or political group"
+  },
+  {
+   "line": 627,
+   "term": "mundane",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerned with the world or worldly matters; ordinary"
+  },
+  {
+   "line": 628,
+   "term": "municipal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to city government"
+  },
+  {
+   "line": 629,
+   "term": "muster",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "gather or bring together"
+  },
+  {
+   "line": 630,
+   "term": "myriad",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a large indefinite number"
+  },
+  {
+   "line": 631,
+   "term": "myth",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a traditional story accepted as history; serves to explain the world view of a people"
+  },
+  {
+   "line": 632,
+   "term": "mythology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "myths collectively; the body of stories associated with a culture or institution or person"
+  },
+  {
+   "line": 633,
+   "term": "narrative",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program"
+  },
+  {
+   "line": 634,
+   "term": "narrator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who tells a story"
+  },
+  {
+   "line": 635,
+   "term": "naturally",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "according to nature; by natural means; without artificial help"
+  },
+  {
+   "line": 636,
+   "term": "naval",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "connected with or belonging to or used in a navy"
+  },
+  {
+   "line": 637,
+   "term": "necessary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "absolutely essential"
+  },
+  {
+   "line": 638,
+   "term": "necessity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "anything indispensable"
+  },
+  {
+   "line": 639,
+   "term": "network",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an interconnected system of things or people"
+  },
+  {
+   "line": 640,
+   "term": "neutral",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no personal preference"
+  },
+  {
+   "line": 641,
+   "term": "nevertheless",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "despite anything to the contrary (usually following a concession)"
+  },
+  {
+   "line": 642,
+   "term": "noisy",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "full of or characterized by loud and nonmusical sounds"
+  },
+  {
+   "line": 643,
+   "term": "nomination",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the condition of having been proposed as a suitable candidate for appointment or election"
+  },
+  {
+   "line": 644,
+   "term": "nominee",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a politician who is running for public office"
+  },
+  {
+   "line": 645,
+   "term": "norm",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a standard or model or pattern regarded as typical"
+  },
+  {
+   "line": 646,
+   "term": "notorious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "known widely and usually unfavorably"
+  },
+  {
+   "line": 647,
+   "term": "nude",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "without clothing (especially in the phrase 'in the nude')"
+  },
+  {
+   "line": 648,
+   "term": "obesity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "more than average fatness"
+  },
+  {
+   "line": 649,
+   "term": "objective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "undistorted by emotion or personal bias; based on observable phenomena"
+  },
+  {
+   "line": 650,
+   "term": "observatory",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a building designed and equipped to observe astronomical phenomena"
+  },
+  {
+   "line": 651,
+   "term": "obsolete",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "no longer in use"
+  },
+  {
+   "line": 652,
+   "term": "obstruction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that stands in the way and must be circumvented or surmounted"
+  },
+  {
+   "line": 653,
+   "term": "obtain",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come into possession of"
+  },
+  {
+   "line": 654,
+   "term": "occasion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a vaguely specified social event"
+  },
+  {
+   "line": 655,
+   "term": "odor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form"
+  },
+  {
+   "line": 656,
+   "term": "ominous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "threatening or foreshadowing evil or tragic developments"
+  },
+  {
+   "line": 657,
+   "term": "operate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "handle and cause to function"
+  },
+  {
+   "line": 658,
+   "term": "operator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an agent that operates some apparatus or machine"
+  },
+  {
+   "line": 659,
+   "term": "opinion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a personal belief or judgment that is not founded on proof or certainty"
+  },
+  {
+   "line": 660,
+   "term": "opponent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a contestant that you are matched against"
+  },
+  {
+   "line": 661,
+   "term": "opportunity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a possibility due to a favorable combination of circumstances"
+  },
+  {
+   "line": 662,
+   "term": "optimism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a general disposition to expect the best in all things"
+  },
+  {
+   "line": 663,
+   "term": "option",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "one of a number of things from which only one can be chosen"
+  },
+  {
+   "line": 664,
+   "term": "oral",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to or affecting or for use in the mouth"
+  },
+  {
+   "line": 665,
+   "term": "ordeal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a severe or trying experience"
+  },
+  {
+   "line": 666,
+   "term": "ornate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by elaborate rhetoric and elaborated with decorative details"
+  },
+  {
+   "line": 667,
+   "term": "orthodox",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "adhering to what is commonly accepted"
+  },
+  {
+   "line": 668,
+   "term": "outbreak",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a sudden violent spontaneous occurrence (usually of some undesirable condition)"
+  },
+  {
+   "line": 669,
+   "term": "outcry",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a loud utterance; often in protest or opposition"
+  },
+  {
+   "line": 670,
+   "term": "outrage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a feeling of righteous anger"
+  },
+  {
+   "line": 671,
+   "term": "outrageous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "grossly offensive to decency or morality; causing horror"
+  },
+  {
+   "line": 672,
+   "term": "outright",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "without reservation or concealment"
+  },
+  {
+   "line": 673,
+   "term": "overhaul",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make repairs, renovations, revisions or adjustments to"
+  },
+  {
+   "line": 674,
+   "term": "oversee",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "watch and direct"
+  },
+  {
+   "line": 675,
+   "term": "overthrow",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the termination of a ruler or institution (especially by force)"
+  },
+  {
+   "line": 676,
+   "term": "overweight",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the property of excessive fatness"
+  },
+  {
+   "line": 677,
+   "term": "pact",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a written agreement between two states or sovereigns"
+  },
+  {
+   "line": 678,
+   "term": "pageant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a rich and spectacular ceremony"
+  },
+  {
+   "line": 679,
+   "term": "panic",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an overwhelming feeling of fear and anxiety"
+  },
+  {
+   "line": 680,
+   "term": "pantheon",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "all the gods of a religion"
+  },
+  {
+   "line": 681,
+   "term": "paradox",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(logic) a statement that contradicts itself"
+  },
+  {
+   "line": 682,
+   "term": "parallel",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being everywhere equidistant and not intersecting"
+  },
+  {
+   "line": 683,
+   "term": "parish",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a local church community"
+  },
+  {
+   "line": 684,
+   "term": "parliament",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a legislative assembly in certain countries"
+  },
+  {
+   "line": 685,
+   "term": "parody",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make a spoof of or make fun of"
+  },
+  {
+   "line": 686,
+   "term": "participant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who takes part in an activity"
+  },
+  {
+   "line": 687,
+   "term": "participate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "become a participant; be involved in"
+  },
+  {
+   "line": 688,
+   "term": "partisan",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an ardent and enthusiastic supporter of some person or activity"
+  },
+  {
+   "line": 689,
+   "term": "partition",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "divide into parts, pieces, or sections"
+  },
+  {
+   "line": 690,
+   "term": "passive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking in energy or will"
+  },
+  {
+   "line": 691,
+   "term": "patriotism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "love of country and willingness to sacrifice for it"
+  },
+  {
+   "line": 692,
+   "term": "patron",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who supports or champions something"
+  },
+  {
+   "line": 693,
+   "term": "pavilion",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "large and often sumptuous tent"
+  },
+  {
+   "line": 694,
+   "term": "peaceful",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not disturbed by strife or turmoil or war"
+  },
+  {
+   "line": 695,
+   "term": "pedestrian",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking wit or imagination"
+  },
+  {
+   "line": 696,
+   "term": "penalty",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a punishment for a crime or offense"
+  },
+  {
+   "line": 697,
+   "term": "penchant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a strong liking"
+  },
+  {
+   "line": 698,
+   "term": "pennant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a long flag; often tapering"
+  },
+  {
+   "line": 699,
+   "term": "pension",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a regular payment to a person that is intended to allow them to subsist without working"
+  },
+  {
+   "line": 700,
+   "term": "pentagon",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a five-sided polygon"
+  },
+  {
+   "line": 701,
+   "term": "perceive",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "to become aware of or conscious of"
+  },
+  {
+   "line": 702,
+   "term": "perception",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "becoming aware of something via the senses"
+  },
+  {
+   "line": 703,
+   "term": "perennial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lasting an indefinitely long time; suggesting self-renewal"
+  },
+  {
+   "line": 704,
+   "term": "perform",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "carry out or perform an action"
+  },
+  {
+   "line": 705,
+   "term": "perjury",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "criminal offense of making false statements under oath"
+  },
+  {
+   "line": 706,
+   "term": "permanent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "continuing or enduring without marked change in status or condition or place"
+  },
+  {
+   "line": 707,
+   "term": "perpetual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "continuing forever or indefinitely"
+  },
+  {
+   "line": 708,
+   "term": "persist",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be persistent, refuse to stop"
+  },
+  {
+   "line": 709,
+   "term": "personal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerning or affecting a particular person or his or her private life and personality"
+  },
+  {
+   "line": 710,
+   "term": "personality",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the complex of all the attributes--behavioral, temperamental, emotional and mental--that characterize a unique individual"
+  },
+  {
+   "line": 711,
+   "term": "personnel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "persons collectively in the employ of a business"
+  },
+  {
+   "line": 712,
+   "term": "perspective",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the appearance of things relative to one another as determined by their distance from the viewer"
+  },
+  {
+   "line": 713,
+   "term": "persuade",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cause somebody to adopt a certain position, belief, or course of action; twist somebody's arm"
+  },
+  {
+   "line": 714,
+   "term": "pervasive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "spreading or spread throughout"
+  },
+  {
+   "line": 715,
+   "term": "petty",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "contemptibly narrow in outlook"
+  },
+  {
+   "line": 716,
+   "term": "phenomenal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "exceedingly or unbelievably great"
+  },
+  {
+   "line": 717,
+   "term": "phenomenon",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any state or process known through the senses rather than by intuition or reasoning"
+  },
+  {
+   "line": 718,
+   "term": "philharmonic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "composing or characteristic of an orchestral group"
+  },
+  {
+   "line": 719,
+   "term": "philosophy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any personal belief about how to live or how to deal with a situation"
+  },
+  {
+   "line": 720,
+   "term": "physicist",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a scientist trained in physics"
+  },
+  {
+   "line": 721,
+   "term": "physics",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the science of matter and energy and their interactions"
+  },
+  {
+   "line": 722,
+   "term": "pinch",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a squeeze with the fingers"
+  },
+  {
+   "line": 723,
+   "term": "pine",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "straight-grained white to yellowish tree"
+  },
+  {
+   "line": 724,
+   "term": "pioneer",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "open up and explore a new area"
+  },
+  {
+   "line": 725,
+   "term": "pivotal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being of crucial importance"
+  },
+  {
+   "line": 726,
+   "term": "plausible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "apparently reasonable and valid, and truthful"
+  },
+  {
+   "line": 727,
+   "term": "playful",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "full of fun and high spirits"
+  },
+  {
+   "line": 728,
+   "term": "playwright",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who writes plays"
+  },
+  {
+   "line": 729,
+   "term": "plea",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a humble request for help from someone in authority"
+  },
+  {
+   "line": 730,
+   "term": "plead",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "appeal or request earnestly"
+  },
+  {
+   "line": 731,
+   "term": "pleasant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "affording pleasure; being in harmony with your taste or likings"
+  },
+  {
+   "line": 732,
+   "term": "plunge",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "fall abruptly"
+  },
+  {
+   "line": 733,
+   "term": "poetic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to poetry"
+  },
+  {
+   "line": 734,
+   "term": "poignant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "arousing emotions; touching"
+  },
+  {
+   "line": 735,
+   "term": "poised",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "in full control of your faculties"
+  },
+  {
+   "line": 736,
+   "term": "portfolio",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a set of pieces of creative work collected to be shown to potential customers or employers"
+  },
+  {
+   "line": 737,
+   "term": "positive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by or displaying affirmation or acceptance or certainty etc."
+  },
+  {
+   "line": 738,
+   "term": "possess",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "have as an attribute, knowledge, or skill"
+  },
+  {
+   "line": 739,
+   "term": "possession",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of having and controlling property"
+  },
+  {
+   "line": 740,
+   "term": "potent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a strong physiological or chemical effect"
+  },
+  {
+   "line": 741,
+   "term": "potential",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "existing in possibility"
+  },
+  {
+   "line": 742,
+   "term": "precedent",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an example that is used to justify similar occurrences at a later time"
+  },
+  {
+   "line": 743,
+   "term": "precise",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "sharply exact or accurate or delimited"
+  },
+  {
+   "line": 744,
+   "term": "precision",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being reproducible in amount or performance"
+  },
+  {
+   "line": 745,
+   "term": "predecessor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "one who precedes you in time (as in holding a position or office)"
+  },
+  {
+   "line": 746,
+   "term": "predict",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make a prediction about; tell in advance"
+  },
+  {
+   "line": 747,
+   "term": "prediction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a statement made about the future"
+  },
+  {
+   "line": 748,
+   "term": "prefer",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "like better; value more highly"
+  },
+  {
+   "line": 749,
+   "term": "preference",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a strong liking"
+  },
+  {
+   "line": 750,
+   "term": "prejudice",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a partiality that prevents objective consideration of an issue or situation"
+  },
+  {
+   "line": 751,
+   "term": "premature",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "too soon or too hasty"
+  },
+  {
+   "line": 752,
+   "term": "premier",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be performed for the first time"
+  },
+  {
+   "line": 753,
+   "term": "premise",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "set forth beforehand, often as an explanation"
+  },
+  {
+   "line": 754,
+   "term": "preparation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the activity of putting or setting in order in advance of some act or purpose"
+  },
+  {
+   "line": 755,
+   "term": "preposterous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "incongruous; inviting ridicule"
+  },
+  {
+   "line": 756,
+   "term": "prescription",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "written instructions from a physician or dentist to a druggist concerning the form and dosage of a drug to be issued to a given patient"
+  },
+  {
+   "line": 757,
+   "term": "preservation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the activity of protecting something from loss or danger"
+  },
+  {
+   "line": 758,
+   "term": "pretentious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "making claim to or creating an appearance of (often undeserved) importance or distinction"
+  },
+  {
+   "line": 759,
+   "term": "prevalent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "most frequent or common"
+  },
+  {
+   "line": 760,
+   "term": "prevention",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of preventing"
+  },
+  {
+   "line": 761,
+   "term": "primer",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an introductory textbook"
+  },
+  {
+   "line": 762,
+   "term": "primitive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "belonging to an early stage of technical development; characterized by simplicity and (often) crudeness"
+  },
+  {
+   "line": 763,
+   "term": "principal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the educator who has executive authority for a school"
+  },
+  {
+   "line": 764,
+   "term": "principle",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a basic truth or law or assumption"
+  },
+  {
+   "line": 765,
+   "term": "principled",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "based on or manifesting objectively defined standards of rightness or morality"
+  },
+  {
+   "line": 766,
+   "term": "pristine",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "completely free from dirt or contamination"
+  },
+  {
+   "line": 767,
+   "term": "privilege",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a special advantage or immunity or benefit not enjoyed by all"
+  },
+  {
+   "line": 768,
+   "term": "probation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(law) a way of dealing with offenders without imprisoning them; a defendant found guilty of a crime is released by the court without imprisonment subject to conditions imposed by the court"
+  },
+  {
+   "line": 769,
+   "term": "probe",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "question or examine thoroughly and closely"
+  },
+  {
+   "line": 770,
+   "term": "procedure",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a process or series of acts especially of a practical or mechanical nature involved in a particular form of work"
+  },
+  {
+   "line": 771,
+   "term": "proceed",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "move ahead; travel onward in time or space"
+  },
+  {
+   "line": 772,
+   "term": "productive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "producing or capable of producing (especially abundantly)"
+  },
+  {
+   "line": 773,
+   "term": "profession",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an occupation requiring special education (especially in the liberal arts or sciences)"
+  },
+  {
+   "line": 774,
+   "term": "professor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who is a member of the faculty at a college or university"
+  },
+  {
+   "line": 775,
+   "term": "profile",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an outline of something (especially a human face as seen from one side)"
+  },
+  {
+   "line": 776,
+   "term": "progressive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "favoring or promoting progress"
+  },
+  {
+   "line": 777,
+   "term": "prohibition",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the action of prohibiting or inhibiting or forbidding (or an instance thereof)"
+  },
+  {
+   "line": 778,
+   "term": "prolific",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "bearing in abundance especially offspring"
+  },
+  {
+   "line": 779,
+   "term": "promenade",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a public area set aside as a pedestrian walk"
+  },
+  {
+   "line": 780,
+   "term": "prominence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "relative importance"
+  },
+  {
+   "line": 781,
+   "term": "prominent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a quality that thrusts itself into attention"
+  },
+  {
+   "line": 782,
+   "term": "promoter",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who is an active supporter and advocate"
+  },
+  {
+   "line": 783,
+   "term": "prone",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a tendency (to); often used in combination"
+  },
+  {
+   "line": 784,
+   "term": "propaganda",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "information that is spread for the purpose of promoting some cause"
+  },
+  {
+   "line": 785,
+   "term": "prophet",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who speaks by divine inspiration; someone who is an interpreter of the will of God"
+  },
+  {
+   "line": 786,
+   "term": "protagonist",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the principal character in a work of fiction"
+  },
+  {
+   "line": 787,
+   "term": "protection",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the activity of protecting someone or something"
+  },
+  {
+   "line": 788,
+   "term": "protective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "intended or adapted to afford protection of some kind"
+  },
+  {
+   "line": 789,
+   "term": "protestant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to Protestants or Protestantism"
+  },
+  {
+   "line": 790,
+   "term": "provincial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characteristic of the provinces or their people"
+  },
+  {
+   "line": 791,
+   "term": "provoke",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "evoke or provoke to appear or occur"
+  },
+  {
+   "line": 792,
+   "term": "proxy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person authorized to act for another"
+  },
+  {
+   "line": 793,
+   "term": "prudence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "knowing how to avoid embarrassment or distress"
+  },
+  {
+   "line": 794,
+   "term": "psychic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "outside the sphere of physical science"
+  },
+  {
+   "line": 795,
+   "term": "pundit",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who has been admitted to membership in a scholarly field"
+  },
+  {
+   "line": 796,
+   "term": "quake",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "shake with fast, tremulous movements"
+  },
+  {
+   "line": 797,
+   "term": "qualify",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make fit or prepared"
+  },
+  {
+   "line": 798,
+   "term": "quarterly",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "in three month intervals"
+  },
+  {
+   "line": 799,
+   "term": "radical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "markedly new or introducing extreme change"
+  },
+  {
+   "line": 800,
+   "term": "rampant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unrestrained and violent"
+  },
+  {
+   "line": 801,
+   "term": "rapid",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by speed; moving with or capable of moving with high speed"
+  },
+  {
+   "line": 802,
+   "term": "rave",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "praise enthusiastically"
+  },
+  {
+   "line": 803,
+   "term": "reaction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a response that reveals a person's feelings or attitude"
+  },
+  {
+   "line": 804,
+   "term": "readily",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "without much difficulty"
+  },
+  {
+   "line": 805,
+   "term": "realism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the attribute of accepting the facts of life and favoring practicality and literal truth"
+  },
+  {
+   "line": 806,
+   "term": "recipient",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who receives something"
+  },
+  {
+   "line": 807,
+   "term": "reckless",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by careless unconcern"
+  },
+  {
+   "line": 808,
+   "term": "recognize",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "detect with the senses"
+  },
+  {
+   "line": 809,
+   "term": "reconcile",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "come to terms"
+  },
+  {
+   "line": 810,
+   "term": "reconsider",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "consider again; give new consideration to; usually with a view to changing"
+  },
+  {
+   "line": 811,
+   "term": "recover",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "get or find back; recover the use of"
+  },
+  {
+   "line": 812,
+   "term": "recruit",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cause to assemble or enlist in the military"
+  },
+  {
+   "line": 813,
+   "term": "redemption",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(theology) the act of delivering from sin or saving from evil"
+  },
+  {
+   "line": 814,
+   "term": "refer",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "send or direct for treatment, information, or a decision"
+  },
+  {
+   "line": 815,
+   "term": "reflection",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the image of something as reflected by a mirror (or other reflective material)"
+  },
+  {
+   "line": 816,
+   "term": "reform",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make changes for improvement in order to remove abuse and injustices"
+  },
+  {
+   "line": 817,
+   "term": "refuge",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a shelter from danger or hardship"
+  },
+  {
+   "line": 818,
+   "term": "refusal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of not accepting something that is offered"
+  },
+  {
+   "line": 819,
+   "term": "regime",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the government or governing authority of a political unit"
+  },
+  {
+   "line": 820,
+   "term": "regional",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "related or limited to a particular region"
+  },
+  {
+   "line": 821,
+   "term": "reign",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "have sovereign power"
+  },
+  {
+   "line": 822,
+   "term": "relevant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a bearing on or connection with the subject at issue"
+  },
+  {
+   "line": 823,
+   "term": "reliant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "depending on another for support"
+  },
+  {
+   "line": 824,
+   "term": "reluctance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a certain degree of unwillingness"
+  },
+  {
+   "line": 825,
+   "term": "reluctant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not eager"
+  },
+  {
+   "line": 826,
+   "term": "reminiscent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "serving to bring to mind"
+  },
+  {
+   "line": 827,
+   "term": "renaissance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the period of European history at the close of the Middle Ages and the rise of the modern world; a cultural rebirth from the 14th through the middle of the 17th centuries"
+  },
+  {
+   "line": 828,
+   "term": "render",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "give or supply"
+  },
+  {
+   "line": 829,
+   "term": "renowned",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "widely known and esteemed"
+  },
+  {
+   "line": 830,
+   "term": "repeal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "cancel officially"
+  },
+  {
+   "line": 831,
+   "term": "reproduction",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of making copies"
+  },
+  {
+   "line": 832,
+   "term": "requisite",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "anything indispensable"
+  },
+  {
+   "line": 833,
+   "term": "resemblance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "similarity in appearance or external or superficial details"
+  },
+  {
+   "line": 834,
+   "term": "resent",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "feel bitter or indignant about"
+  },
+  {
+   "line": 835,
+   "term": "resist",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "withstand the force of something"
+  },
+  {
+   "line": 836,
+   "term": "resistance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the action of opposing something that you disapprove or disagree with"
+  },
+  {
+   "line": 837,
+   "term": "resistant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impervious to being affected"
+  },
+  {
+   "line": 838,
+   "term": "resort",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "have recourse to"
+  },
+  {
+   "line": 839,
+   "term": "resource",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a source of aid or support that may be drawn upon when needed"
+  },
+  {
+   "line": 840,
+   "term": "restore",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "bring back into original existence, use, function, or position"
+  },
+  {
+   "line": 841,
+   "term": "resurrection",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(New Testament) the rising of Christ on the third day after the Crucifixion"
+  },
+  {
+   "line": 842,
+   "term": "retrospect",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "contemplation of things past"
+  },
+  {
+   "line": 843,
+   "term": "retrospective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerned with or related to the past"
+  },
+  {
+   "line": 844,
+   "term": "revelation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "communication of knowledge to man by a divine or supernatural agency"
+  },
+  {
+   "line": 845,
+   "term": "revive",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "be brought back to life, consciousness, or strength"
+  },
+  {
+   "line": 846,
+   "term": "rhetoric",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "using language effectively to please or persuade"
+  },
+  {
+   "line": 847,
+   "term": "ridiculous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "incongruous; absurd; nonsensical"
+  },
+  {
+   "line": 848,
+   "term": "rigorous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "demanding strict attention to rules and procedures"
+  },
+  {
+   "line": 849,
+   "term": "robust",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "sturdy and strong in form, constitution, or construction"
+  },
+  {
+   "line": 850,
+   "term": "rue",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "sadness associated with some wrong done or some disappointment"
+  },
+  {
+   "line": 851,
+   "term": "rural",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "living in or characteristic of farming or country life"
+  },
+  {
+   "line": 852,
+   "term": "rustic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characteristic of the fields or country"
+  },
+  {
+   "line": 853,
+   "term": "sacrifice",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "kill or destroy"
+  },
+  {
+   "line": 854,
+   "term": "savage",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "criticize harshly or violently"
+  },
+  {
+   "line": 855,
+   "term": "scholarly",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characteristic of learning or studying"
+  },
+  {
+   "line": 856,
+   "term": "scope",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an area in which something acts or operates or has power or control"
+  },
+  {
+   "line": 857,
+   "term": "script",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a written version of a play or other dramatic composition; used in preparing for a performance"
+  },
+  {
+   "line": 858,
+   "term": "secession",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "formal separation from an alliance or federation"
+  },
+  {
+   "line": 859,
+   "term": "secondary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not of major importance"
+  },
+  {
+   "line": 860,
+   "term": "secrecy",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the trait of keeping things secret"
+  },
+  {
+   "line": 861,
+   "term": "secular",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not concerned with or devoted to religion"
+  },
+  {
+   "line": 862,
+   "term": "seize",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "take hold of; grab"
+  },
+  {
+   "line": 863,
+   "term": "selective",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by very careful or fastidious choices"
+  },
+  {
+   "line": 864,
+   "term": "seminar",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any meeting for an exchange of ideas"
+  },
+  {
+   "line": 865,
+   "term": "sensation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a perception associated with stimulation of a sensory organ"
+  },
+  {
+   "line": 866,
+   "term": "sensibility",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "refined sensitivity to pleasurable or painful impressions"
+  },
+  {
+   "line": 867,
+   "term": "sensitive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "responsive to physical stimuli"
+  },
+  {
+   "line": 868,
+   "term": "sentence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the period of time a prisoner is imprisoned"
+  },
+  {
+   "line": 869,
+   "term": "sentinel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person employed to keep watch for some anticipated event"
+  },
+  {
+   "line": 870,
+   "term": "sequel",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a part added to a book or play that continues and extends it"
+  },
+  {
+   "line": 871,
+   "term": "sequence",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "serial arrangement in which things follow in logical order or a recurrent pattern"
+  },
+  {
+   "line": 872,
+   "term": "sergeant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "any of several noncommissioned officer ranks in the Army or Air Force or Marines ranking above a corporal"
+  },
+  {
+   "line": 873,
+   "term": "servitude",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "state of subjection to an owner or master or forced labor imposed as punishment"
+  },
+  {
+   "line": 874,
+   "term": "severely",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "with sternness; in a severe manner"
+  },
+  {
+   "line": 875,
+   "term": "shallow",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "lacking depth of intellect or knowledge; concerned only with what is obvious"
+  },
+  {
+   "line": 876,
+   "term": "sheer",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "complete and without restriction or qualification"
+  },
+  {
+   "line": 877,
+   "term": "shrewd",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "marked by practical hardheaded intelligence"
+  },
+  {
+   "line": 878,
+   "term": "siege",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the action of an armed force that surrounds a fortified place and isolates it while continuing to attack"
+  },
+  {
+   "line": 879,
+   "term": "significance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being important in effect or meaning"
+  },
+  {
+   "line": 880,
+   "term": "significant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "important in effect or meaning"
+  },
+  {
+   "line": 881,
+   "term": "similar",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having close to the same characteristics"
+  },
+  {
+   "line": 882,
+   "term": "sinister",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "stemming from evil characteristics or forces; wicked or dishonorable"
+  },
+  {
+   "line": 883,
+   "term": "skepticism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the disbelief in any claims of ultimate knowledge"
+  },
+  {
+   "line": 884,
+   "term": "slack",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not tense or taut"
+  },
+  {
+   "line": 885,
+   "term": "slight",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a deliberate discourteous act (usually as an expression of anger or disapproval)"
+  },
+  {
+   "line": 886,
+   "term": "sober",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "become more realistic"
+  },
+  {
+   "line": 887,
+   "term": "socialism",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a political theory advocating state ownership of industry"
+  },
+  {
+   "line": 888,
+   "term": "socialist",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "advocating or following the socialist principles of state ownership"
+  },
+  {
+   "line": 889,
+   "term": "sociology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the study and classification of human societies"
+  },
+  {
+   "line": 890,
+   "term": "solar",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or derived from the sun or utilizing the energies of the sun"
+  },
+  {
+   "line": 891,
+   "term": "soldier",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an enlisted man or woman who serves in an army"
+  },
+  {
+   "line": 892,
+   "term": "somber",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "grave or even gloomy in character"
+  },
+  {
+   "line": 893,
+   "term": "sophisticated",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having or appealing to those having worldly knowledge and refinement"
+  },
+  {
+   "line": 894,
+   "term": "souvenir",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a reminder of past events"
+  },
+  {
+   "line": 895,
+   "term": "specialty",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an asset of special worth or utility"
+  },
+  {
+   "line": 896,
+   "term": "species",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "(biology) taxonomic group whose members can interbreed"
+  },
+  {
+   "line": 897,
+   "term": "spectator",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a close observer; someone who looks at something (such as an exhibition of some kind)"
+  },
+  {
+   "line": 898,
+   "term": "specter",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a ghostly appearing figure"
+  },
+  {
+   "line": 899,
+   "term": "spectrum",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a broad range of related objects or ideas or activities"
+  },
+  {
+   "line": 900,
+   "term": "speculate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "consider in an idle or casual way and with an element of doubt or without sufficient reason to reach a conclusion"
+  },
+  {
+   "line": 901,
+   "term": "spontaneous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "said or done without having been planned or written in advance"
+  },
+  {
+   "line": 902,
+   "term": "static",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing little if any change"
+  },
+  {
+   "line": 903,
+   "term": "stature",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "high level of respect gained by impressive development or achievement"
+  },
+  {
+   "line": 904,
+   "term": "statute",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an act passed by a legislative body"
+  },
+  {
+   "line": 905,
+   "term": "stealth",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "avoiding detection by moving carefully"
+  },
+  {
+   "line": 906,
+   "term": "stimulate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "cause to be alert and energetic"
+  },
+  {
+   "line": 907,
+   "term": "stringent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "demanding strict attention to rules and procedures"
+  },
+  {
+   "line": 908,
+   "term": "submission",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something (manuscripts or architectural plans and models or estimates or works of art of all genres etc.) submitted for the judgment of others (as in a competition)"
+  },
+  {
+   "line": 909,
+   "term": "subsequent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "following in time or order"
+  },
+  {
+   "line": 910,
+   "term": "subsidiary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "functioning in a supporting capacity"
+  },
+  {
+   "line": 911,
+   "term": "substantive",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having a firm basis in reality and being therefore important, meaningful, or considerable"
+  },
+  {
+   "line": 912,
+   "term": "subtle",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "difficult to detect or grasp by the mind or analyze"
+  },
+  {
+   "line": 913,
+   "term": "successor",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a person who follows next in order"
+  },
+  {
+   "line": 914,
+   "term": "summary",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a brief statement that presents the main points in a concise form"
+  },
+  {
+   "line": 915,
+   "term": "superb",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of surpassing excellence"
+  },
+  {
+   "line": 916,
+   "term": "superficial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerned with or comprehending only what is apparent or obvious; not deep or penetrating emotionally or intellectually"
+  },
+  {
+   "line": 917,
+   "term": "suppress",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "reduce the incidence or severity of or stop"
+  },
+  {
+   "line": 918,
+   "term": "surround",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "extend on all sides of simultaneously; encircle"
+  },
+  {
+   "line": 919,
+   "term": "suspense",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "excited anticipation of an approaching climax"
+  },
+  {
+   "line": 920,
+   "term": "suspension",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an interruption in the intensity or amount of something"
+  },
+  {
+   "line": 921,
+   "term": "suspicious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "openly distrustful and unwilling to confide"
+  },
+  {
+   "line": 922,
+   "term": "sympathetic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "expressing or feeling or resulting from sympathy or compassion or friendly fellow feelings; disposed toward"
+  },
+  {
+   "line": 923,
+   "term": "symphony",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a large orchestra; can perform symphonies"
+  },
+  {
+   "line": 924,
+   "term": "systematic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "characterized by order and planning"
+  },
+  {
+   "line": 925,
+   "term": "tactics",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the branch of military science dealing with detailed maneuvers to achieve objectives set by strategy"
+  },
+  {
+   "line": 926,
+   "term": "tangible",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "perceptible by the senses especially the sense of touch"
+  },
+  {
+   "line": 927,
+   "term": "taxation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the imposition of taxes; the practice of the government in levying taxes on the subjects of a state"
+  },
+  {
+   "line": 928,
+   "term": "technique",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "skillfulness in the command of fundamentals deriving from practice and familiarity"
+  },
+  {
+   "line": 929,
+   "term": "technology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the practical application of science to commerce or industry"
+  },
+  {
+   "line": 930,
+   "term": "telescope",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a magnifier of images of distant objects"
+  },
+  {
+   "line": 931,
+   "term": "temporary",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not permanent; not lasting"
+  },
+  {
+   "line": 932,
+   "term": "tendency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a characteristic likelihood of or natural disposition toward a certain condition or character or effect"
+  },
+  {
+   "line": 933,
+   "term": "tense",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "taut or rigid; stretched tight"
+  },
+  {
+   "line": 934,
+   "term": "tentative",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "unsettled in mind or opinion"
+  },
+  {
+   "line": 935,
+   "term": "tenure",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "give life-time employment to"
+  },
+  {
+   "line": 936,
+   "term": "terminal",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being or situated at an end"
+  },
+  {
+   "line": 937,
+   "term": "territorial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "displaying territoriality; defending an area from intruders"
+  },
+  {
+   "line": 938,
+   "term": "testament",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a profession of belief"
+  },
+  {
+   "line": 939,
+   "term": "theological",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of or relating to or concerning the study of religion"
+  },
+  {
+   "line": 940,
+   "term": "theology",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the rational and systematic study of religion and its influences and of the nature of religious truth"
+  },
+  {
+   "line": 941,
+   "term": "theoretical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "concerned with theories rather than their practical applications"
+  },
+  {
+   "line": 942,
+   "term": "theorist",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "someone who theorizes (especially in science or art)"
+  },
+  {
+   "line": 943,
+   "term": "thesis",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a formal paper advancing a new point of view resulting from research; usually a requirement for an advanced academic degree"
+  },
+  {
+   "line": 944,
+   "term": "titanic",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of great force or power"
+  },
+  {
+   "line": 945,
+   "term": "tolerance",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "willingness to recognize and respect the beliefs or practices of others"
+  },
+  {
+   "line": 946,
+   "term": "tolerant",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "showing respect for the rights or opinions or practices of others"
+  },
+  {
+   "line": 947,
+   "term": "tolerate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "recognize and respect (rights and beliefs of others)"
+  },
+  {
+   "line": 948,
+   "term": "transcript",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something that has been transcribed; a written record (usually typewritten) of dictated or recorded speech"
+  },
+  {
+   "line": 949,
+   "term": "transfer",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "move from one place to another"
+  },
+  {
+   "line": 950,
+   "term": "transition",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "make or undergo a transition (from one state or system to another)"
+  },
+  {
+   "line": 951,
+   "term": "translate",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "restate (words) from one language into another language"
+  },
+  {
+   "line": 952,
+   "term": "transmission",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of sending a message; causing a message to be transmitted"
+  },
+  {
+   "line": 953,
+   "term": "transparent",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "transmitting light; able to be seen through with clarity"
+  },
+  {
+   "line": 954,
+   "term": "transplant",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of removing something from one location and introducing it in another location"
+  },
+  {
+   "line": 955,
+   "term": "tremendous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "extraordinarily large in size or extent or amount or power or degree"
+  },
+  {
+   "line": 956,
+   "term": "tribune",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a protector of the people"
+  },
+  {
+   "line": 957,
+   "term": "trinity",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the union of the Father and Son and Holy Ghost in one Godhead"
+  },
+  {
+   "line": 958,
+   "term": "triple",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "increase threefold"
+  },
+  {
+   "line": 959,
+   "term": "trivial",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "of little substance or significance"
+  },
+  {
+   "line": 960,
+   "term": "truthful",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "expressing or given to expressing the truth"
+  },
+  {
+   "line": 961,
+   "term": "turmoil",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a violent disturbance"
+  },
+  {
+   "line": 962,
+   "term": "typical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "exhibiting the qualities or characteristics that identify a group or kind or category"
+  },
+  {
+   "line": 963,
+   "term": "ubiquitous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "being present everywhere at once"
+  },
+  {
+   "line": 964,
+   "term": "ultimate",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "furthest or highest in degree or order; utmost or extreme"
+  },
+  {
+   "line": 965,
+   "term": "unanimous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "acting together as a single undiversified whole"
+  },
+  {
+   "line": 966,
+   "term": "uncommon",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not common or ordinarily encountered; unusually great in amount or remarkable in character or kind"
+  },
+  {
+   "line": 967,
+   "term": "unconscious",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "not conscious; lacking awareness and the capacity for sensory perception as if asleep or dead"
+  },
+  {
+   "line": 968,
+   "term": "undermine",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "destroy property or hinder normal operations"
+  },
+  {
+   "line": 969,
+   "term": "unique",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "the single one of its kind"
+  },
+  {
+   "line": 970,
+   "term": "unlimited",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no limits in range or scope"
+  },
+  {
+   "line": 971,
+   "term": "unprecedented",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "having no previous example; novel"
+  },
+  {
+   "line": 972,
+   "term": "urban",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "located in or characteristic of a city or city life"
+  },
+  {
+   "line": 973,
+   "term": "urgency",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an urgent situation calling for prompt action"
+  },
+  {
+   "line": 974,
+   "term": "usage",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the act of using"
+  },
+  {
+   "line": 975,
+   "term": "utility",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the quality of being of practical use"
+  },
+  {
+   "line": 976,
+   "term": "vacuum",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "a region that is devoid of matter"
+  },
+  {
+   "line": 977,
+   "term": "valid",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "well grounded in logic or truth or having legal force"
+  },
+  {
+   "line": 978,
+   "term": "variation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an artifact that deviates from a norm or standard"
+  },
+  {
+   "line": 979,
+   "term": "vegetarian",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "eater of fruits and grains and nuts; someone who eats no meat or fish or (often) any animal products"
+  },
+  {
+   "line": 980,
+   "term": "vegetation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "all the plant life in a particular region or period"
+  },
+  {
+   "line": 981,
+   "term": "venerable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "impressive by reason of age"
+  },
+  {
+   "line": 982,
+   "term": "verify",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "confirm the truth of"
+  },
+  {
+   "line": 983,
+   "term": "version",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "something a little different from others of the same type"
+  },
+  {
+   "line": 984,
+   "term": "vertical",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "at right angles to the plane of the horizon or a base line"
+  },
+  {
+   "line": 985,
+   "term": "veto",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the power or right to prohibit or reject a proposed or intended act (especially the power of a chief executive to reject a bill passed by the legislature)"
+  },
+  {
+   "line": 986,
+   "term": "vigorous",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "strong and active physically or mentally"
+  },
+  {
+   "line": 987,
+   "term": "violation",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an act that disregards an agreement or a right"
+  },
+  {
+   "line": 988,
+   "term": "vista",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the visual percept of a region"
+  },
+  {
+   "line": 989,
+   "term": "visual",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "relating to or using sight"
+  },
+  {
+   "line": 990,
+   "term": "vitality",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "an energetic style"
+  },
+  {
+   "line": 991,
+   "term": "vogue",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "the popular taste at a given time"
+  },
+  {
+   "line": 992,
+   "term": "volatile",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "liable to lead to sudden change or violence"
+  },
+  {
+   "line": 993,
+   "term": "vulnerable",
+   "pos_raw": "j",
+   "pos": "adjective",
+   "definition": "capable of being wounded or hurt"
+  },
+  {
+   "line": 994,
+   "term": "warrant",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "stand behind and guarantee the quality, accuracy, or condition of"
+  },
+  {
+   "line": 995,
+   "term": "wherever",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "where in the world"
+  },
+  {
+   "line": 996,
+   "term": "wholly",
+   "pos_raw": "a",
+   "pos": "adverb",
+   "definition": "to a complete degree or to the full or entire extent ('whole' is often used informally for 'wholly')"
+  },
+  {
+   "line": 997,
+   "term": "woo",
+   "pos_raw": "v",
+   "pos": "verb",
+   "definition": "seek someone's favor"
+  },
+  {
+   "line": 998,
+   "term": "zeal",
+   "pos_raw": "n",
+   "pos": "noun",
+   "definition": "excessive fervor to do something or accomplish some end"
+  }
+ ],
+ "skipped": [],
+ "duplicates_removed": 0
+}

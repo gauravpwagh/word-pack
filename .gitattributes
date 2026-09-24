@@ -1,0 +1,5 @@
+# Test fixtures and their golden outputs must stay byte-exact (e.g.
+# sample-excel-dash.csv is deliberately UTF-8 BOM + CRLF).
+fixtures/** -text
+# Shell scripts need LF to run.
+*.sh text eol=lf

@@ -1,0 +1,38 @@
+# Decisions
+
+All decisions were confirmed by the product owner unless marked *Assumed*.
+
+| # | Topic | Decision |
+|---|---|---|
+| D-1 | Platform | **Flutter**, directly (the earlier Flask plan is dropped). One offline app; data on the device. Android + iOS are the v1 targets; desktop (Windows/macOS/Linux) builds from the same code. *Assumed:* web is not a v1 target. |
+| D-2 | Import file format | User picks a **CSV** file. The app also accepts the plain-text sample format (`term - pos. definition`), including when Excel saved it as a one-column CSV. See `IMPORT_FORMAT.md`. |
+| D-3 | Part of speech | Displayed as **noun, verb, adj., adv., pron., prep., conj., interj., phrase, idiom, abbr.** Sample codes: `n` noun, `v` verb, `j` adj., `a` adv. |
+| D-4 | When a pack counts as Learned | **User setting**: both directions / either / Word→Definition only / Definition→Word only. **Default: both.** |
+| D-5 | Failed pass | Any reveal fails the pass; the **whole pack** is repeated. |
+| D-6 | Pack composition | Consecutive words in file order; last pack may be short. |
+| D-7 | Card order | Always **source order**. No shuffling. |
+| D-8 | Changing pack size | **Rebuilds all packs** of all wordlists. Word-level progress is carried over (`LEARNING_LOGIC.md` §6); passes in progress are discarded; confirmation required. |
+| D-9 | When categorising/tagging is allowed | Only for words of a **Learned** pack, when **reviewing** that pack or viewing it in the explorer. The app **never prompts** the user to categorise. (Re-confirmed 2026-09-24.) Tags a word already has stay **visible** even when its pack is no longer Learned (after a pack-size rebuild or a review demotion); only the controls are hidden. |
+| D-10 | Categories per word | Exactly one category + optional subcategory. |
+| D-11 | Category scope | Shared across all wordlists. |
+| D-12 | Tone and traits | Tone single-choice; counter-intuitive and multiple meanings are independent flags combining with any tone. **Quick one-tap buttons** for all five. |
+| D-13 | Visuals | Tone = left border + tint; traits = icon badges (+ dashed outline for counter-intuitive). Always icon + colour. |
+| D-14 | Explorer and learning status | *Assumed:* browsing never changes learning status. |
+| D-15 | Review of a Learned pack | *Assumed:* peeks are recorded but don't demote the pack (setting, default off). |
+| D-16 | Duplicates | *Assumed:* exact duplicates dropped; same term with a different POS/definition kept. |
+| D-17 | Accounts / sync | *Assumed:* none in v1. Data moves between devices via backup file export/import. |
+| D-18 | Resetting a pack (was Q-1) | **No reset.** Any pack can be studied at any time (LRN-1, EXP-10) and a Learned pack can always be reviewed, so its status doesn't need to go back to New. Relearning a forgotten pack goes through the *Peek during review demotes the pack* setting (D-15). Pass statistics and `learnedAt` are never cleared. |
+| D-19 | Visual design | The designer's canvas ([WordPack — app design](https://claude.ai/artifact/692F7FARdZGCMMzrwaiAgb)) is the visual source of truth. Its values are copied into `UI_UX.md` §9. Where it disagreed with this spec, D-9, D-20 and D-21 settle it. |
+| D-20 | Fonts | Literata (words, definitions) + Atkinson Hyperlegible Next (UI), both SIL OFL. **Bundled as assets** in `assets/fonts/`, not loaded with `google_fonts`, which fetches fonts at runtime and would break the no-network rule. |
+| D-21 | Icons | Material Symbols Rounded via the `material_symbols_icons` package (offline; needed for icons the built-in set lacks, e.g. `psychology_alt`, `clock_loader_40`). |
+| D-22 | Wide layout breakpoint | Permanent tree panel from **840 dp** (Material 3 "expanded"), not 1024. |
+| D-23 | Development target | Build and verify on the **Android emulator** (Pixel 9, API 35). Desktop builds stay in scope for the code (adaptive layout, keyboard shortcuts) but are not run until the product owner asks; milestone DoDs are checked on Android. |
+| D-24 | Importer details | *Assumed* (matching the oracle): bytes 0x81, 0x8D, 0x8F, 0x90, 0x9D (undefined in Windows-1252) make a non-UTF-8 file unreadable. In dash lines a missing definition shows up as `NO_SEPARATOR` (the trimmed line has no `" - "`), so `EMPTY_DEFINITION` / `EMPTY_TERM` only occur in column CSVs. |
+| D-25 | Mastery edge cases | *Assumed:* a pass with peeks on a pack already mastered in that direction leaves it mastered (demotion only happens on the reveal, and only with `demoteOnReveal`). For the `either` rule, Continue picks WD first. |
+| D-26 | Storage details | *Assumed:* drift stores times as ISO-8601 text (`build.yaml`: `store_date_time_values_as_text`) so they read back in UTC. Riverpod providers are written by hand (`lib/providers/providers.dart`), not generated; `riverpod_generator` stays available. Host tests load Windows' built-in `winsqlite3.dll`; the app bundles SQLite via `sqlite3_flutter_libs`. |
+| D-27 | Learning screen details | *Assumed:* opening a pack starts (or resumes) a pass right away. Switching direction on card 1 with no peeks happens without the confirmation dialog (nothing is lost); otherwise the dialog asks. The pass summary is drawn in the screen (sheet on phones, centred panel on wide screens) rather than as a modal route. The card is announced as one item to screen readers ("absurd adjective"). Swipes commit at 60 px or a fling; the card does not follow the finger yet. |
+| D-28 | Tagging details | *Assumed:* assigning categories by name lives in `TaggingService` (with tone and traits, behind one learned-only check); `CategoryService` in M6 handles rename / merge / delete. The card always reserves the badge row, and keeps a transparent 1 px border under the dashed outline, so tagging never moves the content. Screen readers hear tags after the word ("abbey, noun, Negative, Counter-intuitive"). Category suggestions appear once the user types. |
+| D-29 | Explorer details | *Assumed:* the tree lists wordlists newest first, each with Packs, Categories, Tags and Uncategorised; only categories that have words in that wordlist appear. Wordlist and Packs nodes show all words in source order. The explorer's app bar shows the node's own name; the full breadcrumb wraps below it. The tree's keyboard cursor appears only in keyboard mode; clicking an expand arrow gives the tree keyboard focus. Tree panel width is kept for the session; open/closed, expansion, selection and card/list mode are saved in `UiState`. Search matches term or definition across all wordlists. |
+| D-30 | Settings and backup details | *Assumed:* the pack size is chosen with −/+ and a slider (5–100), then a preview dialog lists each wordlist's pack counts before rebuilding. Renaming a category to a name that exists at the same level is refused with a hint to merge; merging categories merges their subcategories by name. Restoring a backup resets the tree's expansion and selection. Backups store times as ISO-8601 UTC. The app icon is drawn from the design canvas (`tool/render_icon_test.dart`) and generated with `flutter_launcher_icons`. Pack tiles grow with the text size. |
+
+There are no open questions.
