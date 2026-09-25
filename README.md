@@ -23,6 +23,7 @@ This repository contains the **specification** and the app being built from it (
 | [`CLAUDE.md`](CLAUDE.md) | Working rules for a coding agent |
 | [`flutter-best-practices.md`](flutter-best-practices.md) | General Flutter conventions (structure, widgets, performance, testing, security, CI) the code should follow |
 | [`reference/import_parser.py`](reference/import_parser.py) | Verified behaviour oracle for the importer (generates the golden files) |
+| [`store/`](store/listing.md) | Play Store listing text, graphics, screenshots and privacy policy |
 | [`fixtures/`](fixtures/) | Real sample file (998 words), CSV variants, edge cases, and `expected/` golden outputs |
 
 Read in this order: README → DECISIONS → REQUIREMENTS → LEARNING_LOGIC → DATA_MODEL → UI_UX → ARCHITECTURE → IMPLEMENTATION_PLAN.

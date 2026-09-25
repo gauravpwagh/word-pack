@@ -93,8 +93,11 @@ tool/
   check.sh  check.ps1          # milestone gate (CLAUDE.md)
   gen_fixture_data.dart        # embeds fixtures for integration tests
   render_icon_test.dart        # renders the app icon PNGs
+  render_store_art_test.dart   # Play icon + feature graphic (store/)
+  store_seed_test.dart         # demo backup for store screenshots
 assets/icon/                   # app icon master + adaptive foreground
 drift_schemas/                 # schema dumps (DATA_MODEL §7)
+store/                         # Play listing: text, graphics, screenshots, privacy policy
 fixtures/  reference/  docs/
 ```
 
