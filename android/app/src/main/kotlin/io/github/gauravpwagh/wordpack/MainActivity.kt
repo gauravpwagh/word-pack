@@ -1,4 +1,4 @@
-package com.wordpack.wordpack
+package io.github.gauravpwagh.wordpack
 
 import io.flutter.embedding.android.FlutterActivity
 

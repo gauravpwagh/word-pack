@@ -50,6 +50,16 @@ flutter test integration_test      # end-to-end on a device or desktop
 ./tool/check.sh                    # milestone gate: l10n, format, analyze, test (Windows: tool\check.ps1)
 ```
 
+### Android release (Play Store)
+
+Application ID: `io.github.gauravpwagh.wordpack` (D-31). One-time setup: create an upload keystore **outside the repository** and copy `android/key.properties.example` to `android/key.properties` (git-ignored) with its passwords and path. Then:
+
+```bash
+flutter build appbundle --release   # build/app/outputs/bundle/release/app-release.aab
+```
+
+Raise the `+N` build number in `pubspec.yaml` before every upload. Back up the keystore and its passwords; losing them means asking Play support for an upload-key reset.
+
 Building for Windows needs Developer Mode turned on (Settings → For developers) so Flutter can link plugins.
 
 In the app, tap **Import** and pick `fixtures/definitions.txt` or `fixtures/sample-columns.csv` (copy them to the device first).

@@ -8,7 +8,7 @@
 PRODUCT_NAME = WordPack
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.wordpack.wordpack
+PRODUCT_BUNDLE_IDENTIFIER = io.github.gauravpwagh.wordpack
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2026 com.wordpack. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 gauravpwagh. All rights reserved.
