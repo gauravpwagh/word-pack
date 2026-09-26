@@ -9,9 +9,10 @@ import '../theme/wp_colors.dart';
 import '../theme/wp_text.dart';
 import '../theme/wp_tokens.dart';
 
-/// List mode of the explorer: `term · pos · definition (1 line)` with the tag
-/// visuals of a list row (4 px tone edge, small badges, dashed outline inset
-/// 4 px). Tapping a row opens it in card mode.
+/// List mode of the explorer: term · pos with the badges on the first line,
+/// the whole definition below it (never cut, D-33), and the tag visuals of a
+/// list row (4 px tone edge, small badges, dashed outline inset 4 px). Rows
+/// grow with the definition. Tapping a row opens it in card mode.
 class WordListView extends StatelessWidget {
   const WordListView({super.key, required this.words, required this.onOpen});
 
@@ -45,83 +46,96 @@ class _WordRow extends StatelessWidget {
     final pos = posLabel(word.pos, word.posRaw);
     final radius = BorderRadius.circular(WpRadius.packTile);
 
-    return Material(
-      color: theme.colorScheme.surface,
-      shape: RoundedRectangleBorder(
-        borderRadius: radius,
-        side: BorderSide(color: theme.colorScheme.outlineVariant),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: CustomPaint(
-        foregroundPainter: word.counterIntuitive
-            ? DashedBorderPainter(
-                color: wp.counterOutline,
-                radius: WpRadius.packTile - 4,
-                inset: 4,
-              )
-            : null,
-        child: InkWell(
-          onTap: onTap,
-          child: Stack(
-            children: [
-              ConstrainedBox(
-                constraints: const BoxConstraints(minHeight: WpSize.minTarget),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    WpSpace.lg,
-                    WpSpace.md,
-                    WpSpace.md,
-                    WpSpace.md,
+    // One screen-reader item per row: term, POS, definition, tags.
+    return MergeSemantics(
+      child: Material(
+        color: theme.colorScheme.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: radius,
+          side: BorderSide(color: theme.colorScheme.outlineVariant),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: CustomPaint(
+          foregroundPainter: word.counterIntuitive
+              ? DashedBorderPainter(
+                  color: wp.counterOutline,
+                  radius: WpRadius.packTile - 4,
+                  inset: 4,
+                )
+              : null,
+          child: InkWell(
+            onTap: onTap,
+            child: Stack(
+              children: [
+                ConstrainedBox(
+                  constraints: const BoxConstraints(
+                    minHeight: WpSize.minTarget,
                   ),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Text.rich(
-                          TextSpan(
-                            children: [
-                              TextSpan(
-                                text: word.term,
-                                style: text.cardAnswer.copyWith(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                              if (pos != null)
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      WpSpace.lg,
+                      WpSpace.md,
+                      WpSpace.md,
+                      WpSpace.md,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                              child: Text.rich(
                                 TextSpan(
-                                  text: '  $pos',
-                                  style: text.posChip.copyWith(
-                                    color: theme.colorScheme.onSurfaceVariant,
-                                  ),
-                                  semanticsLabel:
-                                      ' ${posFullName(word.pos, word.posRaw)}',
+                                  children: [
+                                    TextSpan(
+                                      text: word.term,
+                                      style: text.cardAnswer.copyWith(
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                    if (pos != null)
+                                      TextSpan(
+                                        text: '  $pos',
+                                        style: text.posChip.copyWith(
+                                          color: theme
+                                              .colorScheme
+                                              .onSurfaceVariant,
+                                        ),
+                                        semanticsLabel:
+                                            ' ${posFullName(word.pos, word.posRaw)}',
+                                      ),
+                                  ],
                                 ),
-                              TextSpan(
-                                text: '  ${word.definition}',
-                                style: theme.textTheme.bodyMedium,
                               ),
+                            ),
+                            if (TagBadges.hasAny(word)) ...[
+                              const SizedBox(width: WpSpace.sm),
+                              TagBadges(word: word, small: true),
                             ],
-                          ),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
+                          ],
                         ),
-                      ),
-                      if (TagBadges.hasAny(word)) ...[
-                        const SizedBox(width: WpSpace.sm),
-                        TagBadges(word: word, small: true),
+                        const SizedBox(height: WpSpace.xs),
+                        Text(
+                          word.definition,
+                          key: ValueKey('definition-${word.id}'),
+                          style: theme.textTheme.bodyMedium,
+                        ),
                       ],
-                    ],
+                    ),
                   ),
                 ),
-              ),
-              if (tone != null)
-                Positioned(
-                  left: 0,
-                  top: 0,
-                  bottom: 0,
-                  width: WpSize.toneEdgeRow,
-                  child: ColoredBox(color: TagStyle.toneColor(wp, tone)),
-                ),
-            ],
+                if (tone != null)
+                  Positioned(
+                    left: 0,
+                    top: 0,
+                    bottom: 0,
+                    width: WpSize.toneEdgeRow,
+                    child: ColoredBox(color: TagStyle.toneColor(wp, tone)),
+                  ),
+              ],
+            ),
           ),
         ),
       ),

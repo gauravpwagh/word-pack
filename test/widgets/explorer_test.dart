@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart' show Value;
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:wordpack/data/db/database.dart';
@@ -205,6 +206,57 @@ void main() {
       },
       uiStateDelay: const Duration(milliseconds: 500),
     );
+
+    testApp('D-33 list rows show the whole definition under the word', (
+      tester,
+      app,
+    ) async {
+      await setUpList(tester, app);
+      await openTree(tester);
+      await expand(tester, 'sample-columns');
+      await tapText(tester, 'Uncategorised');
+      await tester.tap(find.byTooltip('List'));
+      await tester.pumpAndSettle();
+
+      final word = (await (app.db.select(
+        app.db.words,
+      )..where((w) => w.term.equals('accurate'))).get()).single;
+      final definition = find.byKey(ValueKey('definition-${word.id}'));
+      await tester.scrollUntilVisible(
+        definition,
+        200,
+        scrollable: find.byType(Scrollable).last,
+      );
+      await tester.pumpAndSettle();
+
+      // Not cut: wraps over several lines, below the term.
+      final paragraph = tester.renderObject<RenderParagraph>(definition);
+      expect(paragraph.didExceedMaxLines, isFalse);
+      expect(
+        tester.widget<Text>(definition).data,
+        word.definition,
+        reason: 'the full text, no ellipsis',
+      );
+      final lineHeight = paragraph.getFullHeightForCaret(
+        const TextPosition(offset: 0),
+      );
+      expect(paragraph.size.height, greaterThan(lineHeight * 1.5));
+      expect(
+        tester.getTopLeft(definition).dy,
+        greaterThan(
+          tester.getBottomLeft(find.textContaining('accurate').first).dy - 1,
+        ),
+      );
+
+      // One screen-reader item per row.
+      final handle = tester.ensureSemantics();
+      await tester.pump();
+      expect(
+        tester.getSemantics(definition).label,
+        allOf(contains('accurate'), contains(word.definition)),
+      );
+      handle.dispose();
+    });
 
     testApp('search finds words by term or definition', (tester, app) async {
       await setUpList(tester, app);

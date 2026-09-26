@@ -93,7 +93,7 @@ No categorise button or prompt anywhere (D-9). Celebration animation is skipped 
 
 - App bar: breadcrumb (`definitions › Categories › Emotions › Anger`), count, `SegmentedButton` Card | List, which side shows first (Word / Definition).
 - Card mode: `WordCard` in *browse* variant inside a `PageView` (swipe between words); tap card or Space reveals; no peek counter; no status changes. For Learned words the quick tag buttons and category row are shown (same as review).
-- List mode: `ListView.builder` rows `term · pos chip · definition (1 line, ellipsis)` with tag visuals; tapping opens card mode at that word.
+- List mode: `ListView.builder` rows with term · pos and the badges on the first line and the **whole definition** wrapped below it — never cut; rows grow to fit (D-33). Tag visuals as on cards (§5); one screen-reader item per row. Tapping opens card mode at that word.
 - Order: source order for pack nodes; alphabetical for category, tag, uncategorised and search nodes.
 - Empty node: "No words here yet."
 
