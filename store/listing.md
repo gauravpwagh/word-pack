@@ -114,9 +114,13 @@ v1.0.1 (build 2):
 
 ```
 <en-US>
-Fixed icons missing on some screens. Tag words Positive, Negative, Neutral, Counter-intuitive or Multiple meanings while learning, not just in review.
+• Tag words Positive, Negative, Neutral, Counter-intuitive or Multiple meanings while learning, not just in review.
+• List view now shows each word's full definition.
+• Fixed icons missing on some screens.
+• Fixed tapping a word in list view opening the first word of the group.
 </en-US>
 ```
+(≤ 500 characters per language; this is about 280.)
 
 v1.0.0 (build 1):
 
