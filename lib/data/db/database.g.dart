@@ -3574,6 +3574,21 @@ class $AppSettingsTable extends AppSettings
     requiredDuringInsert: false,
     defaultValue: const Constant('system'),
   );
+  static const VerificationMeta _studyButtonsMeta = const VerificationMeta(
+    'studyButtons',
+  );
+  @override
+  late final GeneratedColumn<bool> studyButtons = GeneratedColumn<bool>(
+    'study_buttons',
+    aliasedName,
+    false,
+    type: DriftSqlType.bool,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'CHECK ("study_buttons" IN (0, 1))',
+    ),
+    defaultValue: const Constant(true),
+  );
   @override
   List<GeneratedColumn> get $columns => [
     id,
@@ -3583,6 +3598,7 @@ class $AppSettingsTable extends AppSettings
     showPos,
     demoteOnReveal,
     theme,
+    studyButtons,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -3626,6 +3642,15 @@ class $AppSettingsTable extends AppSettings
         theme.isAcceptableOrUnknown(data['theme']!, _themeMeta),
       );
     }
+    if (data.containsKey('study_buttons')) {
+      context.handle(
+        _studyButtonsMeta,
+        studyButtons.isAcceptableOrUnknown(
+          data['study_buttons']!,
+          _studyButtonsMeta,
+        ),
+      );
+    }
     return context;
   }
 
@@ -3667,6 +3692,10 @@ class $AppSettingsTable extends AppSettings
         DriftSqlType.string,
         data['${effectivePrefix}theme'],
       )!,
+      studyButtons: attachedDatabase.typeMapping.read(
+        DriftSqlType.bool,
+        data['${effectivePrefix}study_buttons'],
+      )!,
     );
   }
 
@@ -3693,6 +3722,10 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
 
   /// `light` | `dark` | `system`.
   final String theme;
+
+  /// Show / Next / Previous buttons under the study card; off = tap and
+  /// swipe only (D-34). Schema v2.
+  final bool studyButtons;
   const AppSetting({
     required this.id,
     required this.packSize,
@@ -3701,6 +3734,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
     required this.showPos,
     required this.demoteOnReveal,
     required this.theme,
+    required this.studyButtons,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -3720,6 +3754,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
     map['show_pos'] = Variable<bool>(showPos);
     map['demote_on_reveal'] = Variable<bool>(demoteOnReveal);
     map['theme'] = Variable<String>(theme);
+    map['study_buttons'] = Variable<bool>(studyButtons);
     return map;
   }
 
@@ -3732,6 +3767,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
       showPos: Value(showPos),
       demoteOnReveal: Value(demoteOnReveal),
       theme: Value(theme),
+      studyButtons: Value(studyButtons),
     );
   }
 
@@ -3752,6 +3788,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
       showPos: serializer.fromJson<bool>(json['showPos']),
       demoteOnReveal: serializer.fromJson<bool>(json['demoteOnReveal']),
       theme: serializer.fromJson<String>(json['theme']),
+      studyButtons: serializer.fromJson<bool>(json['studyButtons']),
     );
   }
   @override
@@ -3769,6 +3806,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
       'showPos': serializer.toJson<bool>(showPos),
       'demoteOnReveal': serializer.toJson<bool>(demoteOnReveal),
       'theme': serializer.toJson<String>(theme),
+      'studyButtons': serializer.toJson<bool>(studyButtons),
     };
   }
 
@@ -3780,6 +3818,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
     bool? showPos,
     bool? demoteOnReveal,
     String? theme,
+    bool? studyButtons,
   }) => AppSetting(
     id: id ?? this.id,
     packSize: packSize ?? this.packSize,
@@ -3788,6 +3827,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
     showPos: showPos ?? this.showPos,
     demoteOnReveal: demoteOnReveal ?? this.demoteOnReveal,
     theme: theme ?? this.theme,
+    studyButtons: studyButtons ?? this.studyButtons,
   );
   AppSetting copyWithCompanion(AppSettingsCompanion data) {
     return AppSetting(
@@ -3804,6 +3844,9 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
           ? data.demoteOnReveal.value
           : this.demoteOnReveal,
       theme: data.theme.present ? data.theme.value : this.theme,
+      studyButtons: data.studyButtons.present
+          ? data.studyButtons.value
+          : this.studyButtons,
     );
   }
 
@@ -3816,7 +3859,8 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
           ..write('learnedRule: $learnedRule, ')
           ..write('showPos: $showPos, ')
           ..write('demoteOnReveal: $demoteOnReveal, ')
-          ..write('theme: $theme')
+          ..write('theme: $theme, ')
+          ..write('studyButtons: $studyButtons')
           ..write(')'))
         .toString();
   }
@@ -3830,6 +3874,7 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
     showPos,
     demoteOnReveal,
     theme,
+    studyButtons,
   );
   @override
   bool operator ==(Object other) =>
@@ -3841,7 +3886,8 @@ class AppSetting extends DataClass implements Insertable<AppSetting> {
           other.learnedRule == this.learnedRule &&
           other.showPos == this.showPos &&
           other.demoteOnReveal == this.demoteOnReveal &&
-          other.theme == this.theme);
+          other.theme == this.theme &&
+          other.studyButtons == this.studyButtons);
 }
 
 class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
@@ -3852,6 +3898,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
   final Value<bool> showPos;
   final Value<bool> demoteOnReveal;
   final Value<String> theme;
+  final Value<bool> studyButtons;
   const AppSettingsCompanion({
     this.id = const Value.absent(),
     this.packSize = const Value.absent(),
@@ -3860,6 +3907,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
     this.showPos = const Value.absent(),
     this.demoteOnReveal = const Value.absent(),
     this.theme = const Value.absent(),
+    this.studyButtons = const Value.absent(),
   });
   AppSettingsCompanion.insert({
     this.id = const Value.absent(),
@@ -3869,6 +3917,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
     this.showPos = const Value.absent(),
     this.demoteOnReveal = const Value.absent(),
     this.theme = const Value.absent(),
+    this.studyButtons = const Value.absent(),
   }) : defaultDirection = Value(defaultDirection),
        learnedRule = Value(learnedRule);
   static Insertable<AppSetting> custom({
@@ -3879,6 +3928,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
     Expression<bool>? showPos,
     Expression<bool>? demoteOnReveal,
     Expression<String>? theme,
+    Expression<bool>? studyButtons,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -3888,6 +3938,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
       if (showPos != null) 'show_pos': showPos,
       if (demoteOnReveal != null) 'demote_on_reveal': demoteOnReveal,
       if (theme != null) 'theme': theme,
+      if (studyButtons != null) 'study_buttons': studyButtons,
     });
   }
 
@@ -3899,6 +3950,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
     Value<bool>? showPos,
     Value<bool>? demoteOnReveal,
     Value<String>? theme,
+    Value<bool>? studyButtons,
   }) {
     return AppSettingsCompanion(
       id: id ?? this.id,
@@ -3908,6 +3960,7 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
       showPos: showPos ?? this.showPos,
       demoteOnReveal: demoteOnReveal ?? this.demoteOnReveal,
       theme: theme ?? this.theme,
+      studyButtons: studyButtons ?? this.studyButtons,
     );
   }
 
@@ -3941,6 +3994,9 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
     if (theme.present) {
       map['theme'] = Variable<String>(theme.value);
     }
+    if (studyButtons.present) {
+      map['study_buttons'] = Variable<bool>(studyButtons.value);
+    }
     return map;
   }
 
@@ -3953,7 +4009,8 @@ class AppSettingsCompanion extends UpdateCompanion<AppSetting> {
           ..write('learnedRule: $learnedRule, ')
           ..write('showPos: $showPos, ')
           ..write('demoteOnReveal: $demoteOnReveal, ')
-          ..write('theme: $theme')
+          ..write('theme: $theme, ')
+          ..write('studyButtons: $studyButtons')
           ..write(')'))
         .toString();
   }
@@ -4020,6 +4077,18 @@ class $UiStateTable extends UiState with TableInfo<$UiStateTable, UiStateData> {
     ),
     defaultValue: const Constant(true),
   );
+  static const VerificationMeta _gestureHintPassesMeta = const VerificationMeta(
+    'gestureHintPasses',
+  );
+  @override
+  late final GeneratedColumn<int> gestureHintPasses = GeneratedColumn<int>(
+    'gesture_hint_passes',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultValue: const Constant(0),
+  );
   @override
   List<GeneratedColumn> get $columns => [
     id,
@@ -4027,6 +4096,7 @@ class $UiStateTable extends UiState with TableInfo<$UiStateTable, UiStateData> {
     selectedNodeId,
     viewerMode,
     treePanelOpen,
+    gestureHintPasses,
   ];
   @override
   String get aliasedName => _alias ?? actualTableName;
@@ -4067,6 +4137,15 @@ class $UiStateTable extends UiState with TableInfo<$UiStateTable, UiStateData> {
         ),
       );
     }
+    if (data.containsKey('gesture_hint_passes')) {
+      context.handle(
+        _gestureHintPassesMeta,
+        gestureHintPasses.isAcceptableOrUnknown(
+          data['gesture_hint_passes']!,
+          _gestureHintPassesMeta,
+        ),
+      );
+    }
     return context;
   }
 
@@ -4098,6 +4177,10 @@ class $UiStateTable extends UiState with TableInfo<$UiStateTable, UiStateData> {
         DriftSqlType.bool,
         data['${effectivePrefix}tree_panel_open'],
       )!,
+      gestureHintPasses: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}gesture_hint_passes'],
+      )!,
     );
   }
 
@@ -4118,12 +4201,17 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
   /// `card` | `list`.
   final String viewerMode;
   final bool treePanelOpen;
+
+  /// Passes finished with the study buttons off; the gesture hint shows for
+  /// the first three (D-34). Schema v2.
+  final int gestureHintPasses;
   const UiStateData({
     required this.id,
     required this.expandedNodeIds,
     this.selectedNodeId,
     required this.viewerMode,
     required this.treePanelOpen,
+    required this.gestureHintPasses,
   });
   @override
   Map<String, Expression> toColumns(bool nullToAbsent) {
@@ -4139,6 +4227,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
     }
     map['viewer_mode'] = Variable<String>(viewerMode);
     map['tree_panel_open'] = Variable<bool>(treePanelOpen);
+    map['gesture_hint_passes'] = Variable<int>(gestureHintPasses);
     return map;
   }
 
@@ -4151,6 +4240,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
           : Value(selectedNodeId),
       viewerMode: Value(viewerMode),
       treePanelOpen: Value(treePanelOpen),
+      gestureHintPasses: Value(gestureHintPasses),
     );
   }
 
@@ -4167,6 +4257,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
       selectedNodeId: serializer.fromJson<String?>(json['selectedNodeId']),
       viewerMode: serializer.fromJson<String>(json['viewerMode']),
       treePanelOpen: serializer.fromJson<bool>(json['treePanelOpen']),
+      gestureHintPasses: serializer.fromJson<int>(json['gestureHintPasses']),
     );
   }
   @override
@@ -4178,6 +4269,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
       'selectedNodeId': serializer.toJson<String?>(selectedNodeId),
       'viewerMode': serializer.toJson<String>(viewerMode),
       'treePanelOpen': serializer.toJson<bool>(treePanelOpen),
+      'gestureHintPasses': serializer.toJson<int>(gestureHintPasses),
     };
   }
 
@@ -4187,6 +4279,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
     Value<String?> selectedNodeId = const Value.absent(),
     String? viewerMode,
     bool? treePanelOpen,
+    int? gestureHintPasses,
   }) => UiStateData(
     id: id ?? this.id,
     expandedNodeIds: expandedNodeIds ?? this.expandedNodeIds,
@@ -4195,6 +4288,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
         : this.selectedNodeId,
     viewerMode: viewerMode ?? this.viewerMode,
     treePanelOpen: treePanelOpen ?? this.treePanelOpen,
+    gestureHintPasses: gestureHintPasses ?? this.gestureHintPasses,
   );
   UiStateData copyWithCompanion(UiStateCompanion data) {
     return UiStateData(
@@ -4211,6 +4305,9 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
       treePanelOpen: data.treePanelOpen.present
           ? data.treePanelOpen.value
           : this.treePanelOpen,
+      gestureHintPasses: data.gestureHintPasses.present
+          ? data.gestureHintPasses.value
+          : this.gestureHintPasses,
     );
   }
 
@@ -4221,7 +4318,8 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
           ..write('expandedNodeIds: $expandedNodeIds, ')
           ..write('selectedNodeId: $selectedNodeId, ')
           ..write('viewerMode: $viewerMode, ')
-          ..write('treePanelOpen: $treePanelOpen')
+          ..write('treePanelOpen: $treePanelOpen, ')
+          ..write('gestureHintPasses: $gestureHintPasses')
           ..write(')'))
         .toString();
   }
@@ -4233,6 +4331,7 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
     selectedNodeId,
     viewerMode,
     treePanelOpen,
+    gestureHintPasses,
   );
   @override
   bool operator ==(Object other) =>
@@ -4242,7 +4341,8 @@ class UiStateData extends DataClass implements Insertable<UiStateData> {
           other.expandedNodeIds == this.expandedNodeIds &&
           other.selectedNodeId == this.selectedNodeId &&
           other.viewerMode == this.viewerMode &&
-          other.treePanelOpen == this.treePanelOpen);
+          other.treePanelOpen == this.treePanelOpen &&
+          other.gestureHintPasses == this.gestureHintPasses);
 }
 
 class UiStateCompanion extends UpdateCompanion<UiStateData> {
@@ -4251,12 +4351,14 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
   final Value<String?> selectedNodeId;
   final Value<String> viewerMode;
   final Value<bool> treePanelOpen;
+  final Value<int> gestureHintPasses;
   const UiStateCompanion({
     this.id = const Value.absent(),
     this.expandedNodeIds = const Value.absent(),
     this.selectedNodeId = const Value.absent(),
     this.viewerMode = const Value.absent(),
     this.treePanelOpen = const Value.absent(),
+    this.gestureHintPasses = const Value.absent(),
   });
   UiStateCompanion.insert({
     this.id = const Value.absent(),
@@ -4264,6 +4366,7 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
     this.selectedNodeId = const Value.absent(),
     this.viewerMode = const Value.absent(),
     this.treePanelOpen = const Value.absent(),
+    this.gestureHintPasses = const Value.absent(),
   }) : expandedNodeIds = Value(expandedNodeIds);
   static Insertable<UiStateData> custom({
     Expression<int>? id,
@@ -4271,6 +4374,7 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
     Expression<String>? selectedNodeId,
     Expression<String>? viewerMode,
     Expression<bool>? treePanelOpen,
+    Expression<int>? gestureHintPasses,
   }) {
     return RawValuesInsertable({
       if (id != null) 'id': id,
@@ -4278,6 +4382,7 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
       if (selectedNodeId != null) 'selected_node_id': selectedNodeId,
       if (viewerMode != null) 'viewer_mode': viewerMode,
       if (treePanelOpen != null) 'tree_panel_open': treePanelOpen,
+      if (gestureHintPasses != null) 'gesture_hint_passes': gestureHintPasses,
     });
   }
 
@@ -4287,6 +4392,7 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
     Value<String?>? selectedNodeId,
     Value<String>? viewerMode,
     Value<bool>? treePanelOpen,
+    Value<int>? gestureHintPasses,
   }) {
     return UiStateCompanion(
       id: id ?? this.id,
@@ -4294,6 +4400,7 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
       selectedNodeId: selectedNodeId ?? this.selectedNodeId,
       viewerMode: viewerMode ?? this.viewerMode,
       treePanelOpen: treePanelOpen ?? this.treePanelOpen,
+      gestureHintPasses: gestureHintPasses ?? this.gestureHintPasses,
     );
   }
 
@@ -4317,6 +4424,9 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
     if (treePanelOpen.present) {
       map['tree_panel_open'] = Variable<bool>(treePanelOpen.value);
     }
+    if (gestureHintPasses.present) {
+      map['gesture_hint_passes'] = Variable<int>(gestureHintPasses.value);
+    }
     return map;
   }
 
@@ -4327,7 +4437,8 @@ class UiStateCompanion extends UpdateCompanion<UiStateData> {
           ..write('expandedNodeIds: $expandedNodeIds, ')
           ..write('selectedNodeId: $selectedNodeId, ')
           ..write('viewerMode: $viewerMode, ')
-          ..write('treePanelOpen: $treePanelOpen')
+          ..write('treePanelOpen: $treePanelOpen, ')
+          ..write('gestureHintPasses: $gestureHintPasses')
           ..write(')'))
         .toString();
   }
@@ -7189,6 +7300,7 @@ typedef $$AppSettingsTableCreateCompanionBuilder =
       Value<bool> showPos,
       Value<bool> demoteOnReveal,
       Value<String> theme,
+      Value<bool> studyButtons,
     });
 typedef $$AppSettingsTableUpdateCompanionBuilder =
     AppSettingsCompanion Function({
@@ -7199,6 +7311,7 @@ typedef $$AppSettingsTableUpdateCompanionBuilder =
       Value<bool> showPos,
       Value<bool> demoteOnReveal,
       Value<String> theme,
+      Value<bool> studyButtons,
     });
 
 class $$AppSettingsTableFilterComposer
@@ -7246,6 +7359,11 @@ class $$AppSettingsTableFilterComposer
     column: $table.theme,
     builder: (column) => ColumnFilters(column),
   );
+
+  ColumnFilters<bool> get studyButtons => $composableBuilder(
+    column: $table.studyButtons,
+    builder: (column) => ColumnFilters(column),
+  );
 }
 
 class $$AppSettingsTableOrderingComposer
@@ -7291,6 +7409,11 @@ class $$AppSettingsTableOrderingComposer
     column: $table.theme,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<bool> get studyButtons => $composableBuilder(
+    column: $table.studyButtons,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$AppSettingsTableAnnotationComposer
@@ -7330,6 +7453,11 @@ class $$AppSettingsTableAnnotationComposer
 
   GeneratedColumn<String> get theme =>
       $composableBuilder(column: $table.theme, builder: (column) => column);
+
+  GeneratedColumn<bool> get studyButtons => $composableBuilder(
+    column: $table.studyButtons,
+    builder: (column) => column,
+  );
 }
 
 class $$AppSettingsTableTableManager
@@ -7370,6 +7498,7 @@ class $$AppSettingsTableTableManager
                 Value<bool> showPos = const Value.absent(),
                 Value<bool> demoteOnReveal = const Value.absent(),
                 Value<String> theme = const Value.absent(),
+                Value<bool> studyButtons = const Value.absent(),
               }) => AppSettingsCompanion(
                 id: id,
                 packSize: packSize,
@@ -7378,6 +7507,7 @@ class $$AppSettingsTableTableManager
                 showPos: showPos,
                 demoteOnReveal: demoteOnReveal,
                 theme: theme,
+                studyButtons: studyButtons,
               ),
           createCompanionCallback:
               ({
@@ -7388,6 +7518,7 @@ class $$AppSettingsTableTableManager
                 Value<bool> showPos = const Value.absent(),
                 Value<bool> demoteOnReveal = const Value.absent(),
                 Value<String> theme = const Value.absent(),
+                Value<bool> studyButtons = const Value.absent(),
               }) => AppSettingsCompanion.insert(
                 id: id,
                 packSize: packSize,
@@ -7396,6 +7527,7 @@ class $$AppSettingsTableTableManager
                 showPos: showPos,
                 demoteOnReveal: demoteOnReveal,
                 theme: theme,
+                studyButtons: studyButtons,
               ),
           withReferenceMapper: (p0) => p0
               .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
@@ -7429,6 +7561,7 @@ typedef $$UiStateTableCreateCompanionBuilder =
       Value<String?> selectedNodeId,
       Value<String> viewerMode,
       Value<bool> treePanelOpen,
+      Value<int> gestureHintPasses,
     });
 typedef $$UiStateTableUpdateCompanionBuilder =
     UiStateCompanion Function({
@@ -7437,6 +7570,7 @@ typedef $$UiStateTableUpdateCompanionBuilder =
       Value<String?> selectedNodeId,
       Value<String> viewerMode,
       Value<bool> treePanelOpen,
+      Value<int> gestureHintPasses,
     });
 
 class $$UiStateTableFilterComposer
@@ -7471,6 +7605,11 @@ class $$UiStateTableFilterComposer
 
   ColumnFilters<bool> get treePanelOpen => $composableBuilder(
     column: $table.treePanelOpen,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get gestureHintPasses => $composableBuilder(
+    column: $table.gestureHintPasses,
     builder: (column) => ColumnFilters(column),
   );
 }
@@ -7508,6 +7647,11 @@ class $$UiStateTableOrderingComposer
     column: $table.treePanelOpen,
     builder: (column) => ColumnOrderings(column),
   );
+
+  ColumnOrderings<int> get gestureHintPasses => $composableBuilder(
+    column: $table.gestureHintPasses,
+    builder: (column) => ColumnOrderings(column),
+  );
 }
 
 class $$UiStateTableAnnotationComposer
@@ -7540,6 +7684,11 @@ class $$UiStateTableAnnotationComposer
 
   GeneratedColumn<bool> get treePanelOpen => $composableBuilder(
     column: $table.treePanelOpen,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<int> get gestureHintPasses => $composableBuilder(
+    column: $table.gestureHintPasses,
     builder: (column) => column,
   );
 }
@@ -7580,12 +7729,14 @@ class $$UiStateTableTableManager
                 Value<String?> selectedNodeId = const Value.absent(),
                 Value<String> viewerMode = const Value.absent(),
                 Value<bool> treePanelOpen = const Value.absent(),
+                Value<int> gestureHintPasses = const Value.absent(),
               }) => UiStateCompanion(
                 id: id,
                 expandedNodeIds: expandedNodeIds,
                 selectedNodeId: selectedNodeId,
                 viewerMode: viewerMode,
                 treePanelOpen: treePanelOpen,
+                gestureHintPasses: gestureHintPasses,
               ),
           createCompanionCallback:
               ({
@@ -7594,12 +7745,14 @@ class $$UiStateTableTableManager
                 Value<String?> selectedNodeId = const Value.absent(),
                 Value<String> viewerMode = const Value.absent(),
                 Value<bool> treePanelOpen = const Value.absent(),
+                Value<int> gestureHintPasses = const Value.absent(),
               }) => UiStateCompanion.insert(
                 id: id,
                 expandedNodeIds: expandedNodeIds,
                 selectedNodeId: selectedNodeId,
                 viewerMode: viewerMode,
                 treePanelOpen: treePanelOpen,
+                gestureHintPasses: gestureHintPasses,
               ),
           withReferenceMapper: (p0) => p0
               .map((e) => (e.readTable(table), BaseReferences(db, table, e)))

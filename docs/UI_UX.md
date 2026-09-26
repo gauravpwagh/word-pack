@@ -137,7 +137,9 @@ Colour + icon + label always together. Icons are Material Symbols Rounded, bundl
 
 ## 7. Input: gestures and keyboard
 
-Touch: tap card = Show (learn) / reveal (explorer); swipe left = Next; swipe right = Previous; long-press a word row = open it in card view.
+Touch: tap card = Show (learn) / reveal (explorer); swipe left = Next; swipe right = Previous — anywhere in the study area, with the card following the finger and springing back under 60 px; long-press a word row = open it in card view.
+
+Study buttons (D-34): the Show / Next / Previous bar is a setting (default on). When off, the bar is gone and a hint line under the card ("Tap the card to show · swipe left for next, right for previous") shows for the first three passes finished that way (`UiState.gestureHintPasses`). With a screen reader on (`MediaQuery.accessibleNavigation`) the bar is always shown, and the card also offers Show / Next / Previous as custom semantics actions.
 
 Keyboard (desktop and hardware keyboards; `Shortcuts` + `Actions` widgets):
 

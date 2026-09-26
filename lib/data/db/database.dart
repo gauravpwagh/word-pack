@@ -27,7 +27,7 @@ class AppDatabase extends _$AppDatabase {
   /// Bump for every schema change and add a step in [migration]
   /// (`docs/DATA_MODEL.md` §7).
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -51,6 +51,13 @@ class AppDatabase extends _$AppDatabase {
       await into(uiState).insert(
         UiStateCompanion.insert(id: const Value(1), expandedNodeIds: const []),
       );
+    },
+    onUpgrade: (m, from, to) async {
+      if (from < 2) {
+        // v2: study buttons setting and gesture hint counter (D-34).
+        await m.addColumn(appSettings, appSettings.studyButtons);
+        await m.addColumn(uiState, uiState.gestureHintPasses);
+      }
     },
     beforeOpen: (details) async {
       await customStatement('PRAGMA foreign_keys = ON');

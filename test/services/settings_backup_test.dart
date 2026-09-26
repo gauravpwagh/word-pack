@@ -229,6 +229,25 @@ void main() {
       expect([for (final l in lists) l.name], ['d']);
     });
 
+    test('D-34 a backup without studyButtons restores it as on', () async {
+      await settings.setStudyButtons(false);
+      final data =
+          jsonDecode(await BackupService(db: db, clock: clock).export())
+              as Map<String, dynamic>;
+      expect((data['settings'] as Map)['studyButtons'], isFalse);
+      (data['settings'] as Map).remove('studyButtons');
+      final other = memoryDb();
+      addTearDown(other.close);
+      await (other.update(
+        other.appSettings,
+      )).write(const AppSettingsCompanion(studyButtons: Value(false)));
+      await BackupService(db: other, clock: clock).restore(jsonEncode(data));
+      expect(
+        (await other.select(other.appSettings).getSingle()).studyButtons,
+        isTrue,
+      );
+    });
+
     test('invalid files are rejected and change nothing', () async {
       final backup = BackupService(db: db, clock: clock);
       final good = jsonDecode(await backup.export()) as Map<String, dynamic>;

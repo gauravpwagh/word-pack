@@ -67,6 +67,10 @@ class SettingsService {
   Future<void> setDemoteOnReveal(bool v) =>
       _write(AppSettingsCompanion(demoteOnReveal: Value(v)));
 
+  /// Show / Next / Previous buttons under the study card (D-34).
+  Future<void> setStudyButtons(bool v) =>
+      _write(AppSettingsCompanion(studyButtons: Value(v)));
+
   /// `light`, `dark` or `system`.
   Future<void> setTheme(String theme) {
     if (!const {'light', 'dark', 'system'}.contains(theme)) {

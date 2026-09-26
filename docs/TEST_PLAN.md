@@ -74,6 +74,7 @@ Put the test ID in each test description, e.g. `test('U-15 one Show marks direct
 | W-4 | `QuickTagBar` | tone single-select with clear; traits independent; semantics labels |
 | W-5 | Tag visuals | correct border/tint/badges/dashed outline for combinations, light and dark (`WpColors`); existing tags still shown on a word whose pack is no longer Learned, with no tag controls |
 | W-6 | `CategoryRow` | filters case-insensitively; `Create "x"` only when no exact match; subcategory disabled until category chosen |
+| W-7 | Study buttons (D-34) | off: no bar, hint, tap/swipe anywhere, card follows the finger and springs back, hint stops after three passes, screen reader forces the bar and card actions; setting toggles; old backups restore it as on; v1 → v2 migration keeps data |
 
 ## Integration tests — `integration_test/` (device/emulator and desktop)
 

@@ -139,10 +139,12 @@ class BackupService {
             'revealed': (j['revealed'] as List<Object?>).cast<String>(),
           }, serializer: _json),
       ];
-      final settings = AppSetting.fromJson(
-        data['settings'] as Map<String, dynamic>,
-        serializer: _json,
-      );
+      final settings = AppSetting.fromJson({
+        // Settings added after the first backup format default when a
+        // backup does not have them.
+        'studyButtons': true,
+        ...data['settings'] as Map<String, dynamic>,
+      }, serializer: _json);
 
       await _db.transaction(() async {
         await _db.delete(_db.passSessions).go();

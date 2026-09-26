@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 
 import '../../data/db/database.dart';
 import '../../domain/models.dart';
@@ -26,6 +27,7 @@ class WordCard extends StatelessWidget {
     this.showPos = true,
     this.categoryPath,
     this.onTap,
+    this.semanticsActions,
   });
 
   final Word word;
@@ -39,6 +41,9 @@ class WordCard extends StatelessWidget {
 
   /// Tapping the card: Show (learn/review) or reveal (explorer).
   final VoidCallback? onTap;
+
+  /// Extra screen-reader actions on the card (Show / Next / Previous, D-34).
+  final Map<CustomSemanticsAction, VoidCallback>? semanticsActions;
 
   @override
   Widget build(BuildContext context) {
@@ -124,6 +129,7 @@ class WordCard extends StatelessWidget {
 
     return Semantics(
       container: true,
+      customSemanticsActions: semanticsActions,
       child: AnimatedContainer(
         key: const ValueKey('card-surface'),
         duration: reduceMotion ? Duration.zero : tween,

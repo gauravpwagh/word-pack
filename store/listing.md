@@ -110,6 +110,14 @@ The resulting label reads: “No data collected · No data shared with third par
 
 ## Release notes
 
+v1.0.2 (build 3):
+
+```
+<en-US>
+• New setting: Study buttons. Turn it off to study with tap and swipe only — tap the card to show, swipe left for next, right for previous. The card follows your finger.
+</en-US>
+```
+
 v1.0.1 (build 2):
 
 ```

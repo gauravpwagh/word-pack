@@ -24,12 +24,36 @@ void main() {
     },
   );
 
+  test('v1 → v2 keeps the data and adds the D-34 columns', () async {
+    final schema = await verifier.schemaAt(1);
+    final old = schema.rawDatabase;
+    old.execute(
+      'INSERT INTO app_settings (id, pack_size, default_direction, '
+      'learned_rule, show_pos, demote_on_reveal, theme) '
+      "VALUES (1, 20, 'dw', 'either', 0, 1, 'dark')",
+    );
+    old.execute(
+      'INSERT INTO ui_state (id, expanded_node_ids, viewer_mode, '
+      "tree_panel_open) VALUES (1, '[]', 'list', 0)",
+    );
+    final db = AppDatabase(schema.newConnection());
+    await verifier.migrateAndValidate(db, 2);
+    final settings = await db.select(db.appSettings).getSingle();
+    expect(settings.packSize, 20);
+    expect(settings.theme, 'dark');
+    expect(settings.studyButtons, isTrue);
+    final ui = await db.select(db.uiState).getSingle();
+    expect(ui.viewerMode, 'list');
+    expect(ui.gestureHintPasses, 0);
+    await db.close();
+  });
+
   test(
     'a fresh database is created at the current version with seed rows',
     () async {
       final db = memoryDb();
       addTearDown(db.close);
-      expect(db.schemaVersion, 1);
+      expect(db.schemaVersion, 2);
       final settings = await db.select(db.appSettings).getSingle();
       expect(settings.packSize, 30);
       expect((await db.select(db.uiState).getSingle()).viewerMode, 'card');

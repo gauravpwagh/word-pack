@@ -115,7 +115,7 @@ void main() {
       expect((await settingsRow(app)).packSize, 30);
     });
 
-    testApp('learned rule, direction, POS, demote and theme', (
+    testApp('learned rule, direction, POS, demote, study buttons, theme', (
       tester,
       app,
     ) async {
@@ -126,12 +126,14 @@ void main() {
       await tapText(tester, 'A clean Word → Definition pass');
       await tapText(tester, 'Show part of speech');
       await tapText(tester, 'Peeks during review demote the pack');
+      await tapText(tester, 'Study buttons');
       await tapText(tester, 'Dark');
       final s = await settingsRow(app);
       expect(s.learnedRule, LearnedRule.wdOnly);
       expect(s.defaultDirection, Direction.dw);
       expect(s.showPos, isFalse);
       expect(s.demoteOnReveal, isTrue);
+      expect(s.studyButtons, isFalse, reason: 'D-34');
       expect(s.theme, 'dark');
       expect(
         tester.widget<MaterialApp>(find.byType(MaterialApp)).themeMode,

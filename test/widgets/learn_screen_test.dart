@@ -1,6 +1,9 @@
+import 'package:drift/drift.dart' show Value;
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:wordpack/data/db/database.dart';
 import 'package:wordpack/data/repositories/pass_repo.dart';
 import 'package:wordpack/domain/models.dart';
 import 'package:wordpack/ui/card/word_card.dart';
@@ -263,6 +266,105 @@ void main() {
       await openPack1(tester, app);
       await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
       await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
+    }, semantics: true);
+  });
+
+  group('D-34 study buttons', () {
+    Future<void> buttonsOff(TestApp app) => app.db
+        .update(app.db.appSettings)
+        .write(const AppSettingsCompanion(studyButtons: Value(false)));
+
+    testApp('off: no button bar, a hint, tap and swipe anywhere', (
+      tester,
+      app,
+    ) async {
+      await buttonsOff(app);
+      await openPack1(tester, app);
+      expect(find.byKey(const ValueKey('show')), findsNothing);
+      expect(find.byKey(const ValueKey('next')), findsNothing);
+      expect(find.byKey(const ValueKey('gesture-hint')), findsOneWidget);
+
+      await tester.tap(find.byType(WordCard));
+      await tester.pumpAndSettle();
+      expect(find.text('Peeks this pass: 1'), findsOneWidget);
+
+      // A swipe on the empty space below the card works too.
+      final below = tester.getBottomLeft(find.byType(WordCard));
+      await tester.dragFrom(
+        Offset(below.dx + 150, below.dy + 180),
+        const Offset(-200, 0),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text('2 / 30'), findsOneWidget);
+    });
+
+    testApp('the card follows the finger and springs back', (
+      tester,
+      app,
+    ) async {
+      await buttonsOff(app);
+      await openPack1(tester, app);
+      final start = tester.getTopLeft(find.byType(WordCard));
+      final gesture = await tester.startGesture(
+        tester.getCenter(find.byType(WordCard)),
+      );
+      await gesture.moveBy(const Offset(-20, 0));
+      await gesture.moveBy(const Offset(-20, 0));
+      await tester.pump();
+      expect(tester.getTopLeft(find.byType(WordCard)).dx, lessThan(start.dx));
+      await gesture.up();
+      await tester.pumpAndSettle();
+      expect(tester.getTopLeft(find.byType(WordCard)), start);
+      expect(find.text('1 / 30'), findsOneWidget, reason: 'under 60 px');
+    });
+
+    testApp(
+      'the hint counts finished passes and stops after three',
+      (tester, app) async {
+        await buttonsOff(app);
+        await app.db
+            .update(app.db.uiState)
+            .write(const UiStateCompanion(gestureHintPasses: Value(2)));
+        await openPack1(tester, app);
+        expect(find.byKey(const ValueKey('gesture-hint')), findsOneWidget);
+        for (var i = 0; i < 30; i++) {
+          await tester.sendKeyEvent(LogicalKeyboardKey.keyN);
+          await tester.pumpAndSettle();
+        }
+        expect(
+          (await app.db.select(app.db.uiState).getSingle()).gestureHintPasses,
+          3,
+        );
+        await tapText(tester, 'Learn');
+        await tapText(tester, 'Pack 2');
+        expect(find.text('1 / 30'), findsOneWidget);
+        expect(find.byKey(const ValueKey('gesture-hint')), findsNothing);
+      },
+      size: const Size(1280, 800),
+    );
+
+    testApp('a screen reader always gets the buttons and card actions', (
+      tester,
+      app,
+    ) async {
+      await buttonsOff(app);
+      tester.platformDispatcher.accessibilityFeaturesTestValue =
+          const FakeAccessibilityFeatures(accessibleNavigation: true);
+      addTearDown(
+        tester.platformDispatcher.clearAccessibilityFeaturesTestValue,
+      );
+      await openPack1(tester, app);
+      expect(find.byKey(const ValueKey('show')), findsOneWidget);
+      expect(find.byKey(const ValueKey('gesture-hint')), findsNothing);
+      final ids =
+          tester
+              .getSemantics(find.byType(WordCard))
+              .getSemanticsData()
+              .customSemanticsActionIds ??
+          const <int>[];
+      expect([
+        for (final id in ids) CustomSemanticsAction.getAction(id)!.label,
+      ], containsAll(['Show', 'Next']));
     }, semantics: true);
   });
 }

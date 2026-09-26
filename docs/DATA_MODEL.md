@@ -106,6 +106,7 @@ class AppSettings extends Table {   // single row, id = 1
   BoolColumn get showPos => boolean().withDefault(const Constant(true))();
   BoolColumn get demoteOnReveal => boolean().withDefault(const Constant(false))();
   TextColumn get theme => text().withDefault(const Constant('system'))();         // light | dark | system
+  BoolColumn get studyButtons => boolean().withDefault(const Constant(true))();   // v2, D-34
   @override Set<Column> get primaryKey => {id};
 }
 
@@ -115,6 +116,7 @@ class UiState extends Table {       // single row, id = 1
   TextColumn get selectedNodeId => text().nullable()();
   TextColumn get viewerMode => text().withDefault(const Constant('card'))();      // card | list
   BoolColumn get treePanelOpen => boolean().withDefault(const Constant(true))();
+  IntColumn get gestureHintPasses => integer().withDefault(const Constant(0))(); // v2, D-34
   @override Set<Column> get primaryKey => {id};
 }
 ```
@@ -158,8 +160,13 @@ Pack words = `Words` with that `packId`, ordered by `position`. Pack status is *
   "settings": {}, "categories": [], "wordlists": [], "packs": [], "words": [], "passSessions": [] }
 ```
 
-Restore validates `app` and `schemaVersion`, then replaces all tables in one transaction. Export via `share_plus` (mobile) or `file_selector` save dialog (desktop).
+Restore validates `app` and `schemaVersion`, then replaces all tables in one transaction. Settings added later default when a backup lacks them (`studyButtons` → true). Export via `share_plus` (mobile) or `file_selector` save dialog (desktop).
 
 ## 7. Migrations
 
 Bump `schemaVersion` in the drift database for every schema change and add a step in `MigrationStrategy.onUpgrade`; keep drift's schema dumps (`drift_dev schema dump`) in `drift_schemas/` and add generated migration tests.
+
+| Version | Change |
+|---|---|
+| 1 | Initial schema |
+| 2 | `app_settings.study_buttons` (default true), `ui_state.gesture_hint_passes` (default 0) — D-34 |

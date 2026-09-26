@@ -315,6 +315,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learnPrevious => 'Previous';
 
   @override
+  String get learnGestureHint =>
+      'Tap the card to show · swipe left for next, right for previous';
+
+  @override
   String get learnTapToShow => 'Tap to show';
 
   @override
@@ -558,6 +562,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsDemoteHint =>
       'A peek on a learned pack makes it Learning again.';
+
+  @override
+  String get settingsStudyButtons => 'Study buttons';
+
+  @override
+  String get settingsStudyButtonsHint =>
+      'Show, Next and Previous under the card. When off, tap the card to show and swipe for next or previous.';
 
   @override
   String get settingsAppearance => 'Appearance';

@@ -95,6 +95,14 @@ class SettingsScreen extends ConsumerWidget {
             value: settings.demoteOnReveal,
             onChanged: service.setDemoteOnReveal,
           ),
+          SwitchListTile(
+            key: const ValueKey('study-buttons'),
+            secondary: const Icon(WpIcons.swipe),
+            title: Text(l10n.settingsStudyButtons),
+            subtitle: Text(l10n.settingsStudyButtonsHint),
+            value: settings.studyButtons,
+            onChanged: service.setStudyButtons,
+          ),
           _Header(l10n.settingsAppearance),
           _Labeled(
             label: l10n.settingsTheme,

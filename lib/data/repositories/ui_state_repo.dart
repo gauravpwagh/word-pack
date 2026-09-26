@@ -30,4 +30,11 @@ class UiStateRepo {
 
   Future<void> setTreePanelOpen(bool open) =>
       _write(UiStateCompanion(treePanelOpen: Value(open)));
+
+  /// One more pass finished with the study buttons off (D-34).
+  Future<void> countGestureHintPass() => _db.customUpdate(
+    'UPDATE ui_state SET gesture_hint_passes = gesture_hint_passes + 1 '
+    'WHERE id = 1',
+    updates: {_db.uiState},
+  );
 }

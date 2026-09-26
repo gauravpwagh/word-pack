@@ -56,6 +56,7 @@ abstract final class WpIcons {
   static const swapHoriz = IconData(0xe8d4, fontFamily: 'WpSymbols');
   static const taskAlt = IconData(0xe2e6, fontFamily: 'WpSymbols');
   static const uploadFile = IconData(0xe9fc, fontFamily: 'WpSymbols');
+  static const swipe = IconData(0xe9ec, fontFamily: 'WpSymbols');
   static const viewModule = IconData(0xe8f0, fontFamily: 'WpSymbols');
   static const visibility = IconData(0xe417, fontFamily: 'WpSymbols');
   static const visibilityOff = IconData(0xe8f5, fontFamily: 'WpSymbols');
@@ -106,6 +107,7 @@ abstract final class WpIcons {
     0xe8d4: IconData(0xe8d4, fontFamily: 'WpSymbolsFilled'),
     0xe2e6: IconData(0xe2e6, fontFamily: 'WpSymbolsFilled'),
     0xe9fc: IconData(0xe9fc, fontFamily: 'WpSymbolsFilled'),
+    0xe9ec: IconData(0xe9ec, fontFamily: 'WpSymbolsFilled'),
     0xe8f0: IconData(0xe8f0, fontFamily: 'WpSymbolsFilled'),
     0xe417: IconData(0xe417, fontFamily: 'WpSymbolsFilled'),
     0xe8f5: IconData(0xe8f5, fontFamily: 'WpSymbolsFilled'),

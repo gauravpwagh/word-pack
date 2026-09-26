@@ -160,6 +160,10 @@ class AppSettings extends Table {
   /// `light` | `dark` | `system`.
   TextColumn get theme => text().withDefault(const Constant('system'))();
 
+  /// Show / Next / Previous buttons under the study card; off = tap and
+  /// swipe only (D-34). Schema v2.
+  BoolColumn get studyButtons => boolean().withDefault(const Constant(true))();
+
   @override
   Set<Column> get primaryKey => {id};
 }
@@ -173,6 +177,10 @@ class UiState extends Table {
   /// `card` | `list`.
   TextColumn get viewerMode => text().withDefault(const Constant('card'))();
   BoolColumn get treePanelOpen => boolean().withDefault(const Constant(true))();
+
+  /// Passes finished with the study buttons off; the gesture hint shows for
+  /// the first three (D-34). Schema v2.
+  IntColumn get gestureHintPasses => integer().withDefault(const Constant(0))();
 
   @override
   Set<Column> get primaryKey => {id};

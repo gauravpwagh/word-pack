@@ -508,6 +508,12 @@ abstract class AppLocalizations {
   /// **'Previous'**
   String get learnPrevious;
 
+  /// No description provided for @learnGestureHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap the card to show · swipe left for next, right for previous'**
+  String get learnGestureHint;
+
   /// No description provided for @learnTapToShow.
   ///
   /// In en, this message translates to:
@@ -903,6 +909,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A peek on a learned pack makes it Learning again.'**
   String get settingsDemoteHint;
+
+  /// No description provided for @settingsStudyButtons.
+  ///
+  /// In en, this message translates to:
+  /// **'Study buttons'**
+  String get settingsStudyButtons;
+
+  /// No description provided for @settingsStudyButtonsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Show, Next and Previous under the card. When off, tap the card to show and swipe for next or previous.'**
+  String get settingsStudyButtonsHint;
 
   /// No description provided for @settingsAppearance.
   ///

@@ -82,6 +82,7 @@ Full rules: `LEARNING_LOGIC.md`.
 | Pack counts as Learned after | Clean pass in both directions | both, either, WD only, DW only | Re-evaluated instantly for all packs |
 | Show part of speech | On | on/off | |
 | Peek during review demotes the pack | Off | on/off | |
+| Study buttons | On | on/off | Show / Next / Previous under the card. Off: tap the card to show, swipe for next/previous, with a hint for the first three passes. Always shown while a screen reader is on (D-34). |
 | Theme | System | light, dark, system | |
 
 ## 7. Data

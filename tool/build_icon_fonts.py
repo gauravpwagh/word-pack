@@ -31,7 +31,7 @@ label_off left_panel_close left_panel_open list menu menu_book
 psychology_alt radio_button_unchecked remove school search sell
 sentiment_dissatisfied sentiment_neutral sentiment_satisfied settings
 settings_backup_restore stacks style swap_horiz task_alt upload_file
-view_module visibility visibility_off warning
+swipe view_module visibility visibility_off warning
 """.split()
 
 FONTS = {'WpSymbols': 0, 'WpSymbolsFilled': 1}

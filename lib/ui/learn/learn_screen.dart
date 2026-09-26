@@ -1,11 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../domain/models.dart';
 import '../../l10n/app_localizations.dart';
+import '../../providers/providers.dart';
 import '../../services/exceptions.dart';
 import '../card/word_card.dart';
 import '../common/labels.dart';
@@ -107,15 +109,25 @@ class _LearnState extends ConsumerState<_Learn> {
     final word = view.current;
     final wide = MediaQuery.sizeOf(context).width >= WpBreakpoints.medium;
 
+    // Study buttons (D-34): the setting, but always on for screen readers,
+    // where swipes do not reach the app.
+    final settings = ref.watch(settingsProvider).value ?? view.settings;
+    final showButtons =
+        settings.studyButtons || MediaQuery.accessibleNavigationOf(context);
+    final hintPasses = ref.watch(uiStateProvider).value?.gestureHintPasses;
+    final showHint = !showButtons && hintPasses != null && hintPasses < 3;
+
     ref.listen(learnControllerProvider(args), (prev, next) {
       final r = next.value?.result;
-      if (_mobile && r != null && prev?.value?.result == null) {
+      if (r == null || prev?.value?.result != null) return;
+      if (_mobile) {
         _haptic(
           r.becameLearned
               ? HapticFeedback.mediumImpact
               : HapticFeedback.lightImpact,
         );
       }
+      if (showHint) ref.read(uiStateRepoProvider).countGestureHintPass();
     });
 
     Future<void> onNext() async {
@@ -239,68 +251,106 @@ class _LearnState extends ConsumerState<_Learn> {
           _DirectionToggle(view: view, onChanged: onDirection),
           _Progress(view: view),
           Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(
-                horizontal: WpSpace.lg,
-                vertical: WpSpace.md,
-              ),
-              child: Column(
-                children: [
-                  _Swipe(
-                    onNext: onNext,
-                    onPrevious: onPrevious,
-                    child: WordCard(
-                      key: ValueKey('card-${word.id}'),
-                      word: word,
-                      direction: view.direction,
-                      revealed: pass.currentRevealed,
-                      variant: view.isReview
-                          ? WordCardVariant.review
-                          : WordCardVariant.learn,
-                      showPos: view.settings.showPos,
-                      categoryPath: view.categoryPath(word, l10n.categoryPath),
-                      onTap: onShow,
-                    ),
-                  ),
-                  // Tone and traits on every word (D-32); the category row
-                  // only in review, and nothing hints at it before (D-9).
-                  const SizedBox(height: WpSpace.lg),
-                  QuickTagBar(
-                    word: word,
-                    onTone: (t) => tag(() => controller.setTone(word, t)),
-                    onTrait: (t) => tag(() => controller.toggleTrait(word, t)),
-                  ),
-                  if (view.isReview) ...[
-                    const SizedBox(height: WpSpace.md),
-                    CategoryRow(
-                      word: word,
-                      categories: view.categories,
-                      categoryFocus: _categoryFocus,
-                      onAssign: (c, s) =>
-                          tag(() => controller.assignCategory(word, c, s)),
-                    ),
-                  ],
-                  if (pass.peeks > 0) ...[
-                    const SizedBox(height: WpSpace.md),
-                    Text(
-                      l10n.learnPeekNote,
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+            // Swipes work anywhere in the study area, not only on the card.
+            child: _Swipe(
+              onNext: onNext,
+              onPrevious: onPrevious,
+              builder: (context, dx) => SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: WpSpace.lg,
+                  vertical: WpSpace.md,
+                ),
+                child: Column(
+                  children: [
+                    // The card follows the finger while swiping.
+                    Transform.translate(
+                      offset: Offset(dx, 0),
+                      child: Opacity(
+                        opacity: 1 - (dx.abs() / 400).clamp(0.0, 0.4),
+                        child: WordCard(
+                          key: ValueKey('card-${word.id}'),
+                          word: word,
+                          direction: view.direction,
+                          revealed: pass.currentRevealed,
+                          variant: view.isReview
+                              ? WordCardVariant.review
+                              : WordCardVariant.learn,
+                          showPos: view.settings.showPos,
+                          categoryPath: view.categoryPath(
+                            word,
+                            l10n.categoryPath,
+                          ),
+                          onTap: onShow,
+                          // Show / Next / Previous as screen-reader actions
+                          // on the card too.
+                          semanticsActions: {
+                            if (!pass.currentRevealed)
+                              CustomSemanticsAction(label: l10n.learnShow):
+                                  onShow,
+                            CustomSemanticsAction(label: l10n.learnNext):
+                                onNext,
+                            if (pass.index > 0)
+                              CustomSemanticsAction(label: l10n.learnPrevious):
+                                  onPrevious,
+                          },
+                        ),
                       ),
                     ),
+                    if (showHint) ...[
+                      const SizedBox(height: WpSpace.sm),
+                      Text(
+                        l10n.learnGestureHint,
+                        key: const ValueKey('gesture-hint'),
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                    // Tone and traits on every word (D-32); the category row
+                    // only in review, and nothing hints at it before (D-9).
+                    const SizedBox(height: WpSpace.lg),
+                    QuickTagBar(
+                      word: word,
+                      onTone: (t) => tag(() => controller.setTone(word, t)),
+                      onTrait: (t) =>
+                          tag(() => controller.toggleTrait(word, t)),
+                    ),
+                    if (view.isReview) ...[
+                      const SizedBox(height: WpSpace.md),
+                      CategoryRow(
+                        word: word,
+                        categories: view.categories,
+                        categoryFocus: _categoryFocus,
+                        onAssign: (c, s) =>
+                            tag(() => controller.assignCategory(word, c, s)),
+                      ),
+                    ],
+                    if (pass.peeks > 0) ...[
+                      const SizedBox(height: WpSpace.md),
+                      Text(
+                        l10n.learnPeekNote,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
                   ],
-                ],
+                ),
               ),
             ),
           ),
-          _Actions(
-            canGoBack: pass.index > 0,
-            shown: pass.currentRevealed,
-            onPrevious: onPrevious,
-            onShow: onShow,
-            onNext: onNext,
-          ),
+          if (showButtons)
+            _Actions(
+              canGoBack: pass.index > 0,
+              shown: pass.currentRevealed,
+              onPrevious: onPrevious,
+              onShow: onShow,
+              onNext: onNext,
+            )
+          else
+            const SafeArea(top: false, child: SizedBox(height: WpSpace.md)),
         ],
       );
     }
@@ -592,36 +642,81 @@ class _Actions extends StatelessWidget {
   }
 }
 
-/// Swipe left = Next, right = Previous (commit at 60 px or a fling).
+/// Swipe left = Next, right = Previous (commit at 60 px or a fling). The
+/// [builder] gets the drag offset so the card can follow the finger; an
+/// unfinished swipe springs back.
 class _Swipe extends StatefulWidget {
   const _Swipe({
     required this.onNext,
     required this.onPrevious,
-    required this.child,
+    required this.builder,
   });
 
   final VoidCallback onNext;
   final VoidCallback onPrevious;
-  final Widget child;
+  final Widget Function(BuildContext context, double dx) builder;
 
   @override
   State<_Swipe> createState() => _SwipeState();
 }
 
-class _SwipeState extends State<_Swipe> {
+class _SwipeState extends State<_Swipe> with SingleTickerProviderStateMixin {
   var _dx = 0.0;
+  var _from = 0.0;
+  late final AnimationController _back;
+
+  @override
+  void initState() {
+    super.initState();
+    _back =
+        AnimationController(
+          vsync: this,
+          duration: const Duration(milliseconds: 150),
+        )..addListener(
+          () => setState(
+            () => _dx = _from * (1 - Curves.easeOut.transform(_back.value)),
+          ),
+        );
+  }
+
+  @override
+  void dispose() {
+    _back.dispose();
+    super.dispose();
+  }
+
+  void _springBack() {
+    if (MediaQuery.disableAnimationsOf(context)) {
+      setState(() => _dx = 0);
+      return;
+    }
+    _from = _dx;
+    _back.forward(from: 0);
+  }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onHorizontalDragStart: (_) => _dx = 0,
-      onHorizontalDragUpdate: (d) => _dx += d.delta.dx,
+      behavior: HitTestBehavior.opaque,
+      onHorizontalDragStart: (_) {
+        _back.stop();
+        setState(() => _dx = 0);
+      },
+      onHorizontalDragUpdate: (d) => setState(() => _dx += d.delta.dx),
       onHorizontalDragEnd: (d) {
         final v = d.primaryVelocity ?? 0;
-        if (_dx <= -60 || v < -700) widget.onNext();
-        if (_dx >= 60 || v > 700) widget.onPrevious();
+        if (_dx <= -60 || v < -700) {
+          setState(() => _dx = 0);
+          widget.onNext();
+        } else if (_dx >= 60 || v > 700) {
+          setState(() => _dx = 0);
+          widget.onPrevious();
+        } else {
+          _springBack();
+        }
       },
-      child: widget.child,
+      onHorizontalDragCancel: _springBack,
+      child: widget.builder(context, _dx),
     );
   }
 }
