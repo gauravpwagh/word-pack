@@ -33,7 +33,7 @@ class ExplorerScreen extends ConsumerStatefulWidget {
 }
 
 class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
-  final _pages = PageController();
+  var _pages = PageController(keepPage: false);
   var _index = 0;
   var _revealed = false;
 
@@ -175,13 +175,18 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
             _index = i;
             _revealed = false;
           });
+          // The card view opens at [i] when it is built (below), however
+          // many frames the saved mode takes to arrive.
           ref.read(uiStateRepoProvider).setViewerMode('card');
-          WidgetsBinding.instance.addPostFrameCallback((_) {
-            if (_pages.hasClients) _pages.jumpToPage(i);
-          });
         },
       );
     } else {
+      // A new PageView (after list mode) must start at the current word, or
+      // the counter and the card disagree.
+      if (!_pages.hasClients && _pages.initialPage != _index) {
+        _pages.dispose();
+        _pages = PageController(initialPage: _index, keepPage: false);
+      }
       body = Column(
         children: [
           Expanded(

@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:wordpack/app/app.dart';
 import 'package:wordpack/data/db/database.dart';
+import 'package:wordpack/data/repositories/ui_state_repo.dart';
 import 'package:wordpack/providers/providers.dart';
 import 'package:wordpack/services/backup_files.dart';
 import 'package:wordpack/services/file_picking.dart';
@@ -46,6 +47,20 @@ class FakeBackupFiles implements BackupFiles {
   Future<String?> open() async => toOpen;
 }
 
+/// Saves the viewer mode only after [delay], like the device database, which
+/// answers from a background isolate a few frames later.
+class _SlowUiStateRepo extends UiStateRepo {
+  _SlowUiStateRepo(super.db, this.delay);
+
+  final Duration delay;
+
+  @override
+  Future<void> setViewerMode(String mode) async {
+    await Future<void>.delayed(delay);
+    await super.setViewerMode(mode);
+  }
+}
+
 class TestApp {
   TestApp._(this.db, this.picker, this.backups);
 
@@ -63,6 +78,7 @@ void testApp(
   Future<void> Function(WidgetTester tester, TestApp app) body, {
   Size size = const Size(360, 780),
   bool semantics = false,
+  Duration uiStateDelay = Duration.zero,
 }) {
   testWidgets(description, semanticsEnabled: semantics, (tester) async {
     tester.view.physicalSize = size;
@@ -82,6 +98,10 @@ void testApp(
           idsProvider.overrideWithValue(ids),
           importFilePickerProvider.overrideWithValue(picker),
           backupFilesProvider.overrideWithValue(backups),
+          if (uiStateDelay > Duration.zero)
+            uiStateRepoProvider.overrideWithValue(
+              _SlowUiStateRepo(database, uiStateDelay),
+            ),
           importServiceProvider.overrideWithValue(
             ImportService(
               db: database,

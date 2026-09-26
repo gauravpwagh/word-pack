@@ -165,28 +165,46 @@ void main() {
       expect(find.text('1 / 30'), findsOneWidget);
     });
 
-    testApp('list mode, then a row opens card mode at that word', (
-      tester,
-      app,
-    ) async {
-      await setUpList(tester, app);
-      await openTree(tester);
-      await expand(tester, 'sample-columns');
-      await tapText(tester, 'Uncategorised');
-      expect(find.text('58 words'), findsOneWidget);
+    testApp(
+      'list mode, then a row opens card mode at that word',
+      (tester, app) async {
+        await setUpList(tester, app);
+        await openTree(tester);
+        await expand(tester, 'sample-columns');
+        await tapText(tester, 'Uncategorised');
+        expect(find.text('58 words'), findsOneWidget);
 
-      await tester.tap(find.byTooltip('List'));
-      await tester.pumpAndSettle();
-      expect(find.byType(WordCard), findsNothing);
-      expect(
-        (await app.db.select(app.db.uiState).getSingle()).viewerMode,
-        'list',
-      );
-      await tester.tap(find.textContaining('abound').first);
-      await tester.pumpAndSettle();
-      expect(find.byType(WordCard), findsWidgets);
-      expect(find.text('abound'), findsOneWidget);
-    });
+        await tester.tap(find.byTooltip('List'));
+        await tester.pumpAndSettle();
+        expect(find.byType(WordCard), findsNothing);
+        expect(
+          (await app.db.select(app.db.uiState).getSingle()).viewerMode,
+          'list',
+        );
+        // A row far down: the card shown must be that word, matching the
+        // counter (it used to open on the first word while showing "N / 58").
+        final row = find.textContaining('accurate');
+        await tester.scrollUntilVisible(
+          row,
+          200,
+          scrollable: find.byType(Scrollable).last,
+        );
+        await tester.pumpAndSettle();
+        await tester.tap(row.first);
+        await tester.pumpAndSettle();
+        expect(find.byType(WordCard), findsWidgets);
+        final counter = tester.widget<Text>(find.textContaining(' / 58')).data!;
+        final words = await (app.db.select(
+          app.db.words,
+        )..where((w) => w.categoryId.isNull())).get();
+        words.sort((a, b) => a.position.compareTo(b.position));
+        final at = words.indexWhere((w) => w.term == 'accurate');
+        expect(counter, '${at + 1} / 58');
+        expect(find.text('accurate').hitTestable(), findsOneWidget);
+        expect(find.text(words.first.term).hitTestable(), findsNothing);
+      },
+      uiStateDelay: const Duration(milliseconds: 500),
+    );
 
     testApp('search finds words by term or definition', (tester, app) async {
       await setUpList(tester, app);
