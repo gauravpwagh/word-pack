@@ -4,6 +4,7 @@ import '../../data/repositories/pack_repo.dart';
 import '../../domain/models.dart';
 import '../../l10n/app_localizations.dart';
 import '../common/labels.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 
 /// One pack in the wordlist grid: status icon + colour + label, never colour
@@ -50,9 +51,8 @@ class PackTile extends StatelessWidget {
                 Row(
                   children: [
                     Icon(
-                      style.icon,
+                      style.filled ? WpIcons.filled(style.icon) : style.icon,
                       color: style.color,
-                      fill: style.filled ? 1 : 0,
                       size: 20,
                     ),
                     const SizedBox(width: WpSpace.sm),

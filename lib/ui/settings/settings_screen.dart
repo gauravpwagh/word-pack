@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../data/db/database.dart';
 import '../../domain/models.dart';
@@ -14,6 +13,7 @@ import '../common/dialogs.dart';
 import '../common/labels.dart';
 import '../common/page_scaffold.dart';
 import '../common/shortcut_help.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 
 /// Settings (`docs/REQUIREMENTS.md` §6), categories, wordlists and backup.
@@ -47,7 +47,7 @@ class SettingsScreen extends ConsumerWidget {
         children: [
           _Header(l10n.settingsLearning),
           ListTile(
-            leading: const Icon(Symbols.stacks_rounded),
+            leading: const Icon(WpIcons.stacks),
             title: Text(l10n.settingsPackSize),
             subtitle: Text(l10n.settingsPackSizeValue(settings.packSize)),
             onTap: () => _changePackSize(context, ref, settings.packSize),
@@ -83,13 +83,13 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ),
           SwitchListTile(
-            secondary: const Icon(Symbols.sell_rounded),
+            secondary: const Icon(WpIcons.sell),
             title: Text(l10n.settingsShowPos),
             value: settings.showPos,
             onChanged: service.setShowPos,
           ),
           SwitchListTile(
-            secondary: const Icon(Symbols.visibility_rounded),
+            secondary: const Icon(WpIcons.visibility),
             title: Text(l10n.settingsDemote),
             subtitle: Text(l10n.settingsDemoteHint),
             value: settings.demoteOnReveal,
@@ -110,28 +110,28 @@ class SettingsScreen extends ConsumerWidget {
           ),
           _Header(l10n.settingsOrganise),
           ListTile(
-            leading: const Icon(Symbols.folder_copy_rounded),
+            leading: const Icon(WpIcons.folderCopy),
             title: Text(l10n.settingsManageCategories),
-            trailing: const Icon(Symbols.chevron_right_rounded),
+            trailing: const Icon(WpIcons.chevronRight),
             onTap: () => context.go('/settings/categories'),
           ),
           if (lists.isNotEmpty) _Header(l10n.settingsWordlists),
           for (final list in lists) _WordlistTile(list: list),
           _Header(l10n.settingsBackup),
           ListTile(
-            leading: const Icon(Symbols.download_rounded),
+            leading: const Icon(WpIcons.download),
             title: Text(l10n.settingsExport),
             subtitle: Text(l10n.settingsExportHint),
             onTap: () => _export(context, ref),
           ),
           ListTile(
-            leading: const Icon(Symbols.settings_backup_restore_rounded),
+            leading: const Icon(WpIcons.settingsBackupRestore),
             title: Text(l10n.settingsRestore),
             subtitle: Text(l10n.settingsRestoreHint),
             onTap: () => _restore(context, ref),
           ),
           ListTile(
-            leading: const Icon(Symbols.keyboard_rounded),
+            leading: const Icon(WpIcons.keyboard),
             title: Text(l10n.settingsKeyboard),
             onTap: () => showShortcutHelp(context),
           ),
@@ -162,7 +162,7 @@ class SettingsScreen extends ConsumerWidget {
     ].join('\n\n');
     final ok = await confirm(
       context,
-      icon: Symbols.view_module_rounded,
+      icon: WpIcons.viewModule,
       title: l10n.packSizeTitle(size),
       body: body,
       confirmLabel: l10n.packSizeConfirm,
@@ -207,7 +207,7 @@ class SettingsScreen extends ConsumerWidget {
     }
     final ok = await confirm(
       context,
-      icon: Symbols.settings_backup_restore_rounded,
+      icon: WpIcons.settingsBackupRestore,
       title: l10n.restoreTitle,
       body: l10n.restoreBody(
         info.wordlists,
@@ -241,7 +241,7 @@ class _WordlistTile extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final service = ref.read(wordlistServiceProvider);
     return ListTile(
-      leading: const Icon(Symbols.menu_book_rounded),
+      leading: const Icon(WpIcons.menuBook),
       title: Text(list.name),
       subtitle: Text(l10n.homeWords(list.wordCount)),
       trailing: Row(
@@ -249,7 +249,7 @@ class _WordlistTile extends ConsumerWidget {
         children: [
           IconButton(
             tooltip: l10n.rename,
-            icon: const Icon(Symbols.edit_rounded),
+            icon: const Icon(WpIcons.edit),
             onPressed: () async {
               final name = await promptText(
                 context,
@@ -262,7 +262,7 @@ class _WordlistTile extends ConsumerWidget {
           ),
           IconButton(
             tooltip: l10n.delete,
-            icon: const Icon(Symbols.delete_rounded),
+            icon: const Icon(WpIcons.delete),
             onPressed: () async {
               final packs = await ref
                   .read(packRepoProvider)
@@ -270,7 +270,7 @@ class _WordlistTile extends ConsumerWidget {
               if (!context.mounted) return;
               final ok = await confirm(
                 context,
-                icon: Symbols.delete_rounded,
+                icon: WpIcons.delete,
                 title: l10n.deleteWordlistTitle(list.name),
                 body: l10n.deleteWordlistBody(list.wordCount, packs.length),
                 confirmLabel: l10n.deleteWordlistConfirm,
@@ -313,7 +313,7 @@ class _PackSizeDialogState extends State<_PackSizeDialog> {
               IconButton(
                 tooltip: '−',
                 onPressed: () => _set(_size - 1),
-                icon: const Icon(Symbols.remove_rounded),
+                icon: const Icon(WpIcons.remove),
               ),
               SizedBox(
                 width: 72,
@@ -327,7 +327,7 @@ class _PackSizeDialogState extends State<_PackSizeDialog> {
               IconButton(
                 tooltip: '+',
                 onPressed: () => _set(_size + 1),
-                icon: const Icon(Symbols.add_rounded),
+                icon: const Icon(WpIcons.add),
               ),
             ],
           ),

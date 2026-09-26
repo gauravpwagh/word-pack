@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/tree.dart';
 import '../../l10n/app_localizations.dart';
 import '../../providers/providers.dart';
 import '../shell/adaptive_shell.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import 'node_labels.dart';
 
@@ -192,16 +192,15 @@ class _TreeRowTile extends StatelessWidget {
                         onPressed: onToggle,
                         icon: Icon(
                           row.expanded
-                              ? Symbols.expand_more_rounded
-                              : Symbols.chevron_right_rounded,
+                              ? WpIcons.expandMore
+                              : WpIcons.chevronRight,
                         ),
                       )
                     : null,
               ),
               Icon(
-                icon.icon,
+                icon.filled ? WpIcons.filled(icon.icon) : icon.icon,
                 size: 20,
-                fill: icon.filled ? 1 : 0,
                 color: icon.color ?? theme.colorScheme.onSurfaceVariant,
               ),
               const SizedBox(width: WpSpace.sm),
@@ -230,7 +229,7 @@ class _TreeRowTile extends StatelessWidget {
               if (n.kind == NodeKind.pack)
                 IconButton(
                   tooltip: l10n.treeStudyPack(n.packNumber!),
-                  icon: const Icon(Symbols.school_rounded, size: 20),
+                  icon: const Icon(WpIcons.school, size: 20),
                   onPressed: () {
                     ShellScope.maybeOf(context)?.closeTree();
                     // No direction: the pack's last one, else the one needed.

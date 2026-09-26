@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../shell/adaptive_shell.dart';
+import '../theme/wp_icons.dart';
 
 /// Scaffold for a screen inside [AdaptiveShell]. Adds the ☰ button that opens
 /// the tree drawer when the tree is not permanently visible.
@@ -30,7 +30,7 @@ class PageScaffold extends StatelessWidget {
         leading: showTreeButton
             ? IconButton(
                 tooltip: AppLocalizations.of(context).treeOpen,
-                icon: const Icon(Symbols.menu_rounded),
+                icon: const Icon(WpIcons.menu),
                 onPressed: shell.openTree,
               )
             : null,

@@ -53,11 +53,12 @@ Material 3, light and dark themes, adaptive to window width. Routing with `go_ro
  ┃  ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄  │
  ┃        provide with something desired or needed   (after Show)   │
  ─────────────────────────────────────────────────────────────────────
-  [‹ Prev]              [ Show ]                     [ Next › ]
- ─── review only (pack is Learned) ──────────────────────────────────
-  [👍 Positive] [👎 Negative] [— Neutral]
+  [👍 Positive] [👎 Negative] [— Neutral]          (every word, D-32)
   [⇋ Counter-intuitive] [≡ Multiple meanings]
+ ─── review only (pack is Learned) ──────────────────────────────────
   Category [ Emotions        ▾ ]   Subcategory [ Gratitude       ▾ ]
+ ─────────────────────────────────────────────────────────────────────
+  [‹ Prev]              [ Show ]                     [ Next › ]
  ─────────────────────────────────────────────────────────────────────
   WD ✓ mastered   DW ◐ learning     Peeks this pass: 1   ▓▓▓▓▓▓▓▓░░░░░░ 16/30
 ```
@@ -67,7 +68,7 @@ Material 3, light and dark themes, adaptive to window width. Routing with `go_ro
 - Part of speech label from `IMPORT_FORMAT.md` §5 (**noun, verb, adj., adv.** …) in a small `Chip`; `Semantics(label: 'adjective')` / `Tooltip` with the full name.
 - The answer's space is reserved before Show (measure it with `TextPainter`, or `Visibility(maintainSize: true)`), so revealing never moves the buttons. The answer fades in (§9 Motion). The card has a minimum height of 240 and grows with the text size.
 - **Next** = `FilledButton` (primary); **Show** = `FilledButton.tonal`, becomes "Shown" (`onPressed: null`) after use. Both are 56 high.
-- Tags are drawn on the card only through `WpColors`. A word's existing tags are **shown in every mode**, including Learn, even when its pack isn't Learned (possible after a pack-size rebuild or a review demotion). What is hidden outside Review/Explorer-of-learned-words is the tag and category **controls** (D-9).
+- Tags are drawn on the card only through `WpColors`. A word's existing tags are **shown in every mode**, including Learn, even when its pack isn't Learned (possible after a pack-size rebuild or a review demotion). The quick tag buttons are shown for every word (D-32); what is hidden outside Review/Explorer-of-learned-words is the **category** controls (D-9).
 - When peeks > 0: subtle text "This pass won't count — finish it, then repeat the pack."
 - DW: the definition is the prompt (larger, start-aligned if long; scrollable if very long); the word is the answer.
 - **Review mode** (pack Learned): a *Review* badge in the app bar, and the quick tag buttons + category row below the card. Using them is not a peek and never reveals the answer. In learning mode (pack not Learned) these controls are **not built at all** and there is no hint or prompt about them.
@@ -98,7 +99,7 @@ No categorise button or prompt anywhere (D-9). Celebration animation is skipped 
 
 ## 5. Visual language for tone and traits
 
-Colour + icon + label always together. Icons are Material Symbols Rounded (`material_symbols_icons`, D-21). Colour values are in §9.
+Colour + icon + label always together. Icons are Material Symbols Rounded, bundled as static subset fonts and used through `WpIcons` (D-21); names below are the Material Symbols names (`WpIcons` uses camelCase). Colour values are in §9.
 
 | Tag | Card | List row | Icon (`Symbols.`) |
 |---|---|---|---|
@@ -146,14 +147,14 @@ Keyboard (desktop and hardware keyboards; `Shortcuts` + `Actions` widgets):
 | → or N | Next | Next |
 | ← or P | Previous | Previous |
 | D | Toggle direction (confirm mid-pass) | Toggle side |
-| 1 / 2 / 3 | Positive / Negative / Neutral* | same* |
-| 4 / 5 | Counter-intuitive / Multiple meanings* | same* |
+| 1 / 2 / 3 | Positive / Negative / Neutral | same |
+| 4 / 5 | Counter-intuitive / Multiple meanings | same |
 | C | Focus category field* | same* |
 | Ctrl/⌘ + F | Focus search | Focus search |
 | Esc | Close dialog/drawer, leave field | same |
 | ? | Shortcut help | same |
 
-\* only for Learned words. Shortcuts are ignored while a text field has focus.
+\* only for Learned words (review, explorer). Shortcuts are ignored while a text field has focus.
 
 ## 8. Tree
 
@@ -226,7 +227,7 @@ Fonts: **Literata** (words and definitions) and **Atkinson Hyperlegible Next** (
 
 ### Other icons (`Symbols.`)
 
-Show/peek `visibility` · `visibility_off`; nav Learn `school`, Explore `account_tree`, Settings `settings`; Import `upload_file`; Review badge `edit_note`; clean pass `task_alt`; unfinished pass `history`. Weight 400, optical size 24, fill 0 (fill 1 = active state). Tag and tree icons: §5 and §8.
+Show/peek `visibility` · `visibility_off`; nav Learn `school`, Explore `account_tree`, Settings `settings`; Import `upload_file`; Review badge `edit_note`; clean pass `task_alt`; unfinished pass `history`. Weight 400, optical size 24, fill 0; the active state uses the filled font (`WpIcons.filled`). Tag and tree icons: §5 and §8.
 
 ### Motion
 

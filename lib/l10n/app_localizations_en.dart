@@ -769,7 +769,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shortcutTags =>
-      'Positive, Negative, Neutral, Counter-intuitive, Multiple meanings (review)';
+      'Positive, Negative, Neutral, Counter-intuitive, Multiple meanings';
 
   @override
   String get shortcutCategory => 'Category field (review)';

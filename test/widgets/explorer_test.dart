@@ -6,6 +6,7 @@ import 'package:wordpack/data/db/database.dart';
 import 'package:wordpack/domain/models.dart';
 import 'package:wordpack/services/tagging_service.dart';
 import 'package:wordpack/ui/card/word_card.dart';
+import 'package:wordpack/ui/tagging/category_row.dart';
 import 'package:wordpack/ui/tagging/quick_tag_bar.dart';
 
 import '../support/app.dart';
@@ -150,7 +151,7 @@ void main() {
       );
     });
 
-    testApp('no tag controls for words of a pack that is not Learned', (
+    testApp('a pack that is not Learned: tag buttons, no category row', (
       tester,
       app,
     ) async {
@@ -159,7 +160,8 @@ void main() {
       await expand(tester, 'sample-columns');
       await expand(tester, 'Packs');
       await tapText(tester, 'Pack 2');
-      expect(find.byType(QuickTagBar), findsNothing);
+      expect(find.byType(QuickTagBar), findsOneWidget);
+      expect(find.byType(CategoryRow), findsNothing);
       expect(find.text('1 / 30'), findsOneWidget);
     });
 

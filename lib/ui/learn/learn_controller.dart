@@ -160,7 +160,8 @@ class LearnController extends AsyncNotifier<LearnView> {
     );
   });
 
-  // Tagging (review only; the service enforces the learned-only rule).
+  // Tagging: tone and traits on any word (D-32); categories in review only
+  // (the service enforces the learned-only rule, D-9).
 
   Future<void> setTone(Word word, Tone? tone) =>
       _tag(word, () => ref.read(taggingServiceProvider).setTone(word.id, tone));

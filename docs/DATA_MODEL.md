@@ -129,7 +129,7 @@ Pack words = `Words` with that `packId`, ordered by `position`. Pack status is *
 2. Pack numbers per wordlist are 1..k; each pack has 1..packSize words (always true, because changing the size rebuilds every pack).
 3. `subcategoryId` set ⇒ `categoryId` set and the subcategory's `parentId == categoryId`.
 4. Category depth ≤ 2.
-5. Tag/category writes throw `WordNotLearnedException` unless the word's pack status is `learned`.
+5. Category writes throw `WordNotLearnedException` unless the word's pack status is `learned`. Tone and trait writes are allowed on any word (D-32).
 6. At most one pass session per (pack, direction).
 7. Every multi-row change runs in one `db.transaction(...)`.
 

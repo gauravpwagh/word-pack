@@ -33,7 +33,7 @@ class WordlistNotFoundException implements Exception {
   String toString() => 'WordlistNotFoundException($id)';
 }
 
-/// Tagging or categorising a word whose pack is not Learned (D-9).
+/// Categorising a word whose pack is not Learned (D-9).
 class WordNotLearnedException implements Exception {
   const WordNotLearnedException(this.wordId);
 

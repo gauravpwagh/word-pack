@@ -49,7 +49,7 @@ PackStatus packStatus(Mastery wd, Mastery dw, LearnedRule rule, {required bool h
 
 Because it's derived, changing the learned rule in Settings re-evaluates all packs instantly. `pack.learnedAt` is written the first time a pass completion makes the status `learned`.
 
-A **word is Learned** when its pack is Learned. Categorising/tagging is allowed only for Learned words (`DECISIONS.md` D-9).
+A **word is Learned** when its pack is Learned. Categorising is allowed only for Learned words (`DECISIONS.md` D-9); tone and traits can be set on any word, while learning too (D-32), and never count as a peek.
 
 Worked example (rule = both):
 
@@ -116,8 +116,8 @@ Reducer functions return a record `(PassState? state, List<LearningEvent> events
 ## 5. Review mode
 
 Studying a Learned pack. Same state machine. Differences:
-- The card shows the quick tag buttons and category controls (for all words, since they are all Learned).
-- Peeks are recorded in word stats and in the summary but, by default, do not change mastery (`demoteOnReveal = false`). If demotion is on and the pack drops to Learning, the controls disappear until it is Learned again; existing tags are kept and still displayed.
+- The card also shows the category controls (for all words, since they are all Learned); the quick tag buttons are there in learning too (D-32).
+- Peeks are recorded in word stats and in the summary but, by default, do not change mastery (`demoteOnReveal = false`). If demotion is on and the pack drops to Learning, the category controls disappear until it is Learned again; existing categories and tags are kept and still displayed.
 
 ## 6. Pack generation and pack-size change (rebuilds all packs)
 

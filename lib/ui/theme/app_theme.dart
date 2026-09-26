@@ -92,13 +92,7 @@ abstract final class AppTheme {
       canvasColor: wp.background,
       textTheme: textTheme,
       materialTapTargetSize: MaterialTapTargetSize.padded,
-      iconTheme: IconThemeData(
-        color: onSurfaceVariant,
-        weight: 400,
-        opticalSize: 24,
-        grade: 0,
-        fill: 0,
-      ),
+      iconTheme: IconThemeData(color: onSurfaceVariant),
       extensions: [wp, WpText.standard],
       appBarTheme: AppBarTheme(
         backgroundColor: wp.background,

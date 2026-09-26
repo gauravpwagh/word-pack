@@ -6,11 +6,12 @@ import '../../domain/tags.dart';
 import '../../l10n/app_localizations.dart';
 import '../card/tag_style.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 
 /// The five one-tap tag buttons (`docs/UI_UX.md` §5). Tones are single-choice
-/// (tapping the active one clears it); traits toggle independently. Shown only
-/// for words of a Learned pack.
+/// (tapping the active one clears it); traits toggle independently. Shown for
+/// every word, while learning too (D-32).
 class QuickTagBar extends StatelessWidget {
   const QuickTagBar({
     super.key,
@@ -48,7 +49,7 @@ class QuickTagBar extends StatelessWidget {
         key: key,
         selected: selected,
         showCheckmark: false,
-        avatar: Icon(icon, color: color, fill: selected ? 1 : 0),
+        avatar: Icon(selected ? WpIcons.filled(icon) : icon, color: color),
         label: Text(label),
         selectedColor: background,
         side: BorderSide(

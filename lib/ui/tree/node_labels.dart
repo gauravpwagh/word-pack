@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/models.dart';
 import '../../domain/tree.dart';
@@ -7,6 +6,7 @@ import '../../l10n/app_localizations.dart';
 import '../card/tag_style.dart';
 import '../common/labels.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 
 /// Display text for a tree node.
 String nodeTitle(AppLocalizations l10n, TreeNode n) => switch (n.kind) {
@@ -63,19 +63,17 @@ String tagTitle(AppLocalizations l10n, String key) => switch (key) {
           );
         }
       }
-      return (icon: Symbols.sell_rounded, filled: false, color: wp.statusNew);
+      return (icon: WpIcons.sell, filled: false, color: wp.statusNew);
     default:
       final icon = switch (n.kind) {
-        NodeKind.wordlist => Symbols.menu_book_rounded,
-        NodeKind.packs => Symbols.stacks_rounded,
-        NodeKind.categories => Symbols.folder_copy_rounded,
-        NodeKind.category =>
-          expanded ? Symbols.folder_open_rounded : Symbols.folder_rounded,
-        NodeKind.subcategory => Symbols.label_rounded,
-        NodeKind.noSubcategory ||
-        NodeKind.uncategorised => Symbols.label_off_rounded,
-        NodeKind.tags => Symbols.sell_rounded,
-        _ => Symbols.search_rounded,
+        NodeKind.wordlist => WpIcons.menuBook,
+        NodeKind.packs => WpIcons.stacks,
+        NodeKind.categories => WpIcons.folderCopy,
+        NodeKind.category => expanded ? WpIcons.folderOpen : WpIcons.folder,
+        NodeKind.subcategory => WpIcons.label,
+        NodeKind.noSubcategory || NodeKind.uncategorised => WpIcons.labelOff,
+        NodeKind.tags => WpIcons.sell,
+        _ => WpIcons.search,
       };
       return (icon: icon, filled: false, color: null);
   }

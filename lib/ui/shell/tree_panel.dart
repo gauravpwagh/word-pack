@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/tree.dart';
 import '../../l10n/app_localizations.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import '../tree/tree_view.dart';
 
@@ -50,7 +50,7 @@ class _TreePanelState extends ConsumerState<TreePanel> {
                 onSubmitted: _submit,
                 decoration: InputDecoration(
                   hintText: l10n.treeSearchHint,
-                  prefixIcon: const Icon(Symbols.search_rounded),
+                  prefixIcon: const Icon(WpIcons.search),
                   isDense: true,
                 ),
               ),

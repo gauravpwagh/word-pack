@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../common/page_scaffold.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import 'start_import.dart';
 
@@ -37,7 +37,7 @@ class WelcomeScreen extends ConsumerWidget {
                     ),
                   ),
                   onPressed: () => startImport(context, ref),
-                  icon: const Icon(Symbols.upload_file_rounded),
+                  icon: const Icon(WpIcons.uploadFile),
                   label: Text(l10n.welcomeImport),
                 ),
                 const SizedBox(height: WpSpace.lg),

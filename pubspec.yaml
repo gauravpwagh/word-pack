@@ -2,7 +2,7 @@ name: wordpack
 description: "WordPack: offline vocabulary pack learner."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.11.4
@@ -25,7 +25,6 @@ dependencies:
   flutter_riverpod: ^3.3.1
   go_router: ^17.5.0
   intl: ^0.20.2
-  material_symbols_icons: ^4.2960.0
   path_provider: ^2.1.6
   riverpod_annotation: ^4.0.2
   share_plus: ^13.3.0
@@ -48,6 +47,12 @@ flutter:
   uses-material-design: true
   generate: true
 
+  # Font licences, registered with LicenseRegistry in lib/main.dart.
+  assets:
+    - assets/fonts/OFL-Literata.txt
+    - assets/fonts/OFL-AtkinsonHyperlegibleNext.txt
+    - assets/fonts/LICENSE-MaterialSymbols.txt
+
   # Bundled, never downloaded at runtime (DECISIONS D-20). Both are variable
   # fonts: weights are applied through FontVariation in lib/ui/theme/app_theme.dart.
   fonts:
@@ -59,6 +64,13 @@ flutter:
     - family: AtkinsonHyperlegibleNext
       fonts:
         - asset: assets/fonts/AtkinsonHyperlegibleNext-Variable.ttf
+    # Static Material Symbols subsets from tool/build_icon_fonts.py (D-21).
+    - family: WpSymbols
+      fonts:
+        - asset: assets/fonts/WpSymbols.ttf
+    - family: WpSymbolsFilled
+      fonts:
+        - asset: assets/fonts/WpSymbolsFilled.ttf
 
 # App icon from the design canvas (tool/render_icon_test.dart renders the
 # PNGs). Regenerate with: dart run flutter_launcher_icons

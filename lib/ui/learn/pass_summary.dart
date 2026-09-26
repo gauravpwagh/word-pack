@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/models.dart';
 import '../../l10n/app_localizations.dart';
 import '../common/labels.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import 'learn_controller.dart';
 
@@ -41,7 +41,7 @@ class PassSummary extends StatelessWidget {
     final String title;
     final List<(SummaryAction, String)> actions;
     if (result.becameLearned) {
-      icon = Symbols.check_circle_rounded;
+      icon = WpIcons.checkCircle;
       color = wp.statusLearned;
       title = l10n.summaryLearned(number);
       actions = [
@@ -53,7 +53,7 @@ class PassSummary extends StatelessWidget {
       final learned = result.status == PackStatus.learned;
       final otherNeeded =
           !learned && view.progress.of(other) != Mastery.mastered;
-      icon = Symbols.task_alt_rounded;
+      icon = WpIcons.taskAlt;
       color = wp.statusLearned;
       title = learned
           ? l10n.summaryCleanReview(number, direction)
@@ -68,7 +68,7 @@ class PassSummary extends StatelessWidget {
         (SummaryAction.back, l10n.summaryBack),
       ];
     } else {
-      icon = Symbols.visibility_rounded;
+      icon = WpIcons.visibility;
       color = wp.statusLearning;
       final terms = [
         for (final id in result.peekedWordIds) view.wordById(id).term,
@@ -95,7 +95,7 @@ class PassSummary extends StatelessWidget {
             curve: Curves.elasticOut,
             builder: (context, scale, child) =>
                 Transform.scale(scale: scale, child: child),
-            child: Icon(icon, size: 56, color: color, fill: 1),
+            child: Icon(WpIcons.filled(icon), size: 56, color: color),
           ),
           const SizedBox(height: WpSpace.md),
           Text(

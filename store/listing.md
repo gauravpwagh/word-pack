@@ -41,10 +41,10 @@ LEARN ONE PACK AT A TIME
 • Practise Word → Definition, Definition → Word, or both. You decide which clean passes make a pack count as learned.
 • Pick up exactly where you left off.
 
-ORGANISE WHAT YOU’VE LEARNED
-• Once a pack is learned, sort its words into your own categories and subcategories.
-• One-tap tags: Positive, Negative or Neutral tone, plus Counter-intuitive and Multiple meanings.
+TAG AND ORGANISE
+• One-tap tags on any card, even mid-pack: Positive, Negative or Neutral tone, plus Counter-intuitive and Multiple meanings.
 • Tags show up everywhere as colours and icons, so tricky words stand out.
+• Once a pack is learned, sort its words into your own categories and subcategories.
 
 EXPLORE
 • Browse a tree of wordlists, packs, categories and tags, with live counts.
@@ -70,7 +70,7 @@ Also: light and dark themes, large-text support, screen-reader labels, swipe ges
 
 Screenshot order (upload in this order):
 
-1. `01-learn.png` — a card revealed mid-pass, peek counter
+1. `01-learn.png` — a card revealed mid-pass and tagged Positive, peek counter
 2. `02-review-tags.png` — reviewing a learned pack: tone, category, quick tag buttons
 3. `03-packs.png` — wordlist home: progress, Continue, pack grid
 4. `04-explore-card.png` — explorer card with both trait badges and dashed outline
@@ -108,7 +108,17 @@ Regenerating: `flutter test tool/render_store_art_test.dart` renders the icon an
 
 The resulting label reads: “No data collected · No data shared with third parties”.
 
-## Release notes (v1.0.0, build 1)
+## Release notes
+
+v1.0.1 (build 2):
+
+```
+<en-US>
+Fixed icons missing on some screens. Tag words Positive, Negative, Neutral, Counter-intuitive or Multiple meanings while learning, not just in review.
+</en-US>
+```
+
+v1.0.0 (build 1):
 
 ```
 <en-US>

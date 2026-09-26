@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../data/db/database.dart';
 import '../../domain/categories.dart';
 import '../../l10n/app_localizations.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 
 /// Category + subcategory comboboxes (`docs/UI_UX.md` §5, CAT-3 … CAT-5).
@@ -198,7 +198,7 @@ class _NameFieldState extends State<_NameField> {
                 ? null
                 : IconButton(
                     tooltip: widget.clearTooltip,
-                    icon: const Icon(Symbols.close_rounded),
+                    icon: const Icon(WpIcons.close),
                     onPressed: widget.onCleared,
                   ),
           ),
@@ -230,9 +230,7 @@ class _NameFieldState extends State<_NameField> {
                 children: [
                   for (final o in options)
                     ListTile(
-                      leading: Icon(
-                        o.create ? Symbols.add_rounded : Symbols.label_rounded,
-                      ),
+                      leading: Icon(o.create ? WpIcons.add : WpIcons.label),
                       title: Text(
                         o.create ? l10n.categoryCreate(o.name) : o.name,
                       ),

@@ -56,7 +56,7 @@ Put the test ID in each test description, e.g. `test('U-15 one Show marks direct
 | R-4 | Close and reopen a file-backed database → pass state and data intact |
 | R-5 | Every service method runs in one transaction (inject a failure mid-way → no partial writes) |
 | R-6 | Worked example via `LearningService` → pack learned, `becameLearned` true exactly once |
-| R-7 | `TaggingService` on a non-learned word → `WordNotLearnedException`; learned word → saved |
+| R-7 | `TaggingService`: categorising a non-learned word → `WordNotLearnedException`; tone and traits on any word → saved (D-32) |
 | R-8 | `CategoryService.assign(word, 'Emotions', 'Anger')` find-or-create, case-insensitive; wrong parent → `InvalidSubcategoryException` |
 | R-9 | `applyPackSizeChange(20)` → U-12 expectations in the DB; open passes deleted |
 | R-10 | Changing learned rule changes derived pack statuses with no writes |
@@ -84,7 +84,7 @@ Put the test ID in each test description, e.g. `test('U-15 one Show marks direct
 | I-3 | Pack 1 DW: Show on card 5, finish → 1 peek; repeat with Next only → "Pack 1 learned!"; tree icon green; no categorise prompt appears |
 | I-4 | Restart app mid-pass at card 12 with one peek → resume banner → card 12, peeks 1 |
 | I-5 | Switch direction mid-pass → confirm → card 1 in DW |
-| I-6 | Learning pack 2 (not learned): no quick tag buttons or category row present |
+| I-6 | Learning pack 2 (not learned): quick tag buttons present and working (also keys 1–5); no category row, C does nothing |
 | I-7 | Review pack 1: on `accuse` tap Negative, then Counter-intuitive → red border, dashed outline, badge; tap Negative again → border gone, badge stays |
 | I-8 | Review pack 1: `abbey` → `Religion › Places`; on `acclaim` the category field suggests `Religion`, then `Places` |
 | I-9 | Explorer: select `Religion › Places` → `1 / 2`, swipe → `2 / 2`, reveal works, pack statuses unchanged |

@@ -55,7 +55,7 @@ Future<void> choose(WidgetTester tester, String fieldKey, String text) async {
 
 void main() {
   group('M4 review', () {
-    testApp('I-6 learning a pack that is not Learned: no tag controls', (
+    testApp('I-6 learning a pack that is not Learned: tags, no categories', (
       tester,
       app,
     ) async {
@@ -63,16 +63,23 @@ void main() {
       await tapText(tester, 'Import CSV');
       await tapText(tester, 'Import 60 words');
       await tapText(tester, 'Continue · Pack 1 · Word → Definition');
-      expect(find.byType(QuickTagBar), findsNothing);
+      expect(find.byType(QuickTagBar), findsOneWidget);
       expect(find.byType(CategoryRow), findsNothing);
       expect(find.text('Review'), findsNothing);
       expect(find.textContaining('ategor'), findsNothing);
 
-      // Keyboard tag shortcuts do nothing either.
+      // Tag buttons and keys 1–5 work while learning (D-32).
+      await tapText(tester, 'Counter-intuitive');
       await tester.sendKeyEvent(LogicalKeyboardKey.digit2);
       await tester.pumpAndSettle();
       final abbey = await wordNamed(app, 'abbey');
-      expect(abbey.tone, isNull);
+      expect(abbey.tone, Tone.negative);
+      expect(abbey.counterIntuitive, isTrue);
+
+      // C does not open a category field.
+      await tester.sendKeyEvent(LogicalKeyboardKey.keyC);
+      await tester.pumpAndSettle();
+      expect(find.byType(CategoryRow), findsNothing);
     });
 
     testApp('I-7 accuse: Negative + Counter-intuitive, then Negative off', (

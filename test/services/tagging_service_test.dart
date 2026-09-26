@@ -48,20 +48,32 @@ void main() {
   });
   tearDown(() => db.close());
 
-  group('R-7 learned-only rule', () {
-    test('a word of a pack that is not Learned is rejected', () async {
-      final w = pack2.first;
-      for (final action in [
-        () => tags.setTone(w.id, Tone.positive),
-        () => tags.toggleTrait(w.id, Trait.counterIntuitive),
-        () => tags.assign(w.id, category: 'Law'),
-        () => tags.setCategoryIds(w.id, categoryId: null),
-      ]) {
-        await expectLater(action(), throwsA(isA<WordNotLearnedException>()));
-      }
-      expect((await reload(w)).tone, isNull);
-      expect(await CategoryRepo(db).all(), isEmpty);
-    });
+  group('R-7 learned-only rule (categories only, D-32)', () {
+    test(
+      'categorising a word of a pack that is not Learned is rejected',
+      () async {
+        final w = pack2.first;
+        for (final action in [
+          () => tags.assign(w.id, category: 'Law'),
+          () => tags.setCategoryIds(w.id, categoryId: null),
+        ]) {
+          await expectLater(action(), throwsA(isA<WordNotLearnedException>()));
+        }
+        expect(await CategoryRepo(db).all(), isEmpty);
+      },
+    );
+
+    test(
+      'tone and traits work on a word of a pack that is not Learned',
+      () async {
+        final w = pack2.first;
+        await tags.setTone(w.id, Tone.positive);
+        await tags.toggleTrait(w.id, Trait.counterIntuitive);
+        final saved = await reload(w);
+        expect(saved.tone, Tone.positive);
+        expect(saved.counterIntuitive, isTrue);
+      },
+    );
 
     test('a word of a Learned pack is saved', () async {
       final w = pack1.first;
@@ -87,7 +99,7 @@ void main() {
       await (db.update(db.packs)..where((p) => p.id.equals(pack2.first.packId)))
           .write(const PacksCompanion(masteryWd: Value(Mastery.mastered)));
       await expectLater(
-        tags.setTone(pack2.first.id, Tone.neutral),
+        tags.assign(pack2.first.id, category: 'Law'),
         throwsA(isA<WordNotLearnedException>()),
       );
       await db
@@ -95,8 +107,8 @@ void main() {
           .write(
             const AppSettingsCompanion(learnedRule: Value(LearnedRule.either)),
           );
-      await tags.setTone(pack2.first.id, Tone.neutral);
-      expect((await reload(pack2.first)).tone, Tone.neutral);
+      await tags.assign(pack2.first.id, category: 'Law');
+      expect((await reload(pack2.first)).categoryId, isNotNull);
     });
 
     test('unknown word', () async {

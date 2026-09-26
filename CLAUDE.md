@@ -13,7 +13,8 @@ You are building WordPack v1 as a **Flutter** app (offline, SQLite via drift) fr
 - The importer must reproduce `fixtures/expected/*.json` exactly (behaviour oracle: `reference/import_parser.py`). Copy fixtures into `test/fixtures/` or read them via a relative path.
 - Every user action = one service method = one `db.transaction`.
 - Pack status is derived (`packStatus`), never stored.
-- Tagging/categorising must throw `WordNotLearnedException` unless the word's pack is Learned. Never add a prompt/nudge to categorise.
+- Categorising must throw `WordNotLearnedException` unless the word's pack is Learned; tone and traits work on any word (D-32). Never add a prompt/nudge to categorise.
+- Icons only through `WpIcons` (static fonts, D-21); never a variable icon font — release builds break it. Add icons with `tool/build_icon_fonts.py`.
 - Cards are always in source order — never shuffle.
 - Tag and status colours only through the `WpColors` theme extension; always icon + colour + `Semantics` label.
 - Design values (colours, fonts, spacing, radii, icons, motion) come from `docs/UI_UX.md` §9 — don't invent new ones.

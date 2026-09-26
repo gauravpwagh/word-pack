@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../../providers/providers.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import 'tree_panel.dart';
 import 'tree_panel_state.dart';
@@ -12,10 +12,10 @@ import 'tree_panel_state.dart';
 /// Top-level sections. The bottom bar (phones) shows all but Import, which is
 /// reached from the wordlist home there (`docs/UI_UX.md` §1).
 enum AppSection {
-  learn('/', Symbols.school_rounded),
-  explore('/explore', Symbols.account_tree_rounded),
-  import('/import', Symbols.upload_file_rounded),
-  settings('/settings', Symbols.settings_rounded);
+  learn('/', WpIcons.school),
+  explore('/explore', WpIcons.accountTree),
+  import('/import', WpIcons.uploadFile),
+  settings('/settings', WpIcons.settings);
 
   const AppSection(this.path, this.icon);
 
@@ -99,7 +99,7 @@ class _AdaptiveShellState extends State<AdaptiveShell> {
           for (final s in AppSection.values)
             NavigationRailDestination(
               icon: Icon(s.icon),
-              selectedIcon: Icon(s.icon, fill: 1),
+              selectedIcon: Icon(WpIcons.filled(s.icon)),
               label: Text(s.label(l10n)),
             ),
         ],
@@ -138,7 +138,7 @@ class _AdaptiveShellState extends State<AdaptiveShell> {
                   for (final s in bottomSections)
                     NavigationDestination(
                       icon: Icon(s.icon),
-                      selectedIcon: Icon(s.icon, fill: 1),
+                      selectedIcon: Icon(WpIcons.filled(s.icon)),
                       label: s.label(l10n),
                     ),
                 ],
@@ -166,7 +166,7 @@ class _PermanentTreePanel extends ConsumerWidget {
         children: [
           IconButton(
             tooltip: l10n.treeExpand,
-            icon: const Icon(Symbols.left_panel_open_rounded),
+            icon: const Icon(WpIcons.leftPanelOpen),
             onPressed: toggle,
           ),
         ],
@@ -185,7 +185,7 @@ class _PermanentTreePanel extends ConsumerWidget {
                 bottom: WpSpace.sm,
                 child: IconButton(
                   tooltip: l10n.treeCollapse,
-                  icon: const Icon(Symbols.left_panel_close_rounded),
+                  icon: const Icon(WpIcons.leftPanelClose),
                   onPressed: toggle,
                 ),
               ),

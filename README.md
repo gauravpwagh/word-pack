@@ -34,8 +34,8 @@ Read in this order: README → DECISIONS → REQUIREMENTS → LEARNING_LOGIC →
 2. **Packs**: consecutive words in file order, *N* per pack (setting, default 30); last pack may be shorter.
 3. **Learning**: one card at a time, in source order. **Next** = "I knew it"; **Show** = reveal. Any Show makes the pack *Learning* and the whole pack must be repeated; a pass with zero reveals is a clean pass.
 4. **Direction**: *Word → Definition* or *Definition → Word*. Which clean passes make a pack *Learned* is a user setting (default: **both directions**).
-5. **Categorise and tag** — only for words of **Learned** packs, while reviewing them or in the explorer. No prompts. One category + optional subcategory per word, from dropdowns that suggest all earlier entries (shared across wordlists).
-6. **Quick tag buttons**: Positive / Negative / Neutral (pick one) and Counter-intuitive / Multiple meanings (toggles).
+5. **Categorise** — only for words of **Learned** packs, while reviewing them or in the explorer. No prompts. One category + optional subcategory per word, from dropdowns that suggest all earlier entries (shared across wordlists).
+6. **Quick tag buttons** on every word, while learning too: Positive / Negative / Neutral (pick one) and Counter-intuitive / Multiple meanings (toggles).
 7. **Visuals**: tone = coloured left border + tint; traits = icon badges (+ dashed outline for counter-intuitive). Always icon + colour.
 8. **Explorer**: tree `Wordlist → Packs / Categories → Subcategories / Tags / Uncategorised`; selecting a node shows its words one at a time.
 9. **Settings**: pack size (rebuilds all packs), default direction, learned rule, show part of speech, theme; backup export/import.

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../data/db/database.dart';
 import '../../domain/models.dart';
@@ -15,6 +14,7 @@ import '../common/shortcut_help.dart';
 import '../shell/adaptive_shell.dart';
 import '../tagging/category_row.dart';
 import '../tagging/quick_tag_bar.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import '../tree/node_labels.dart';
 import 'word_list_view.dart';
@@ -194,7 +194,7 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
               }),
               itemBuilder: (context, i) {
                 final w = words[i];
-                final canTag = learned.contains(w.packId);
+                final canCategorise = learned.contains(w.packId);
                 return SingleChildScrollView(
                   padding: const EdgeInsets.all(WpSpace.lg),
                   child: Column(
@@ -209,14 +209,14 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
                         categoryPath: categoryPath(w),
                         onTap: () => setState(() => _revealed = !_revealed),
                       ),
-                      if (canTag) ...[
-                        const SizedBox(height: WpSpace.lg),
-                        QuickTagBar(
-                          word: w,
-                          onTone: (t) => _tag(() => tagging.setTone(w.id, t)),
-                          onTrait: (t) =>
-                              _tag(() => tagging.toggleTrait(w.id, t)),
-                        ),
+                      const SizedBox(height: WpSpace.lg),
+                      QuickTagBar(
+                        word: w,
+                        onTone: (t) => _tag(() => tagging.setTone(w.id, t)),
+                        onTrait: (t) =>
+                            _tag(() => tagging.toggleTrait(w.id, t)),
+                      ),
+                      if (canCategorise) ...[
                         const SizedBox(height: WpSpace.md),
                         CategoryRow(
                           word: w,
@@ -245,7 +245,7 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
                   IconButton(
                     tooltip: l10n.learnPrevious,
                     onPressed: _index > 0 ? () => _go(_index - 1, count) : null,
-                    icon: const Icon(Symbols.chevron_left_rounded),
+                    icon: const Icon(WpIcons.chevronLeft),
                   ),
                   Expanded(
                     child: Semantics(
@@ -263,7 +263,7 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
                     onPressed: _index < count - 1
                         ? () => _go(_index + 1, count)
                         : null,
-                    icon: const Icon(Symbols.chevron_right_rounded),
+                    icon: const Icon(WpIcons.chevronRight),
                   ),
                 ],
               ),
@@ -303,7 +303,7 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
               tooltip: _side == Direction.wd
                   ? l10n.exploreDefinitionFirst
                   : l10n.exploreWordFirst,
-              icon: const Icon(Symbols.swap_horiz_rounded),
+              icon: const Icon(WpIcons.swapHoriz),
               onPressed: () => setState(() {
                 _side = _side.other;
                 _revealed = false;
@@ -316,12 +316,12 @@ class _ExplorerScreenState extends ConsumerState<ExplorerScreen> {
                 segments: [
                   ButtonSegment(
                     value: false,
-                    icon: const Icon(Symbols.style_rounded),
+                    icon: const Icon(WpIcons.style),
                     tooltip: l10n.exploreCardMode,
                   ),
                   ButtonSegment(
                     value: true,
-                    icon: const Icon(Symbols.list_rounded),
+                    icon: const Icon(WpIcons.list),
                     tooltip: l10n.exploreListMode,
                   ),
                 ],
@@ -394,7 +394,7 @@ class _Choose extends StatelessWidget {
                 const SizedBox(height: WpSpace.lg),
                 FilledButton.icon(
                   onPressed: shell.openTree,
-                  icon: const Icon(Symbols.account_tree_rounded),
+                  icon: const Icon(WpIcons.accountTree),
                   label: Text(l10n.treeOpen),
                 ),
               ],

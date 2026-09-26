@@ -243,7 +243,7 @@ void main() {
       db.words,
     )..where((w) => w.term.equals(term))).get()).single;
 
-    testWidgets('I-6 learning pack 2: no tag buttons or category row', (
+    testWidgets('I-6 learning pack 2: tag buttons, no category row', (
       tester,
     ) async {
       final db = AppDatabase(NativeDatabase.memory());
@@ -252,7 +252,7 @@ void main() {
       await tapText(tester, 'Import CSV');
       await tapText(tester, 'Import 998 words');
       await tapText(tester, 'Pack 2');
-      expect(find.text('Positive'), findsNothing);
+      expect(find.text('Positive'), findsOneWidget);
       expect(find.text('Category'), findsNothing);
       expect(find.text('Review'), findsNothing);
       await tester.pumpWidget(const SizedBox());

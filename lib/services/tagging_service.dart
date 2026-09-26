@@ -11,9 +11,10 @@ import '../domain/learning.dart';
 import '../domain/models.dart';
 import 'exceptions.dart';
 
-/// Tone, traits, category and subcategory of a word — only for words whose
-/// pack is Learned (D-9, `docs/REQUIREMENTS.md` CAT-1 … CAT-6, TAG-1 … TAG-2).
-/// Each method is one transaction.
+/// Tone, traits, category and subcategory of a word. Tone and traits can be
+/// set on any word, including while learning (D-32); categories only on words
+/// whose pack is Learned (D-9, `docs/REQUIREMENTS.md` CAT-1 … CAT-6,
+/// TAG-1 … TAG-2). Each method is one transaction.
 class TaggingService {
   TaggingService({
     required AppDatabase db,
@@ -35,14 +36,14 @@ class TaggingService {
 
   /// Sets the tone, or clears it with null. Traits are untouched.
   Future<void> setTone(String wordId, Tone? tone) => _db.transaction(() async {
-    await _learnedWord(wordId);
+    await _word(wordId);
     await _write(wordId, WordsCompanion(tone: Value(tone)));
   });
 
   /// Turns a trait on or off.
   Future<void> toggleTrait(String wordId, Trait trait) =>
       _db.transaction(() async {
-        final word = await _learnedWord(wordId);
+        final word = await _word(wordId);
         await _write(
           wordId,
           trait == Trait.counterIntuitive
@@ -122,11 +123,16 @@ class TaggingService {
 
   // -------------------------------------------------------------------------
 
-  Future<Word> _learnedWord(String wordId) async {
+  Future<Word> _word(String wordId) async {
     final word = await (_db.select(
       _db.words,
     )..where((w) => w.id.equals(wordId))).getSingleOrNull();
     if (word == null) throw WordNotFoundException(wordId);
+    return word;
+  }
+
+  Future<Word> _learnedWord(String wordId) async {
+    final word = await _word(wordId);
     final pack = (await _packs.get(word.packId))!;
     final rule = (await _settings.get()).learnedRule;
     if (!isLearned(pack.masteryWd, pack.masteryDw, rule)) {

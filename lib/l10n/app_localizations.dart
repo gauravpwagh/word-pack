@@ -1195,7 +1195,7 @@ abstract class AppLocalizations {
   /// No description provided for @shortcutTags.
   ///
   /// In en, this message translates to:
-  /// **'Positive, Negative, Neutral, Counter-intuitive, Multiple meanings (review)'**
+  /// **'Positive, Negative, Neutral, Counter-intuitive, Multiple meanings'**
   String get shortcutTags;
 
   /// No description provided for @shortcutCategory.

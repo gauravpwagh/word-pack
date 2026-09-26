@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/importer.dart';
 import '../../domain/pos.dart';
@@ -12,6 +11,7 @@ import '../../services/file_picking.dart';
 import '../../services/import_service.dart';
 import '../common/page_scaffold.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_text.dart';
 import '../theme/wp_tokens.dart';
 import 'start_import.dart';
@@ -32,7 +32,7 @@ class ImportPreviewScreen extends ConsumerWidget {
       body = _Centered(
         child: FilledButton.icon(
           onPressed: () => startImport(context, ref),
-          icon: const Icon(Symbols.upload_file_rounded),
+          icon: const Icon(WpIcons.uploadFile),
           label: Text(l10n.importChooseFile),
         ),
       );
@@ -93,7 +93,7 @@ class _ErrorBody extends ConsumerWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Symbols.error_rounded, size: 40, color: theme.colorScheme.error),
+          Icon(WpIcons.error, size: 40, color: theme.colorScheme.error),
           const SizedBox(height: WpSpace.lg),
           Text(
             message,
@@ -203,13 +203,13 @@ class _PreviewState extends ConsumerState<_Preview> {
               ),
               const SizedBox(height: WpSpace.sm),
               _Fact(
-                icon: Symbols.check_circle_rounded,
+                icon: WpIcons.checkCircle,
                 color: wp.statusLearned,
                 text: l10n.importWordsReady(words),
                 detail: posSummary.isEmpty ? null : posSummary,
               ),
               _Fact(
-                icon: Symbols.warning_rounded,
+                icon: WpIcons.warning,
                 color: report.skipped.isEmpty
                     ? wp.textTertiary
                     : wp.statusLearning,
@@ -232,12 +232,12 @@ class _PreviewState extends ConsumerState<_Preview> {
                   ),
                 ),
               _Fact(
-                icon: Symbols.info_rounded,
+                icon: WpIcons.info,
                 color: wp.textTertiary,
                 text: l10n.importDuplicates(report.duplicatesRemoved),
               ),
               _Fact(
-                icon: Symbols.stacks_rounded,
+                icon: WpIcons.stacks,
                 color: theme.colorScheme.primary,
                 text: last == packSize
                     ? l10n.importPacks(packs, packSize)

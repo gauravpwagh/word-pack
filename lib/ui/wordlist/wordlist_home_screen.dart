@@ -3,7 +3,6 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../data/db/database.dart';
 import '../../data/repositories/pack_repo.dart';
@@ -14,6 +13,7 @@ import '../../providers/providers.dart';
 import '../common/labels.dart';
 import '../common/page_scaffold.dart';
 import '../import/start_import.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import 'pack_tile.dart';
 
@@ -42,7 +42,7 @@ class WordlistHomeScreen extends ConsumerWidget {
         if (lists.length > 1)
           PopupMenuButton<String>(
             tooltip: l10n.switchWordlist,
-            icon: const Icon(Symbols.swap_horiz_rounded),
+            icon: const Icon(WpIcons.swapHoriz),
             onSelected: (id) => context.go('/lists/$id'),
             itemBuilder: (context) => [
               for (final l in lists)
@@ -55,7 +55,7 @@ class WordlistHomeScreen extends ConsumerWidget {
           ),
         IconButton(
           tooltip: l10n.welcomeImport,
-          icon: const Icon(Symbols.add_rounded),
+          icon: const Icon(WpIcons.add),
           onPressed: () => startImport(context, ref),
         ),
       ],
@@ -236,7 +236,7 @@ class _ContinueButton extends StatelessWidget {
         ),
       ),
       onPressed: () => context.go(path),
-      icon: const Icon(Symbols.school_rounded),
+      icon: const Icon(WpIcons.school),
       label: Text(label, textAlign: TextAlign.center),
     );
   }
@@ -265,7 +265,7 @@ class _ResumeBanner extends StatelessWidget {
             child: Row(
               children: [
                 Icon(
-                  Symbols.history_rounded,
+                  WpIcons.history,
                   color: theme.colorScheme.onPrimaryContainer,
                 ),
                 const SizedBox(width: WpSpace.md),

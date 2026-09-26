@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/models.dart';
 import '../../l10n/app_localizations.dart';
@@ -15,6 +14,7 @@ import '../common/shortcut_help.dart';
 import '../tagging/category_row.dart';
 import '../tagging/quick_tag_bar.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 import '../wordlist/wordlist_home_screen.dart' show learnPath;
 import 'learn_controller.dart';
@@ -262,16 +262,15 @@ class _LearnState extends ConsumerState<_Learn> {
                       onTap: onShow,
                     ),
                   ),
-                  // Review only: in learning mode these are not built at all
-                  // and nothing hints at them (D-9).
+                  // Tone and traits on every word (D-32); the category row
+                  // only in review, and nothing hints at it before (D-9).
+                  const SizedBox(height: WpSpace.lg),
+                  QuickTagBar(
+                    word: word,
+                    onTone: (t) => tag(() => controller.setTone(word, t)),
+                    onTrait: (t) => tag(() => controller.toggleTrait(word, t)),
+                  ),
                   if (view.isReview) ...[
-                    const SizedBox(height: WpSpace.lg),
-                    QuickTagBar(
-                      word: word,
-                      onTone: (t) => tag(() => controller.setTone(word, t)),
-                      onTrait: (t) =>
-                          tag(() => controller.toggleTrait(word, t)),
-                    ),
                     const SizedBox(height: WpSpace.md),
                     CategoryRow(
                       word: word,
@@ -320,17 +319,18 @@ class _LearnState extends ConsumerState<_Learn> {
             onKey(() => onDirection(view.direction.other)),
         const SingleActivator(LogicalKeyboardKey.slash, shift: true): () =>
             onKey(() => showShortcutHelp(context)),
-        // Review only (words of a Learned pack): 1–5 tag, C category.
-        if (reviewWord != null) ...{
+        // 1–5 tag any word (D-32); C (category) only in review (D-9).
+        if (word != null) ...{
           for (final (i, t) in Tone.values.indexed)
             SingleActivator(_digits[i]): () =>
-                onKey(() => tag(() => controller.tapTone(reviewWord, t))),
+                onKey(() => tag(() => controller.tapTone(word, t))),
           for (final (i, t) in Trait.values.indexed)
             SingleActivator(_digits[3 + i]): () =>
-                onKey(() => tag(() => controller.toggleTrait(reviewWord, t))),
+                onKey(() => tag(() => controller.toggleTrait(word, t))),
+        },
+        if (reviewWord != null)
           const SingleActivator(LogicalKeyboardKey.keyC): () =>
               onKey(_categoryFocus.requestFocus),
-        },
       },
       child: Focus(
         autofocus: true,
@@ -366,7 +366,7 @@ class _LearnState extends ConsumerState<_Learn> {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        icon: const Icon(Symbols.swap_horiz_rounded),
+        icon: const Icon(WpIcons.swapHoriz),
         title: Text(l10n.switchDirectionTitle(directionLabel(l10n, to))),
         content: Text(l10n.switchDirectionBody),
         actions: [
@@ -395,7 +395,7 @@ class _ReviewBadge extends StatelessWidget {
       padding: const EdgeInsets.only(right: WpSpace.md),
       child: Chip(
         avatar: Icon(
-          Symbols.edit_note_rounded,
+          WpIcons.editNote,
           size: 18,
           color: theme.colorScheme.onPrimaryContainer,
         ),
@@ -423,18 +423,11 @@ class _DirectionToggle extends StatelessWidget {
 
     Widget statusIcon(Mastery m) => switch (m) {
       Mastery.mastered => Icon(
-        Symbols.check_circle_rounded,
-        fill: 1,
+        WpIcons.filled(WpIcons.checkCircle),
         color: wp.statusLearned,
       ),
-      Mastery.learning => Icon(
-        Symbols.clock_loader_40_rounded,
-        color: wp.statusLearning,
-      ),
-      Mastery.unseen => Icon(
-        Symbols.radio_button_unchecked_rounded,
-        color: wp.statusNew,
-      ),
+      Mastery.learning => Icon(WpIcons.clockLoader40, color: wp.statusLearning),
+      Mastery.unseen => Icon(WpIcons.radioButtonUnchecked, color: wp.statusNew),
     };
     String masteryText(Mastery m) => switch (m) {
       Mastery.mastered => l10n.masteryMastered,
@@ -504,7 +497,7 @@ class _Progress extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Icon(
-                      Symbols.visibility_rounded,
+                      WpIcons.visibility,
                       size: 18,
                       color: pass.peeks > 0
                           ? WpColors.of(context).statusLearning
@@ -569,7 +562,7 @@ class _Actions extends StatelessWidget {
                 minHeight: WpSize.studyAction,
               ),
               onPressed: canGoBack ? onPrevious : null,
-              icon: const Icon(Symbols.chevron_left_rounded),
+              icon: const Icon(WpIcons.chevronLeft),
             ),
             const SizedBox(width: WpSpace.sm),
             Expanded(
@@ -577,11 +570,7 @@ class _Actions extends StatelessWidget {
                 key: const ValueKey('show'),
                 style: FilledButton.styleFrom(minimumSize: tall),
                 onPressed: shown ? null : onShow,
-                icon: Icon(
-                  shown
-                      ? Symbols.visibility_off_rounded
-                      : Symbols.visibility_rounded,
-                ),
+                icon: Icon(shown ? WpIcons.visibilityOff : WpIcons.visibility),
                 label: Text(shown ? l10n.learnShown : l10n.learnShow),
               ),
             ),
@@ -592,7 +581,7 @@ class _Actions extends StatelessWidget {
                 style: FilledButton.styleFrom(minimumSize: tall),
                 onPressed: onNext,
                 iconAlignment: IconAlignment.end,
-                icon: const Icon(Symbols.chevron_right_rounded),
+                icon: const Icon(WpIcons.chevronRight),
                 label: Text(l10n.learnNext),
               ),
             ),

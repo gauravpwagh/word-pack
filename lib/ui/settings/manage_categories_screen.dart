@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../l10n/app_localizations.dart';
 import '../../providers/providers.dart';
@@ -8,6 +7,7 @@ import '../../services/category_service.dart';
 import '../../services/exceptions.dart';
 import '../common/dialogs.dart';
 import '../common/page_scaffold.dart';
+import '../theme/wp_icons.dart';
 import '../theme/wp_tokens.dart';
 
 enum _Action { rename, merge, delete }
@@ -69,9 +69,7 @@ class _Row extends ConsumerWidget {
         left: WpSpace.lg + depth * WpSpace.xl,
         right: WpSpace.sm,
       ),
-      leading: Icon(
-        depth == 0 ? Symbols.folder_rounded : Symbols.label_rounded,
-      ),
+      leading: Icon(depth == 0 ? WpIcons.folder : WpIcons.label),
       title: Text(c.name),
       subtitle: Text(l10n.homeWords(item.words)),
       trailing: PopupMenuButton<_Action>(
@@ -161,7 +159,7 @@ class _Row extends ConsumerWidget {
     final subs = all.where((u) => u.category.parentId == c.id).length;
     final ok = await confirm(
       context,
-      icon: Symbols.folder_delete_rounded,
+      icon: WpIcons.folderDelete,
       title: l10n.deleteCategoryTitle(c.name),
       body: c.parentId == null
           ? l10n.deleteCategoryBody(subs, item.words)

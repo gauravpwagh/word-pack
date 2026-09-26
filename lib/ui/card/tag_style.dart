@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:material_symbols_icons/symbols.dart';
 
 import '../../domain/models.dart';
 import '../../l10n/app_localizations.dart';
 import '../theme/wp_colors.dart';
+import '../theme/wp_icons.dart';
 
 /// Icon, label and colours for each tag (`docs/UI_UX.md` §5, §9). Colour is
 /// never the only signal: every tag has an icon and a spoken label.
 abstract final class TagStyle {
   static IconData toneIcon(Tone t) => switch (t) {
-    Tone.positive => Symbols.sentiment_satisfied_rounded,
-    Tone.negative => Symbols.sentiment_dissatisfied_rounded,
-    Tone.neutral => Symbols.sentiment_neutral_rounded,
+    Tone.positive => WpIcons.sentimentSatisfied,
+    Tone.negative => WpIcons.sentimentDissatisfied,
+    Tone.neutral => WpIcons.sentimentNeutral,
   };
 
   static IconData traitIcon(Trait t) => switch (t) {
-    Trait.counterIntuitive => Symbols.psychology_alt_rounded,
-    Trait.multipleMeanings => Symbols.alt_route_rounded,
+    Trait.counterIntuitive => WpIcons.psychologyAlt,
+    Trait.multipleMeanings => WpIcons.altRoute,
   };
 
   static String toneLabel(AppLocalizations l10n, Tone t) => switch (t) {
